@@ -20,6 +20,7 @@ exports.config = {
         'objects-drawers',
         'objects-medias',
         'objects-modals',
+        'components-buttons',
         'utils-alignment',
         'utils-boxing',
         'utils-colors',

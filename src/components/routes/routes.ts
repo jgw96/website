@@ -132,6 +132,14 @@ export const utilsRoutes = [
   })
 ];
 
+export const componentsRoutes = [new Route({
+  url: '/components/buttons',
+  component: 'components-buttons',
+  props: new RouteProps({
+    name: 'Buttons'
+  })
+})];
+
 export const allRoutes = [{
   title: 'Getting Started',
   routes: gettingStartedRoutes
@@ -141,6 +149,9 @@ export const allRoutes = [{
 }, {
   title: 'Objects',
   routes: objectsRoutes
+}, {
+  title: 'Components',
+  routes: componentsRoutes
 }, {
   title: 'Utils',
   routes: utilsRoutes
