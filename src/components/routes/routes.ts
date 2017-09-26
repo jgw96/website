@@ -37,7 +37,7 @@ export const genericsRoutes = [
 
 export const objectsRoutes = [
   new Route({
-    url: '/objects/global',
+    url: '/objects/containers',
     component: 'objects-containers',
     props: new RouteProps({
       name: 'Containers'
@@ -87,8 +87,61 @@ export const objectsRoutes = [
   })
 ];
 
-export const allRoutes = [
-  ...gettingStartedRoutes,
-  ...genericsRoutes,
-  ...objectsRoutes
+export const utilsRoutes = [
+  new Route({
+    url: '/utils/alignment',
+    component: 'utils-alignment',
+    props: new RouteProps({
+      name: 'Alignment'
+    })
+  }),
+  new Route({
+    url: '/utils/boxing',
+    component: 'utils-boxing',
+    props: new RouteProps({
+      name: 'Boxing'
+    })
+  }),
+  new Route({
+    url: '/utils/elevation',
+    component: 'utils-elevation',
+    props: new RouteProps({
+      name: 'Elevation'
+    })
+  }),
+  new Route({
+    url: '/utils/sizes',
+    component: 'utils-sizes',
+    props: new RouteProps({
+      name: 'Sizes'
+    })
+  }),
+  new Route({
+    url: '/utils/colors',
+    component: 'utils-colors',
+    props: new RouteProps({
+      name: 'Colors'
+    })
+  }),
+  new Route({
+    url: '/utils/visibility',
+    component: 'utils-visibility',
+    props: new RouteProps({
+      name: 'Visibility'
+    })
+  })
 ];
+
+export const allRoutes = [{
+  title: 'Getting Started',
+  routes: gettingStartedRoutes
+}, {
+  title: 'Generics',
+  routes: genericsRoutes
+}, {
+  title: 'Objects',
+  routes: objectsRoutes
+}, {
+  title: 'Utils',
+  routes: utilsRoutes
+}];

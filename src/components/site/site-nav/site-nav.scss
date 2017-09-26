@@ -1,0 +1,21 @@
+.c-overlay, .o-drawer {
+  position: fixed;
+  z-index: 1000;
+}
+
+.a-overlay {
+  animation: fade-in .5s;
+}
+
+@keyframes fade-in {
+  0% {
+    background-color: rgba(17, 17, 17, 0);
+  }
+  100% {
+    background-color: rgba(17, 17, 17, 0.4);
+  }
+}
+
+.a-drawer {
+  transition: transform .3s;
+}

@@ -56,7 +56,7 @@ export class ObjectsMedias {
           class="c-code">--center</code> or <code class="c-code">--bottom</code> modifiers.
         </p>
 
-        <div class="o-grid o-grid--small-full">
+        <div class="o-grid o-grid--small-full o-grid--medium-full o-grid--large-full">
           <div class="o-grid__cell o-grid__cell--width-33">
             <demo-markup code={`<div class="c-card">
   <div class="c-card__item o-media">

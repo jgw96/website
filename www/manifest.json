@@ -1,10 +1,10 @@
 {
-  "name": "Stencil Starter",
-  "short_name": "Stencil",
+  "name": "Blaze",
+  "short_name": "Blaze",
   "start_url": "/",
   "display": "standalone",
   "icons": [{
-    "src": "assets/img/icon.png",
+    "src": "assets/img/blaze.png",
     "sizes": "512x512",
     "type": "image/png"
   }],

@@ -1,7 +1,7 @@
 import { Component } from '@stencil/core';
 
 @Component({
-  tag: 'landing-page'
+  tag: 'home-page'
 })
 export class LandingPage {
   constructor() {
@@ -11,7 +11,7 @@ export class LandingPage {
   render() {
     return (
       <div>
-        Landing Page
+        Home Page
       </div>
     );
   }

@@ -1,22 +1,56 @@
 @import "../../../node_modules/blaze/scss/blaze";
+@import "../../../node_modules/blaze/scss/blaze.colors";
+
+body {
+  overflow-x: hidden;
+}
+
+@media (min-width: 42em) {
+  body {
+    font-size: 18px;
+  }
+}
+
+.c-text {
+  font-family: "Source Sans Pro", -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  color: #2c3e50;
+}
+main {
+  padding-bottom: 5em;
+}
+
+site-search stencil-route-link a ,
+site-nav stencil-route-link a {
+  cursor: pointer;
+  display: inline-block;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  margin: 0;
+  border-radius: 4px;
+  background-color: transparent;
+  color: $link-color;
+  text-decoration: $link-text-decoration;
+}
+
+site-nav stencil-route-link .link-active {
+  background-color: $color-info;
+  color: $color-white;
+}
+
+/*
+ * Colors demo
+ */
+.colors-demo {
+  .c-badge {
+    margin: 0.5em;
+    text-align: center;
+  }
+}
 
 /*
  * Demo containers
  */
-.demo-container {
-  position: relative;
-  height: 400px;
-  overflow: hidden;
-}
-
-.toast-demo {
-  position: relative;
-  height: 440px;
-  overflow: hidden;
-  border: 1px solid #eee;
-}
-
-.alignment-demo {
+.fixed-height-demo {
   position: relative;
   height: 400px;
   overflow: hidden;
@@ -30,7 +64,6 @@
   background-image: url(https://unsplash.it/1024/963?random);
   background-size: cover;
 }
-
 
 /*
  * Grid outlines
@@ -63,3 +96,4 @@
 .o-grid-text {
   background-color: #fff;
 }
+

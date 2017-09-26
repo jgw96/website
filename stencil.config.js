@@ -3,9 +3,12 @@ exports.config = {
     {
       components: [
         'blaze-site',
+        'site-header',
+        'site-nav',
+        'github-corner',
         'demo-markup',
         'carbon-ad',
-        'landing-page',
+        'home-page',
         'install-page',
         'about-page',
         'custom-build',
@@ -16,7 +19,13 @@ exports.config = {
         'objects-images',
         'objects-drawers',
         'objects-medias',
-        'objects-modals'
+        'objects-modals',
+        'utils-alignment',
+        'utils-boxing',
+        'utils-colors',
+        'utils-elevation',
+        'utils-sizes',
+        'utils-visibility'
       ]
     }
   ],

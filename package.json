@@ -22,12 +22,12 @@
     "start": "npm run dev"
   },
   "dependencies": {
-    "@stencil/core": "next",
+    "@stencil/core": "0.0.6-0",
     "@stencil/router": "0.0.9"
   },
   "devDependencies": {
     "@stencil/dev-server": "latest",
     "@stencil/utils": "latest",
-    "blaze": "^3.4.1"
+    "blaze": "^3.5.1"
   }
 }
