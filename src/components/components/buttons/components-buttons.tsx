@@ -46,7 +46,7 @@ export class ButtonsPage {
           There are five button color modifiers:
         </p>
 
-        <demo-markup code={`<button type="button" class="c-button">Button</button>
+        <demo-markup language="html" code={`<button type="button" class="c-button">Button</button>
 <button type="button" class="c-button c-button--brand">Button</button>
 <button type="button" class="c-button c-button--info">Button</button>
 <button type="button" class="c-button c-button--warning">Button</button>
@@ -61,7 +61,7 @@ export class ButtonsPage {
           This will bunch the buttons together and remove the spacing between them.
         </p>
 
-        <demo-markup code={`<span class="c-input-group">
+        <demo-markup language="html" code={`<span class="c-input-group">
   <button type="button" class="c-button c-button--brand">Button</button>
   <button type="button" class="c-button">Button</button>
 </span>`}/>
@@ -71,7 +71,7 @@ export class ButtonsPage {
           rounded.
         </p>
 
-        <deo-markup code={`<span class="c-input-group c-input-group--rounded">
+        <demo-markup language="html" code={`<span class="c-input-group c-input-group--rounded">
   <button type="button" class="c-button c-button--brand">Button</button>
   <button type="button" class="c-button">Button</button>
   <button type="button" class="c-button c-button--info">Button</button>
@@ -82,7 +82,7 @@ export class ButtonsPage {
           Adding a size utility class will change the size of the button.
         </p>
 
-        <demo-markup code={`<button type="button" class="c-button u-xsmall">.u-xsmall</button>
+        <demo-markup language="html" code={`<button type="button" class="c-button u-xsmall">.u-xsmall</button>
 <button type="button" class="c-button u-small">.u-small</button>
 <button type="button" class="c-button u-medium">.u-medium</button>
 <button type="button" class="c-button u-large">.u-large</button>
@@ -91,7 +91,7 @@ export class ButtonsPage {
 
         <h2 id="full-width" class="c-heading u-xlarge">Full Width Buttons</h2>
 
-        <demo-markup code={`<button type="button" class="c-button c-button--block u-xsmall">Button</button>
+        <demo-markup language="html" code={`<button type="button" class="c-button c-button--block u-xsmall">Button</button>
 <button type="button" class="c-button c-button--block u-small">Button</button>
 <button type="button" class="c-button c-button--block u-medium">Button</button>
 <button type="button" class="c-button c-button--block u-large">Button</button>
@@ -100,7 +100,7 @@ export class ButtonsPage {
 
         <h2 id="ghost" class="c-heading u-xlarge">Ghost Buttons</h2>
 
-        <demo-markup code={`<button type="button" class="c-button c-button--ghost u-xsmall">Button</button>
+        <demo-markup language="html" code={`<button type="button" class="c-button c-button--ghost u-xsmall">Button</button>
 <button type="button" class="c-button c-button--ghost u-small">Button</button>
 <button type="button" class="c-button c-button--ghost u-medium">Button</button>
 <button type="button" class="c-button c-button--ghost u-large">Button</button>
@@ -109,7 +109,7 @@ export class ButtonsPage {
 
         <h2 id="ghost-colors" class="c-heading u-xlarge">Ghost colors</h2>
 
-        <demo-markup code={`<button type="button" class="c-button c-button--ghost">Button</button>
+        <demo-markup language="html" code={`<button type="button" class="c-button c-button--ghost">Button</button>
 <button type="button" class="c-button c-button--ghost-brand">Button</button>
 <button type="button" class="c-button c-button--ghost-info">Button</button>
 <button type="button" class="c-button c-button--ghost-warning">Button</button>
@@ -118,7 +118,7 @@ export class ButtonsPage {
 
         <h2 id="rounded" class="c-heading u-xlarge">Rounded Buttons</h2>
 
-        <demo-markup code={`<button type="button" class="c-button c-button--rounded c-button--ghost">Button</button>
+        <demo-markup language="html" code={`<button type="button" class="c-button c-button--rounded c-button--ghost">Button</button>
 <button type="button" class="c-button c-button--rounded c-button--ghost-brand">Button</button>
 <button type="button" class="c-button c-button--rounded c-button--ghost-info">Button</button>
 <button type="button" class="c-button c-button--rounded c-button--ghost-warning">Button</button>
@@ -127,7 +127,7 @@ export class ButtonsPage {
 
         <h2 id="states" class="c-heading u-xlarge">Active state</h2>
 
-        <demo-markup code={`<span class="c-input-group">
+        <demo-markup language="html" code={`<span class="c-input-group">
   <button class="c-button c-button--info c-button--active" type="button">Button 1</button>
   <button class="c-button c-button--info" type="button">Button 2</button>
 </span>`}/>

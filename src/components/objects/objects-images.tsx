@@ -23,7 +23,7 @@ export class ObjectsImages {
 
         <carbon-ad/>
 
-        <demo-markup code={`<img class="o-image" src="https://unsplash.it/1024/963?random" />`}/>
+        <demo-markup language="html" code={`<img class="o-image" src="https://unsplash.it/1024/963?random" />`}/>
 
       </section>
     );

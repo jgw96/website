@@ -31,19 +31,19 @@ export class UtilsAlignment {
 
         <h2 id="centered" class="c-heading u-xlarge">Centered</h2>
 
-        <demo-markup code={`<div class="u-center-block fixed-height-demo">
+        <demo-markup language="html" code={`<div class="u-center-block fixed-height-demo">
   <div class="u-center-block__content">Hello Blaze</div>
 </div>`}/>
 
         <h2 id="vertical" class="c-heading u-xlarge">Vertical</h2>
 
-        <demo-markup code={`<div class="u-center-block fixed-height-demo">
+        <demo-markup language="html" code={`<div class="u-center-block fixed-height-demo">
   <div class="u-center-block__content u-center-block__content--vertical">Hello Blaze</div>
 </div>`}/>
 
         <h2 id="horizontal" class="c-heading u-xlarge">Horizontal</h2>
 
-        <demo-markup code={`<div class="u-center-block fixed-height-demo">
+        <demo-markup language="html" code={`<div class="u-center-block fixed-height-demo">
     <div class="u-center-block__content u-center-block__content--horizontal">Hello Blaze</div>
   </div>`}/>
 
@@ -53,7 +53,7 @@ export class UtilsAlignment {
           To position an element perfectly in the center of a relative container use the <code class="c-code">.u-absolute-center</code> block.
         </p>
 
-        <demo-markup code={`<div class="u-center-block fixed-height-demo">
+        <demo-markup language="html" code={`<div class="u-center-block fixed-height-demo">
     <div class="u-absolute-center">Hello Blaze</div>
   </div>`}/>
 
@@ -63,7 +63,7 @@ export class UtilsAlignment {
           Use <code class="c-code">.u-centered</code> to apply <code class="c-code">text-align: center;</code> to an element.
         </p>
 
-        <demo-markup code={`<div class="u-center-block fixed-height-demo">
+        <demo-markup language="html" code={`<div class="u-center-block fixed-height-demo">
     <div class="u-centered">Hello Blaze</div>
   </div>`}/>
       </section>

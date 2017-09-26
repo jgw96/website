@@ -35,7 +35,7 @@ export class ObjectsGrid {
           Use the <code class="c-code">.o-grid</code> class to wrap your <code class="c-code">.o-grid__cell</code> elements.
         </p>
 
-        <demo-markup code={`<div class="o-grid o-grid--demo">
+        <demo-markup language="html" code={`<div class="o-grid o-grid--demo">
   <div class="o-grid__cell">
     <div class="o-grid-text">first</div>
   </div>
@@ -52,7 +52,7 @@ export class ObjectsGrid {
           Use the <code class="c-code">.o-grid__cell--width-xx</code> class to apply widths to your cells. If you add a width to one cell the other cells will automatically take up the rest of the space equally.
         </p>
 
-        <demo-markup code={`<div class="o-grid o-grid--demo">
+        <demo-markup language="html" code={`<div class="o-grid o-grid--demo">
   <div class="o-grid__cell o-grid__cell--width-50">
     <div class="o-grid-text">first</div>
   </div>
@@ -68,7 +68,7 @@ export class ObjectsGrid {
           and use the <code class="c-code">.o-grid--full</code> class to make all the cells full width.
         </p>
 
-        <demo-markup code={`<div class="o-grid o-grid--full o-grid--demo">
+        <demo-markup language="html" code={`<div class="o-grid o-grid--full o-grid--demo">
   <div class="o-grid__cell">
     <div class="o-grid-text">first</div>
   </div>
@@ -85,7 +85,7 @@ export class ObjectsGrid {
           To "push" a cell horizontally across the grid use the <code class="c-code">.o-grid__cell--offset-xx</code> class. Use in-conjunction with widths to perfectly align your cells.
         </p>
 
-        <demo-markup code={`<div class="o-grid o-grid--demo">
+        <demo-markup language="html" code={`<div class="o-grid o-grid--demo">
   <div class="o-grid__cell o-grid__cell--width-20">
     <div class="o-grid-text">first</div>
   </div>
@@ -102,7 +102,7 @@ export class ObjectsGrid {
           Here we have 2 cells, <span class="loud">50%</span> and <span class="loud">66.6666%</span> wide, but the grid is only <span class="loud">100%</span> wide...eek!
         </p>
 
-        <demo-markup code={`<div class="o-grid o-grid--demo">
+        <demo-markup language="html" code={`<div class="o-grid o-grid--demo">
   <div class="o-grid__cell o-grid__cell--width-50">
     <div class="o-grid-text">first</div>
   </div>
@@ -115,7 +115,7 @@ export class ObjectsGrid {
           To solve this we can wrap the cells within the grid by adding the <code class="c-code">.o-grid--wrap</code> modifier class.
         </p>
 
-        <demo-markup code={`<div class="o-grid o-grid--wrap o-grid--demo">
+        <demo-markup language="html" code={`<div class="o-grid o-grid--wrap o-grid--demo">
   <div class="o-grid__cell o-grid__cell--width-50">
     <div class="o-grid-text">first</div>
   </div>
@@ -129,7 +129,7 @@ export class ObjectsGrid {
           You can nest grids inside cells with relative ease...with nesting you're into advanced territory!
         </p>
 
-        <demo-markup code={`<div class="o-grid o-grid--demo">
+        <demo-markup language="html" code={`<div class="o-grid o-grid--demo">
   <div class="o-grid__cell">
     <div class="o-grid">
       <div class="o-grid__cell">
@@ -170,7 +170,7 @@ export class ObjectsGrid {
           <code class="c-code">.o-grid--top</code>, <code class="c-code">.o-grid--center</code> and <code class="c-code">.o-grid--bottom</code> are supported.
         </p>
 
-        <demo-markup code={`<div class="o-grid o-grid--bottom o-grid--demo">
+        <demo-markup language="html" code={`<div class="o-grid o-grid--bottom o-grid--demo">
   <div class="o-grid__cell">
     <div class="o-grid-text">first</div>
   </div>
@@ -200,7 +200,7 @@ export class ObjectsGrid {
           <code class="c-code">.o-grid__cell--top</code>, <code class="c-code">.o-grid__cell--center</code> and <code class="c-code">.o-grid__cell--bottom</code> are supported.
         </p>
 
-        <demo-markup code={`<div class="o-grid o-grid--bottom o-grid--demo">
+        <demo-markup language="html" code={`<div class="o-grid o-grid--bottom o-grid--demo">
   <div class="o-grid__cell o-grid__cell--top">
     <div class="o-grid-text">first</div>
   </div>
@@ -232,7 +232,7 @@ export class ObjectsGrid {
           <code class="c-code">{`.o-grid--{small | medium | large}-{fit | full}`}</code>
         </p>
 
-        <demo-markup code={`<div class="o-grid o-grid--small-full o-grid--medium-fit o-grid--large-full o-grid--demo">
+        <demo-markup language="html" code={`<div class="o-grid o-grid--small-full o-grid--medium-fit o-grid--large-full o-grid--demo">
     <div class="o-grid__cell">
       <div class="o-grid-text">first</div>
     </div>
@@ -258,7 +258,7 @@ export class ObjectsGrid {
           </a>.
         </p>
 
-        <demo-markup code={`<div class="o-grid o-grid--wrap o-grid--demo">
+        <demo-markup language="html" code={`<div class="o-grid o-grid--wrap o-grid--demo">
   <div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-33@small">
     <div class="o-grid-text">small</div>
   </div>
@@ -288,7 +288,7 @@ export class ObjectsGrid {
           Sometimes you want your cells to be flush with each other. To turn off all gutters use <code class="c-code">.o-grid--no-gutter</code>
         </p>
 
-        <demo-markup code={`<div class="o-grid o-grid--no-gutter o-grid--demo">
+        <demo-markup language="html" code={`<div class="o-grid o-grid--no-gutter o-grid--demo">
   <div class="o-grid__cell">
     <div class="o-grid-text">first</div>
   </div>
@@ -304,7 +304,7 @@ export class ObjectsGrid {
           ...or cell specific <code class="c-code">.o-grid__cell--no-gutter</code>
         </p>
 
-        <demo-markup code={`<div class="o-grid o-grid--demo">
+        <demo-markup language="html" code={`<div class="o-grid o-grid--demo">
   <div class="o-grid__cell">
     <div class="o-grid-text">first</div>
   </div>
@@ -321,7 +321,7 @@ export class ObjectsGrid {
           Usually cells in a grid will be <em class="c-text--loud">fluid and responsive</em>. If however you want to set a cell to a fixed width add the <code class="c-code">.o-grid__cell--width-fixed</code> modifier and give it a specific width.
         </p>
 
-        <demo-markup code={`<div class="o-grid o-grid--demo">
+        <demo-markup language="html" code={`<div class="o-grid o-grid--demo">
   <div class="o-grid__cell">
     <div class="o-grid-text">first</div>
   </div>

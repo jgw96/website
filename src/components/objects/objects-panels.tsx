@@ -32,7 +32,7 @@ export class ObjectsPanels {
           Scroll the below content...
         </p>
 
-        <demo-markup code={`<div class="o-panel-container" style="height: 350px">
+        <demo-markup language="html" code={`<div class="o-panel-container" style="height: 350px">
   <div class="o-panel">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget neque mollis, sodales nulla ut, porta
     urna. Vivamus gravida placerat metus ac malesuada. Donec convallis dolor in ex tristique, luctus tempus dui
@@ -80,7 +80,7 @@ export class ObjectsPanels {
           that the nav or tab doesn't overlap the scrollable area of the panel.
         </p>
 
-        <demo-markup code={`<div class="o-panel-container" style="height: 350px">
+        <demo-markup language="html" code={`<div class="o-panel-container" style="height: 350px">
   <nav class="c-nav c-nav--light c-nav--top c-nav--inline">
     <span class="c-nav__content">Header</span>
   </nav>

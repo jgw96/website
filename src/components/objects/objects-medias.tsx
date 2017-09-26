@@ -23,7 +23,7 @@ export class ObjectsMedias {
 
         <carbon-ad/>
 
-        <demo-markup code={`<div class="c-card">
+        <demo-markup language="html" code={`<div class="c-card">
   <div class="c-card__item c-card__item--brand o-media">
     <div class="o-media__image">
       <img class="o-image" src="https://placehold.it/80"/>
@@ -37,7 +37,7 @@ export class ObjectsMedias {
   </div>
 </div>`}/>
 
-        <demo-markup code={`<div class="c-card">
+        <demo-markup language="html" code={`<div class="c-card">
   <div class="c-card__item c-card__item--info o-media">
     <div class="o-media__body">
       <h2 class="c-heading">Title <span class="c-heading__sub">Subtitle</span></h2>
@@ -58,7 +58,7 @@ export class ObjectsMedias {
 
         <div class="o-grid o-grid--small-full o-grid--medium-full o-grid--large-full">
           <div class="o-grid__cell o-grid__cell--width-33">
-            <demo-markup code={`<div class="c-card">
+            <demo-markup language="html" code={`<div class="c-card">
   <div class="c-card__item o-media">
     <div class="o-media__image o-media__image--bottom">
       <img class="o-image" src="https://placehold.it/80"/>
@@ -74,7 +74,7 @@ export class ObjectsMedias {
           </div>
 
           <div class="o-grid__cell o-grid__cell--width-33">
-            <demo-markup code={`<div class="c-card">
+            <demo-markup language="html" code={`<div class="c-card">
   <div class="c-card__item o-media">
     <div class="o-media__image o-media__image--center">
       <img class="o-image" src="https://placehold.it/80"/>
@@ -90,7 +90,7 @@ export class ObjectsMedias {
           </div>
 
           <div class="o-grid__cell o-grid__cell--width-33">
-            <demo-markup code={`<div class="c-card">
+            <demo-markup language="html" code={`<div class="c-card">
   <div class="c-card__item o-media">
     <div class="o-media__image o-media__image--top">
       <img class="o-image" src="https://placehold.it/80"/>
