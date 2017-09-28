@@ -21,8 +21,10 @@ export class DemoMarkup {
   }
 
   componentDidUpdate() {
-    const codeEl = this.el.querySelector('code');
-    hljs.highlightBlock(codeEl);
+    if (typeof hljs !== 'undefined') {
+      const codeEl = this.el.querySelector('code');
+      hljs.highlightBlock(codeEl);
+    }
   }
 
   render() {

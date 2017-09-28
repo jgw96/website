@@ -16,8 +16,10 @@ export class SiteSearch {
   index: any;
 
   constructor() {
-    this.client = algoliasearch('OR1F7EOMDJ', '30a5e5272fc8cf7cc47aadeeb6aec522');
-    this.index = this.client.initIndex('pages');
+    if (typeof algoliasearch !== 'undefined') {
+      this.client = algoliasearch('OR1F7EOMDJ', '30a5e5272fc8cf7cc47aadeeb6aec522');
+      this.index = this.client.initIndex('pages');
+    }
   }
 
   openSearch() {

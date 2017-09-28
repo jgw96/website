@@ -2,6 +2,24 @@
   "name": "blaze-webite",
   "version": "0.1.0",
   "description": "The home of Blaze",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "stencil build --prerender",
+    "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
+    "serve": "stencil-dev-server",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@stencil/core": "next",
+    "@stencil/router": "latest"
+  },
+  "devDependencies": {
+    "@stencil/dev-server": "latest",
+    "@stencil/utils": "latest",
+    "blaze": "^3.5.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BlazeCSS/website.git"
@@ -11,23 +29,5 @@
   "bugs": {
     "url": "https://github.com/BlazeCSS/website/issues"
   },
-  "homepage": "http://blazecss.com",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "stencil build --prerender",
-    "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
-    "serve": "stencil-dev-server",
-    "start": "npm run dev"
-  },
-  "dependencies": {
-    "@stencil/core": "0.0.6-0",
-    "@stencil/router": "0.0.9"
-  },
-  "devDependencies": {
-    "@stencil/dev-server": "latest",
-    "@stencil/utils": "latest",
-    "blaze": "^3.5.1"
-  }
+  "homepage": "http://blazecss.com"
 }
