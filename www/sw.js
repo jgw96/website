@@ -36,15 +36,11 @@ const fileManifest = [
   },
   {
     "url": "build/app.js",
-    "revision": "848265db6b5ba53b92d60d19d221925b"
+    "revision": "5998681c14029eebb918fd7c533be3f5"
   },
   {
     "url": "build/app.registry.json",
-    "revision": "20b27ae409e3de2e472c5886d8bd04cc"
-  },
-  {
-    "url": "build/app/5dzeojyf.css",
-    "revision": "3802816c0a4415d3636235f4804ee43a"
+    "revision": "d65e9e8e9d1b29d82f3d5009ea543bea"
   },
   {
     "url": "build/app/6tyoiqua.js",
@@ -67,6 +63,10 @@ const fileManifest = [
     "revision": "ef671870ce35c1fad76b5fd407ea1dab"
   },
   {
+    "url": "build/app/jpg7wqsn.css",
+    "revision": "bdbbdb3b820b2c8d7128ff060307627e"
+  },
+  {
     "url": "build/app/kzngcu9x.js",
     "revision": "b461f64a72b4975ddd7147349abd4534"
   },
@@ -76,35 +76,35 @@ const fileManifest = [
   },
   {
     "url": "components/buttons/index.html",
-    "revision": "e10e959a605269d3ca24b292270dfc0f"
+    "revision": "f035c62bd483f34c06b84b755dd95aec"
   },
   {
     "url": "components/cards/index.html",
-    "revision": "5db8f56c98a01f2f596fd86e8bd8a700"
+    "revision": "67aa3fec907a1dfdd3487bafaa5db351"
   },
   {
     "url": "components/overlays/index.html",
-    "revision": "42f956941312a542539205baa983664e"
+    "revision": "ceff6e8c10598d515401ff071069e94d"
   },
   {
     "url": "generics/global/index.html",
-    "revision": "a039aefc2778e61d6ffee85f0c046d38"
+    "revision": "7dc98404913a0a6116edf420dafd12c9"
   },
   {
     "url": "getting-started/about/index.html",
-    "revision": "88103abbc390b77a19eba14ef0e1dbb6"
+    "revision": "52bbe2572e11dcd89e391cf27a5bb482"
   },
   {
     "url": "getting-started/custombuild/index.html",
-    "revision": "c25597dfbf093590013604760f47bd84"
+    "revision": "9290dcdf533cfd95138e2f4af825194f"
   },
   {
     "url": "getting-started/install/index.html",
-    "revision": "724b233b55d53dcc1c08fe6fea1b41e6"
+    "revision": "1a3e8a43f32ddd22c146946e995f761b"
   },
   {
     "url": "index.html",
-    "revision": "e519d783b03775fe67a41c089b2be7ee"
+    "revision": "5c666b1340ebb8071e068868fe39ea06"
   },
   {
     "url": "manifest.json",
@@ -112,55 +112,55 @@ const fileManifest = [
   },
   {
     "url": "objects/containers/index.html",
-    "revision": "2e642028fe08ae574d7f10851ba7fe0f"
+    "revision": "a6c0e8c02a00424aace51e3357b19c27"
   },
   {
     "url": "objects/drawers/index.html",
-    "revision": "59c5b45ff24cc3c4dde4bc02a36a4bed"
+    "revision": "3fd4592ecd98432cc751880597f4fa45"
   },
   {
     "url": "objects/grid/index.html",
-    "revision": "1b08cdca1937bb075eb600790505fbd8"
+    "revision": "c405d671798aacb90b0e1c0cc31c7a7e"
   },
   {
     "url": "objects/images/index.html",
-    "revision": "3f546d469e8b061872fc1adbac346a62"
+    "revision": "2f6363ab6a3d51f338ae4fbdab850dcd"
   },
   {
     "url": "objects/medias/index.html",
-    "revision": "45813e367cfdf4514cddba857a2c73be"
+    "revision": "e3663131ea0367529f304dcb061c0c1e"
   },
   {
     "url": "objects/modals/index.html",
-    "revision": "c835c60ddc931323a2e596833552681e"
+    "revision": "7cc1c3260b44fd397856c81e344ef3f6"
   },
   {
     "url": "objects/panels/index.html",
-    "revision": "c80d23f7f7b88dfa534d0c239dcf655e"
+    "revision": "bf44058895dd23f717dc288a2f41a427"
   },
   {
     "url": "utils/alignment/index.html",
-    "revision": "c932a1bb4f69dccbbeee9ec5f3d95ec7"
+    "revision": "465f3701193af677b671f68e32f81bef"
   },
   {
     "url": "utils/boxing/index.html",
-    "revision": "853b27e3967686c08f38347f2b2fa367"
+    "revision": "561a0ab13326bbedf0be4d12dd96da66"
   },
   {
     "url": "utils/colors/index.html",
-    "revision": "6844bef4a4567a5381e2d69a275a7c76"
+    "revision": "acb26841f32ec32393f9af7e3a1aa674"
   },
   {
     "url": "utils/elevation/index.html",
-    "revision": "6d83b0ee0645676d8ce67f8ba0474f3d"
+    "revision": "52c102ba6dc31ae55b0aabb8afbd170d"
   },
   {
     "url": "utils/sizes/index.html",
-    "revision": "ab6870ddce886ba755f87a0ea24a0703"
+    "revision": "1b351b7d1b0ad7e8aca3e185ad5e09f1"
   },
   {
     "url": "utils/visibility/index.html",
-    "revision": "761b4b4892abc67ddd62c8d0df1bd66a"
+    "revision": "10d5f305c4b76136d5125f88a7be82ae"
   }
 ];
 

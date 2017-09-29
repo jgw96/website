@@ -39,7 +39,7 @@ export class ObjectsModals {
           make full use of modals.
         </p>
 
-        <demo-markup classes="modal-demo" code={`<div class="c-overlay"></div>
+        <demo-markup language="html" classes="modal-demo" code={`<div class="c-overlay"></div>
 <div class="o-modal">
   <div class="c-card">
     <header class="c-card__header">
@@ -67,7 +67,7 @@ export class ObjectsModals {
           To make a ghost modal simply add the <code class="c-code">.o-modal--ghost</code> modifier.
         </p>
 
-        <demo-markup classes="modal-demo" code={`<div class="c-overlay"></div>
+        <demo-markup language="html" classes="modal-demo" code={`<div class="c-overlay"></div>
 <div class="o-modal o-modal--ghost">
   <div class="c-card">
     <header class="c-card__header">
@@ -92,7 +92,7 @@ export class ObjectsModals {
           fixed height so long content starts to scroll.
         </p>
 
-        <demo-markup classes="modal-demo" code={`<div class="c-overlay"></div>
+        <demo-markup language="html" classes="modal-demo" code={`<div class="c-overlay"></div>
 <div class="o-modal">
   <div class="c-card">
     <header class="c-card__header">
@@ -116,7 +116,7 @@ export class ObjectsModals {
           To make a full screen modal simply add the <code class="c-code">.o-modal--full</code> modifier.
         </p>
 
-        <demo-markup classes="modal-demo" code={`<div class="c-overlay"></div>
+        <demo-markup language="html" classes="modal-demo" code={`<div class="c-overlay"></div>
 <div class="o-modal o-modal--full">
   <div class="c-card">
     <header class="c-card__header">
@@ -141,7 +141,7 @@ export class ObjectsModals {
           the variations cards give you as the different content types of modals.
         </p>
 
-        <demo-markup classes="modal-demo" code={`<div class="c-overlay"></div>
+        <demo-markup language="html" classes="modal-demo" code={`<div class="c-overlay"></div>
 <div class="o-modal u-highest">
   <div class="c-card">
     <header class="c-card__header">
