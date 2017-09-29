@@ -132,13 +132,22 @@ export const utilsRoutes = [
   })
 ];
 
-export const componentsRoutes = [new Route({
-  url: '/components/buttons',
-  component: 'components-buttons',
-  props: new RouteProps({
-    name: 'Buttons'
+export const componentsRoutes = [
+  new Route({
+    url: '/components/accordions',
+    component: 'components-accordions',
+    props: new RouteProps({
+      name: 'Accordions'
+    })
+  }),
+  new Route({
+    url: '/components/buttons',
+    component: 'components-buttons',
+    props: new RouteProps({
+      name: 'Buttons'
+    })
   })
-})];
+];
 
 export const allRoutes = [{
   title: 'Getting Started',

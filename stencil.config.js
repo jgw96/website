@@ -5,6 +5,7 @@ exports.config = {
         'blaze-site',
         'site-header',
         'site-nav',
+        'page-template',
         'github-corner',
         'demo-markup',
         'carbon-ad',

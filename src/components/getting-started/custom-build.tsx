@@ -22,24 +22,14 @@ export class CustomBuild {
     );
   }
 
-  componentWillLoad() {
-    document.title = `${this.name} - Blaze`;
-  }
-
   render() {
     return (
-      <section>
-        <h1 class="c-heading u-super">
-          {this.name}
-        </h1>
-
-        <p class="c-paragraph">
+      <page-template name={this.name}>
+        <p slot="intro" class="c-paragraph">
           You may want to theme or override so much of Blaze that you should really build a customised version.
           The best approach is to grab the code from GitHub, change the variables and mixins and build the toolkit
           yourself.
         </p>
-
-        <carbon-ad/>
 
         <div class="o-grid o-grid--wrap o-grid--top">
           <div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-33@large u-letter-box--small">
@@ -103,7 +93,7 @@ export class CustomBuild {
             }
           </div>
         </div>
-      </section>
+      </page-template>
     );
   }
 }

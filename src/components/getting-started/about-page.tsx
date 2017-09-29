@@ -6,19 +6,9 @@ import { Component, Prop } from '@stencil/core';
 export class AboutPage {
   @Prop() name: string;
 
-  componentWillLoad() {
-    document.title = `${this.name} - Blaze`;
-  }
-
   render() {
     return (
-      <section>
-        <h1 class="c-heading u-super">
-          {this.name}
-        </h1>
-
-        <carbon-ad/>
-
+      <page-template name={this.name}>
         <h2 class="c-heading u-xlarge">What makes Blaze different?</h2>
 
         <p class="c-paragraph">
@@ -67,7 +57,7 @@ export class AboutPage {
           developer wanting more. We took the approach that provides a decent set of components
           built on top of solid foundations.
         </p>
-      </section>
+      </page-template>
     );
   }
 }

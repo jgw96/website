@@ -6,22 +6,12 @@ import { Component, Prop } from '@stencil/core';
 export class InstallPage {
   @Prop() name: string;
 
-  componentWillLoad() {
-    document.title = `${this.name} - Blaze`;
-  }
-
   render() {
     return (
-      <section>
-        <h1 class="c-heading u-super">
-          {this.name}
-        </h1>
-
-        <p class="c-paragraph">
+      <page-template name={this.name}>
+        <p slot="intro" class="c-paragraph">
           You can start using Blaze in a variety of ways:
         </p>
-
-        <carbon-ad/>
 
         <h2 id="cdn" class="c-heading u-xlarge">Link via CDN</h2>
 
@@ -102,7 +92,7 @@ export class InstallPage {
           look at the documentation for our objects, components, typography etc. and you'll see how intuitive it is
           to use.
         </p>
-      </section>
+      </page-template>
     );
   }
 }

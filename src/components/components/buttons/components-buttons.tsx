@@ -4,7 +4,7 @@ import { Component, Prop } from '@stencil/core';
   tag: 'components-buttons',
   styleUrl: 'components-buttons.scss'
 })
-export class ButtonsPage {
+export class ComponentsButtons {
   @Prop() name: string;
 
   componentWillLoad() {
