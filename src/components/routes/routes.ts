@@ -141,10 +141,59 @@ export const componentsRoutes = [
     })
   }),
   new Route({
+    url: '/components/addresses',
+    component: 'components-addresses',
+    props: new RouteProps({
+      name: 'Addresses'
+    })
+  }),
+  new Route({
+    url: '/components/alerts',
+    component: 'components-alerts',
+    props: new RouteProps({
+      name: 'Alerts'
+    })
+  }),
+  new Route({
+    url: '/components/avatars',
+    component: 'components-avatars',
+    props: new RouteProps({
+      name: 'Avatars'
+    })
+  }),
+  new Route({
+    url: '/components/badges',
+    component: 'components-badges',
+    props: new RouteProps({
+      name: 'Badges'
+    })
+  }),
+  new Route({
+    url: '/components/breadcrumbs',
+    component: 'components-breadcrumbs',
+    props: new RouteProps({
+      name: 'Breadcrumbs'
+    })
+  }),
+  new Route({
+    url: '/components/bubbles',
+    component: 'components-bubbles',
+    props: new RouteProps({
+      name: 'Bubbles'
+    })
+  }),
+  new Route({
     url: '/components/buttons',
     component: 'components-buttons',
     props: new RouteProps({
       name: 'Buttons'
+    })
+  }),
+  new Route({
+    url: '/components/calendars',
+    component: 'components-calendars',
+    props: new RouteProps({
+      name: 'Calendars'
     })
   })
 ];

@@ -4,20 +4,15 @@ site-nav {
     z-index: 1000;
   }
 
-  .a-overlay {
-    animation: fade-in .5s;
+  .c-overlay {
+    transition: visibility 0s .3s, opacity .3s;
   }
 
-  @keyframes fade-in {
-    0% {
-      background-color: rgba(17, 17, 17, 0);
-    }
-    100% {
-      background-color: rgba(17, 17, 17, 0.4);
-    }
+  .c-overlay--visible {
+    transition: opacity .3s;
   }
 
-  .a-drawer {
+  .o-drawer {
     transition: transform .3s;
   }
 }

@@ -40,18 +40,15 @@ export class SiteNav {
 
   render() {
     const drawerVisibleClass = this.isOpen ? 'o-drawer--visible' : '';
+    const overlayVisibleClass = this.isOpen ? 'c-overlay--visible' : '';
+
     return (
       <div class="c-text">
         <a class="o-page-header__button o-page-header__button--left c-link c-link--brand" onClick={() => this.openMenu()}>
           <i class="fa fa-bars u-pillar-box--xsmall"/> Menu
         </a>
-
-        {
-          this.isOpen &&
-          <div class="c-overlay c-overlay--dismissable a-overlay" onClick={() => this.closeMenu()}/>
-        }
-
-        <div class={`o-drawer o-drawer--left a-drawer ${drawerVisibleClass}`}>
+        <div class={`c-overlay c-overlay--dismissable ${overlayVisibleClass}`} onClick={() => this.closeMenu()}/>
+        <div class={`o-drawer o-drawer--left ${drawerVisibleClass} u-highest`}>
           <div class="c-card">
             <div class="c-card__body">
               <nav>

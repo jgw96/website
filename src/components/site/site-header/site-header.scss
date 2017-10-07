@@ -1,22 +1,24 @@
-.o-page-header {
-  position: relative;
-  border-bottom: 1px solid #eee;
-}
-
-.o-page-logo {
-  width: 4em;
-}
-
-.o-page-header__button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-
-  &--left {
-    left: 0;
+site-header {
+  .o-page-header {
+    position: relative;
+    border-bottom: 1px solid #eee;
   }
 
-  &--right {
-    right: 0;
+  .o-page-logo {
+    width: 4em;
+  }
+
+  .o-page-header__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
   }
 }

@@ -23,24 +23,28 @@ export class ComponentsAddresses {
 
         <carbon-ad/>
 
-        <demo-markup language="html" code={`<div class="c-card c-card--accordion u-high">
-  <input type="checkbox" id="accordion-1">
-  <label class="c-card__item" for="accordion-1">Item 1</label>
-  <div class="c-card__item">
-    Pane 1
-    <p class="c-paragraph">
-      This is an example paragraph
-    </p>
-  </div>
-  <input type="checkbox" id="accordion-2">
-  <label class="c-card__item" for="accordion-2">Item 2</label>
-  <div class="c-card__item">
-    Pane 2
-    <p class="c-paragraph">
-      This is another example paragraph
-    </p>
-  </div>
-</div>`}/>
+        <h2 id="address" class="c-heading u-xlarge">
+          Basic Address
+        </h2>
+
+        <demo-markup language="html" code={`<address class="c-address">
+  742 Evergreen Terrace,<br>
+  Springfield,<br>
+  80085,<br>
+  USA
+</address>`}/>
+
+        <h2 id="heading" class="c-heading u-xlarge">
+          Heading
+        </h2>
+
+        <demo-markup language="html" code={`<address class="c-address">
+  <span class="c-address__heading">The Simpsons,</span>
+  742 Evergreen Terrace,<br>
+  Springfield,<br>
+  80085,<br>
+  USA
+</address>`}/>
 
       </section>
     );

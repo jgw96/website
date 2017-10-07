@@ -18,7 +18,7 @@
   "devDependencies": {
     "@stencil/dev-server": "latest",
     "@stencil/utils": "latest",
-    "blaze": "^3.5.1"
+    "blaze": "^3.5.2"
   },
   "repository": {
     "type": "git",
