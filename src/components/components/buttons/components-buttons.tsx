@@ -39,7 +39,7 @@ export class ComponentsButtons {
 <button type="button" class="c-button" disabled>Button</button>`}/>
 
         <h2 id="colors" class="c-heading u-xlarge">
-          Button colors
+          Button Colors
         </h2>
 
         <p class="c-paragraph">

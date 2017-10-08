@@ -195,6 +195,13 @@ export const componentsRoutes = [
     props: new RouteProps({
       name: 'Calendars'
     })
+  }),
+  new Route({
+    url: '/components/cards',
+    component: 'components-cards',
+    props: new RouteProps({
+      name: 'Cards'
+    })
   })
 ];
 

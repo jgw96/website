@@ -15,8 +15,13 @@ body {
   font-family: "Source Sans Pro", -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
   color: #2c3e50;
 }
+
 main {
   padding-bottom: 5em;
+}
+
+.c-code {
+  font-size: 0.8em;
 }
 
 site-search stencil-route-link a ,

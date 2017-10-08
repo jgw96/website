@@ -43,7 +43,7 @@ export class ComponentsAvatars {
 </div>`}/>
 
         <h2 class="c-heading">
-          2 images
+          2 Images
         </h2>
 
         <demo-markup language="html" code={`<div class="c-avatar u-super">
