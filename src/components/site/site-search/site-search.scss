@@ -24,9 +24,13 @@
   width: 6em;
 }
 
+.c-search__input {
+  position: relative;
+}
+
 .c-search__results {
   position: absolute;
-  top: 4em;
+  top: 2.5em;
   width: 100%;
   text-align: left;
 }

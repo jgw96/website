@@ -202,6 +202,48 @@ export const componentsRoutes = [
     props: new RouteProps({
       name: 'Cards'
     })
+  }),
+  new Route({
+    url: '/components/headings',
+    component: 'components-headings',
+    props: new RouteProps({
+      name: 'Headings'
+    })
+  }),
+  new Route({
+    url: '/components/inputs',
+    component: 'components-inputs',
+    props: new RouteProps({
+      name: 'Inputs'
+    })
+  }),
+  new Route({
+    url: '/components/lists',
+    component: 'components-lists',
+    props: new RouteProps({
+      name: 'Lists'
+    })
+  }),
+  new Route({
+    url: '/components/menus',
+    component: 'components-menus',
+    props: new RouteProps({
+      name: 'Menus'
+    })
+  }),
+  new Route({
+    url: '/components/navs',
+    component: 'components-navs',
+    props: new RouteProps({
+      name: 'Navs'
+    })
+  }),
+  new Route({
+    url: '/components/overlays',
+    component: 'components-overlays',
+    props: new RouteProps({
+      name: 'Overlays'
+    })
   })
 ];
 

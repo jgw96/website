@@ -23,29 +23,23 @@ export class ObjectsContainers {
 
         <carbon-ad/>
 
-        <pre class="c-pre html"><code class="c-code c-code--multiline">
-          {`<div class="o-container o-container--xsmall"></div>
+        <demo-markup language="html" demo={false} code={`<div class="o-container o-container--xsmall"></div>
 <div class="o-container o-container--small"></div>
 <div class="o-container o-container--medium"></div>
 <div class="o-container o-container--large"></div>
 <div class="o-container o-container--xlarge"></div>
-<div class="o-container o-container--super"></div>`}
-        </code></pre>
+<div class="o-container o-container--super"></div>`}/>
 
         <h2 id="sizes" class="c-heading u-xlarge">Container sizes</h2>
         <p class="c-paragraph">
           Containers work off the screen size variables:
         </p>
-        <pre class="c-pre scss">
-          <code class="c-code c-code--multiline">
-            {`$screen-width-xsmall:  20em;
+        <demo-markup language="scss" demo={false} code={`$screen-width-xsmall:  20em;
 $screen-width-small:   30em;
 $screen-width-medium:  48em;
 $screen-width-large:   64em;
 $screen-width-xlarge:  78em;
-$screen-width-super:   116em;`}
-          </code>
-        </pre>
+$screen-width-super:   116em;`}/>
 
         <h2 id="responsiveness" class="c-heading">Responsiveness</h2>
         <p class="c-paragraph">

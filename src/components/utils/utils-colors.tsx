@@ -24,10 +24,7 @@ export class UtilsColors {
         <carbon-ad/>
 
         <h2 class="c-heading">Install</h2>
-        <pre class="c-pre">
-          <code
-            class="c-code c-code--multiline">{`link rel="stylesheet" href="https://unpkg.com/blaze/dist/blaze.colors.min.css" />`}</code>
-        </pre>
+        <demo-markup language="html" demo={false} code={`<link rel="stylesheet" href="https://unpkg.com/blaze/dist/blaze.colors.min.css" />`}/>
 
         <h2 class="c-heading">Available values</h2>
         <p class="c-paragraph">

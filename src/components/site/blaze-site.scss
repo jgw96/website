@@ -24,17 +24,20 @@ main {
   font-size: 0.8em;
 }
 
-site-search stencil-route-link a ,
-site-nav stencil-route-link a {
+stencil-route-link a {
   cursor: pointer;
   display: inline-block;
-  padding-left: 0.25em;
-  padding-right: 0.25em;
   margin: 0;
   border-radius: 4px;
   background-color: transparent;
   color: $link-color;
   text-decoration: $link-text-decoration;
+}
+
+site-search stencil-route-link a ,
+site-nav stencil-route-link a {
+  padding-left: 0.25em;
+  padding-right: 0.25em;
 }
 
 site-nav stencil-route-link .link-active {

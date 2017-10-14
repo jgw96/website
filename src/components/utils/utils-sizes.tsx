@@ -24,12 +24,12 @@ export class UtilsSizes {
 
         <carbon-ad/>
 
-        <pre class="c-pre css"><code class="c-code c-code--multiline">{`.u-xsmall
+        <demo-markup language="css" demo={false} code={`.u-xsmall
 .u-small
 .u-medium
 .u-large
 .u-xlarge
-.u-super`}</code></pre>
+.u-super`}/>
 
         <div class="u-letter-box u-letter-box--small">
           <div class="c-badge c-badge--brand u-xsmall">.u-xsmall</div>

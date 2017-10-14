@@ -67,10 +67,17 @@ export class SiteSearch {
           Search <i class="fa fa-search u-pillar-box--xsmall"/>
         </a>
         <div class="c-search__container o-grid o-grid--center o-grid--no-gutter">
-          <div class="o-grid__cell">
+          <div class="o-grid__cell c-search__input">
             <input type="search" class="c-field" placeholder="Search..." autocomplete="off"
                    onInput={(e: UIEvent) => this.search(e)}
                    onFocus={(e: UIEvent) => this.search(e)}/>
+            {this.results.length > 0 &&
+            <div class="c-search__results">
+              <div class="c-card c-card--menu u-high">
+                {this.results}
+              </div>
+            </div>
+            }
           </div>
           <div class="c-search__close o-grid__cell--width-fixed u-centered">
             <a class="c-link c-link--brand" onClick={() => this.closeSearch()}>
@@ -78,13 +85,6 @@ export class SiteSearch {
             </a>
           </div>
         </div>
-        {this.results.length > 0 &&
-        <div class="c-search__results">
-          <div class="c-card c-card--menu u-high">
-            {this.results}
-          </div>
-        </div>
-        }
       </div>
 
     );

@@ -10,6 +10,7 @@ export class DemoMarkup {
   @Prop() classes: string;
   @Prop() code: string;
   @Prop() language: string = '';
+  @Prop() demo: boolean = true;
   @State() markup: string;
 
   componentDidLoad() {
@@ -29,7 +30,7 @@ export class DemoMarkup {
 
   render() {
     return ([
-      <div class={`demo-markup-source u-letter-box--small ${this.classes}`} innerHTML={this.markup}/>,
+      this.demo && <div class={`demo-markup-source u-letter-box--small ${this.classes}`} innerHTML={this.markup}/>,
       <div class="u-letter-box--small">
         <pre class="c-pre">
           <code class={`c-code c-code--multiline ${this.language}`} contenteditable onBlur={(e) => this.updateDemo(e)}>

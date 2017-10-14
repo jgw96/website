@@ -12,6 +12,8 @@ Example:
 
 **code** - A string of code that you would like to demonstrate
 
+**demo** - render the code supplied to the component *(default **true**)*
+
 **classes** - Additional classes you can apply to the demo container
 
 **language** - The class to apply to help HighlightJS

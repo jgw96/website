@@ -41,7 +41,7 @@ export class CustomBuild {
                   Clone <a class="c-link" href="https://github.com/BlazeCSS/blaze">the git repo:</a>
                 </p>,
                   <p class="c-paragraph">
-                    <code class="c-code c-code--multiline">git clone https://github.com/BlazeCSS/blaze.git</code>
+                    <demo-markup language="bash" demo={false} code={`git clone https://github.com/BlazeCSS/blaze.git`}/>
                   </p>])
               })
             }
@@ -56,7 +56,7 @@ export class CustomBuild {
                   Install node modules:
                 </p>,
                   <p class="c-paragraph">
-                    <code class="c-code c-code--multiline">{`npm i gulp -g && npm i`}</code>
+                    <demo-markup language="bash" demo={false} code={`npm i gulp -g && npm i`}/>
                   </p>])
               })
             }
@@ -71,7 +71,7 @@ export class CustomBuild {
                   To build Blaze run:
                 </p>,
                   <p class="c-paragraph">
-                    <code class="c-code c-code--multiline">gulp</code>
+                    <demo-markup language="bash" demo={false} code={`gulp`}/>
                   </p>])
               })
             }

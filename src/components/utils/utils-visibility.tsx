@@ -27,7 +27,7 @@ export class UtilsVisibility {
           Display
         </h2>
 
-        <pre class="c-pre css"><code class="c-code c-code--multiline">{`.u-display-none
+        <demo-markup language="css" demo={false} code={`.u-display-none
 .u-display-initial
 .u-display-inline
 .u-display-inline-block
@@ -35,7 +35,7 @@ export class UtilsVisibility {
 .u-display-table
 .u-display-table-cell
 .u-display-flex
-.u-display-inline-flex`}</code></pre>
+.u-display-inline-flex`}/>
 
         <h2 id="visibility" class="c-heading u-xlarge">
           Visibility
@@ -45,8 +45,8 @@ export class UtilsVisibility {
           The visible utils changes the <code class="c-code">visible: visible|hidden</code> property is CSS.
         </p>
 
-        <pre class="c-pre css"><code class="c-code c-code--multiline">{`.u-visible
-.u-invisible`}</code></pre>
+        <demo-markup language="css" demo={false} code={`.u-visible
+.u-invisible`}/>
 
       </section>
     );

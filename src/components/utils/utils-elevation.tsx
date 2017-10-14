@@ -27,9 +27,9 @@ export class UtilsElevation {
         <p class="c-paragraph">
           Available levels:
         </p>
-        <pre class="c-pre css"><code class="c-code c-code--multiline">{`.u-high
+        <demo-markup language="css" demo={false} code={`.u-high
 .u-higher
-.u-highest`}</code></pre>
+.u-highest`}/>
 
         <div class="o-grid o-grid--wrap u-centered">
           <div class="o-grid__cell u-letter-box--large">
