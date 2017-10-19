@@ -244,6 +244,20 @@ export const componentsRoutes = [
     props: new RouteProps({
       name: 'Overlays'
     })
+  }),
+  new Route({
+    url: '/components/pagination',
+    component: 'components-pagination',
+    props: new RouteProps({
+      name: 'Pagination'
+    })
+  }),
+  new Route({
+    url: '/components/progress',
+    component: 'components-progress',
+    props: new RouteProps({
+      name: 'Progress'
+    })
   })
 ];
 

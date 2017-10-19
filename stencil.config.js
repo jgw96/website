@@ -36,6 +36,8 @@ exports.config = {
         'components-menus',
         'components-navs',
         'components-overlays',
+        'components-pagination',
+        'components-progress',
         'utils-alignment',
         'utils-boxing',
         'utils-colors',
