@@ -258,6 +258,62 @@ export const componentsRoutes = [
     props: new RouteProps({
       name: 'Progress'
     })
+  }),
+  new Route({
+    url: '/components/ranges',
+    component: 'components-ranges',
+    props: new RouteProps({
+      name: 'Ranges'
+    })
+  }),
+  new Route({
+    url: '/components/tables',
+    component: 'components-tables',
+    props: new RouteProps({
+      name: 'Tables'
+    })
+  }),
+  new Route({
+    url: '/components/tabs',
+    component: 'components-tabs',
+    props: new RouteProps({
+      name: 'Tabs'
+    })
+  }),
+  new Route({
+    url: '/components/toasts',
+    component: 'components-toasts',
+    props: new RouteProps({
+      name: 'Toasts'
+    })
+  }),
+  new Route({
+    url: '/components/toggles',
+    component: 'components-toggles',
+    props: new RouteProps({
+      name: 'Toggles'
+    })
+  }),
+  new Route({
+    url: '/components/tooltips',
+    component: 'components-tooltips',
+    props: new RouteProps({
+      name: 'Tooltips'
+    })
+  }),
+  new Route({
+    url: '/components/trees',
+    component: 'components-trees',
+    props: new RouteProps({
+      name: 'Trees'
+    })
+  }),
+  new Route({
+    url: '/components/typography',
+    component: 'components-typography',
+    props: new RouteProps({
+      name: 'Typography'
+    })
   })
 ];
 
