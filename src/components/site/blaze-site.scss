@@ -45,6 +45,11 @@ site-nav stencil-route-link .link-active {
   color: $color-white;
 }
 
+.c-heading[id] a {
+  font-size: 0.6em;
+  vertical-align: middle;
+}
+
 /*
  * Colors demo
  */
