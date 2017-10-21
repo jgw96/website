@@ -12,16 +12,10 @@ export class ObjectsContainers {
 
   render() {
     return (
-      <section>
-        <h1 class="c-heading u-super">
-          {this.name}
-        </h1>
-
-        <p class="c-paragraph">
+      <page-template name={this.name}>
+        <p slot="intro" class="c-paragraph">
           Containers provide media query screen width restrictions on your content.
         </p>
-
-        <carbon-ad/>
 
         <demo-markup language="html" demo={false} code={`<div class="o-container o-container--xsmall"></div>
 <div class="o-container o-container--small"></div>
@@ -107,7 +101,7 @@ $screen-width-super:   116em;`}/>
             sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-      </section>
+      </page-template>
     );
   }
 }

@@ -12,16 +12,10 @@ export class UtilsAlignment {
 
   render() {
     return (
-      <section>
-        <h1 class="c-heading u-super">
-          {this.name}
-        </h1>
-
-        <p class="c-paragraph">
+      <page-template name={this.name}>
+        <p slot="intro" class="c-paragraph">
           Alignment of content, whether it's horizontal or vertical, or both.
         </p>
-
-        <carbon-ad/>
 
         <p class="c-paragraph">
           <span class="c-badge c-badge--secondary">Tip:</span> Give your
@@ -66,7 +60,7 @@ export class UtilsAlignment {
         <demo-markup language="html" code={`<div class="u-center-block fixed-height-demo">
     <div class="u-centered">Hello Blaze</div>
   </div>`}/>
-      </section>
+      </page-template>
     );
   }
 }

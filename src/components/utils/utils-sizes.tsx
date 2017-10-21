@@ -12,17 +12,11 @@ export class UtilsSizes {
 
   render() {
     return (
-      <section>
-        <h1 class="c-heading u-super">
-          {this.name}
-        </h1>
-
-        <p class="c-paragraph">
+      <page-template name={this.name}>
+        <p slot="intro" class="c-paragraph">
           A set of sizes to make things bigger or smaller. Add one of these utility classes to a component and it will
           grow in size.
         </p>
-
-        <carbon-ad/>
 
         <demo-markup language="css" demo={false} code={`.u-xsmall
 .u-small
@@ -50,7 +44,7 @@ export class UtilsSizes {
           <div class="c-badge c-badge--brand u-super">.u-super</div>
         </div>
 
-      </section>
+      </page-template>
     );
   }
 }

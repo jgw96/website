@@ -12,16 +12,10 @@ export class UtilsBoxing {
 
   render() {
     return (
-      <section>
-        <h1 class="c-heading u-super">
-          {this.name}
-        </h1>
-
-        <p class="c-paragraph">
+      <page-template name={this.name}>
+        <p slot="intro" class="c-paragraph">
           A complete set of padded cells. Just for you.
         </p>
-
-        <carbon-ad/>
 
         <h2 id="letter-boxes" class="c-heading u-xlarge">Letter Boxes</h2>
         <p class="c-paragraph">
@@ -73,7 +67,7 @@ export class UtilsBoxing {
 .u-window-box--tiny
 .u-window-box--none`}/>
 
-      </section>
+      </page-template>
     );
   }
 }

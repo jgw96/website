@@ -12,17 +12,11 @@ export class GenericsGlobal {
 
   render() {
     return (
-      <section>
-        <h1 class="c-heading u-super">
-          {this.name}
-        </h1>
-
-        <p class="c-paragraph">
+      <page-template name={this.name}>
+        <p slot="intro" class="c-paragraph">
           Almost all of Blaze's styles build on top of <span class="c-text--loud">generic.global.css</span>. It's a tiny
           file that handles box-sizing and body margin.
         </p>
-
-        <carbon-ad/>
 
         <p class="c-paragraph">
           The rest of Blaze takes cues from <a class="c-link" href="https://necolas.github.io/normalize.css/">Normalize.css</a>
@@ -37,7 +31,7 @@ export class GenericsGlobal {
             <a class="c-link" href="https://necolas.github.io/normalize.css">https://necolas.github.io/normalize.css</a>
           </div>
         </blockquote>
-      </section>
+      </page-template>
     );
   }
 }

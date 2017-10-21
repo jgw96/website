@@ -12,16 +12,10 @@ export class UtilsElevation {
 
   render() {
     return (
-      <section>
-        <h1 class="c-heading u-super">
-          {this.name}
-        </h1>
-
-        <p class="c-paragraph">
+      <page-template name={this.name}>
+        <p slot="intro" class="c-paragraph">
           Consistent box-shadows for any element.
         </p>
-
-        <carbon-ad/>
 
         <h2 id="letter-boxes" class="c-heading u-xlarge">Levels</h2>
         <p class="c-paragraph">
@@ -46,7 +40,7 @@ export class UtilsElevation {
           </div>
         </div>
 
-      </section>
+      </page-template>
     );
   }
 }

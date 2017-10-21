@@ -12,16 +12,10 @@ export class ObjectsDrawers {
 
   render() {
     return (
-      <section>
-        <h1 class="c-heading u-super">
-          {this.name}
-        </h1>
-
-        <p class="c-paragraph">
+      <page-template name={this.name}>
+        <p slot="intro" class="c-paragraph">
           Slide in menus. Drawers provide a special layout for cards.
         </p>
-
-        <carbon-ad/>
 
         <h2 class="c-heading u-xlarge">Basic Drawer</h2>
         <p class="c-paragraph">
@@ -135,7 +129,7 @@ export class ObjectsDrawers {
   </div>
 </div>`} />
 
-      </section>
+      </page-template>
     );
   }
 }

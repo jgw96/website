@@ -12,16 +12,10 @@ export class ObjectsMedias {
 
   render() {
     return (
-      <section>
-        <h1 class="c-heading u-super">
-          {this.name}
-        </h1>
-
-        <p class="c-paragraph">
+      <page-template name={this.name}>
+        <p slot="intro" class="c-paragraph">
           Media objects are usually used for comment engines and other image and related text displays.
         </p>
-
-        <carbon-ad/>
 
         <demo-markup language="html" code={`<div class="c-card">
   <div class="c-card__item c-card__item--brand o-media">
@@ -105,7 +99,7 @@ export class ObjectsMedias {
 </div>`}/>
           </div>
         </div>
-      </section>
+      </page-template>
     );
   }
 }

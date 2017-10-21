@@ -12,17 +12,11 @@ export class ObjectsPanels {
 
   render() {
     return (
-      <section>
-        <h1 class="c-heading u-super">
-          {this.name}
-        </h1>
-
-        <p class="c-paragraph">
+      <page-template name={this.name}>
+        <p slot="intro" class="c-paragraph">
           A panel can be a very useful piece of layout, it provides a manageable scrollable space within the existing
           structure of your page.
         </p>
-
-        <carbon-ad/>
 
         <h2 class="c-heading u-xlarge">
           Basic Panel
@@ -123,7 +117,8 @@ export class ObjectsPanels {
     <span class="c-nav__content">Footer</span>
   </nav>
 </div>`}/>
-      </section>
+
+      </page-template>
     );
   }
 }

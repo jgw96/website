@@ -12,16 +12,10 @@ export class UtilsColors {
 
   render() {
     return (
-      <section>
-        <h1 class="c-heading u-super">
-          {this.name}
-        </h1>
-
-        <p class="c-paragraph">
+      <page-template name={this.name}>
+        <p slot="intro" class="c-paragraph">
           A set of colors and background colors separate from Blaze core.
         </p>
-
-        <carbon-ad/>
 
         <h2 class="c-heading">Install</h2>
         <demo-markup language="html" demo={false} code={`<link rel="stylesheet" href="https://unpkg.com/blaze/dist/blaze.colors.min.css" />`}/>
@@ -149,7 +143,7 @@ export class UtilsColors {
           </div>
         </div>
 
-      </section>
+      </page-template>
     );
   }
 }

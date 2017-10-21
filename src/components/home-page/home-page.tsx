@@ -10,9 +10,9 @@ export class LandingPage {
 
   render() {
     return (
-      <h1 class="c-heading u-super">
-        Hello world
-      </h1>
+      <div>
+        
+      </div>
     );
   }
 }

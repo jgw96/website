@@ -12,16 +12,10 @@ export class ObjectsModals {
 
   render() {
     return (
-      <section>
-        <h1 class="c-heading u-super">
-          {this.name}
-        </h1>
-
-        <p class="c-paragraph">
+      <page-template name={this.name}>
+        <p slot="intro" class="c-paragraph">
           Modal popups, with great power comes great responsibility. Please use modals wisely.
         </p>
-
-        <carbon-ad/>
 
         <h2 class="c-heading">
           Basic Modal
@@ -163,7 +157,7 @@ export class ObjectsModals {
   </div>
 </div>`}/>
 
-      </section>
+      </page-template>
     );
   }
 }

@@ -13,16 +13,10 @@ export class ComponentsButtons {
 
   render() {
     return (
-      <section class="button-demo">
-        <h1 class="c-heading u-super">
-          {this.name}
-        </h1>
-
-        <p class="c-paragraph">
+      <page-template name={this.name}>
+        <p slot="intro" class="c-paragraph">
           Probably the first thing people look at when choosing a CSS toolkit. The common button!
         </p>
-
-        <carbon-ad/>
 
         <h2 class="c-heading u-xlarge">
           Basic Button
@@ -132,7 +126,7 @@ export class ComponentsButtons {
   <button class="c-button c-button--info" type="button">Button 2</button>
 </span>`}/>
 
-      </section>
+      </page-template>
     );
   }
 }

@@ -12,16 +12,10 @@ export class UtilsVisibility {
 
   render() {
     return (
-      <section>
-        <h1 class="c-heading u-super">
-          {this.name}
-        </h1>
-
-        <p class="c-paragraph">
+      <page-template name={this.name}>
+        <p slot="intro" class="c-paragraph">
           Blaze comes with a set of visibility utils that should cover all your display and visibility needs.
         </p>
-
-        <carbon-ad/>
 
         <h2 id="display" class="c-heading u-xlarge">
           Display
@@ -48,7 +42,7 @@ export class UtilsVisibility {
         <demo-markup language="css" demo={false} code={`.u-visible
 .u-invisible`}/>
 
-      </section>
+      </page-template>
     );
   }
 }

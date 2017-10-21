@@ -12,16 +12,10 @@ export class ObjectsGrid {
 
   render() {
     return (
-      <section>
-        <h1 class="c-heading u-super">
-          {this.name}
-        </h1>
-
-        <p class="c-paragraph">
+      <page-template name={this.name}>
+        <p slot="intro" class="c-paragraph">
           The grid is the easiest way to produce a fluid responsive layout. Its easy to use and very flexible.
         </p>
-
-        <carbon-ad/>
 
         <p class="c-paragraph">
           color key:
@@ -333,7 +327,7 @@ export class ObjectsGrid {
   </div>
 </div>`}/>
 
-      </section>
+      </page-template>
     );
   }
 }

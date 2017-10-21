@@ -7,14 +7,15 @@ import { allRoutes } from '../routes/routes';
 })
 export class BlazeSite {
   render() {
-    return (
+    return ([
+      // <github-corner />,
       <div class="c-text o-container o-container--large u-pillar-box u-pillar-box--medium">
         <site-header />
         <main>
           <stencil-router id="blaze-content">
 
             <stencil-route url="/"
-              component="install-page"
+              component="home-page"
               componentProps={{ name: 'Install' }}
               exact={true} />
 
@@ -30,6 +31,6 @@ export class BlazeSite {
           </stencil-router>
         </main>
       </div>
-    );
+    ]);
   }
 }
