@@ -7,7 +7,7 @@ import { Component } from "@stencil/core"
 export class SiteHeader {
   render() {
     return ([
-      <div class="o-page-header">
+      <div class="o-page-header o-container o-container--large">
         <site-nav/>
         <div class="u-centered u-letter-box--small">
           <stencil-route-link url="/">

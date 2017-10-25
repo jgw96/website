@@ -9,7 +9,7 @@ export class BlazeSite {
   render() {
     return ([
       // <github-corner />,
-      <div class="c-text o-container o-container--large u-pillar-box u-pillar-box--medium">
+      <div class="c-text">
         <site-header />
         <main>
           <stencil-router id="blaze-content">
