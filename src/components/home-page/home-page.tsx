@@ -30,7 +30,7 @@ export class LandingPage {
             with a scalable and maintainable foundation.
           </p>
 
-          <div class="o-grid o-grid--wrap u-letter-box u-letter-box--large">
+          <div id='buttonsDiv' class="o-grid o-grid--wrap u-letter-box u-letter-box--large">
             <div class="o-grid__cell u-letter-box u-letter-box--small o-grid__cell--width-100 o-grid__cell--width-50@small">
               <button onClick={() => this.navigate('/getting-started/install')}
                 class="c-button c-button--brand c-button--block u-large">
@@ -50,17 +50,17 @@ export class LandingPage {
           <div class="o-grid o-grid--center u-letter-box u-letter-box--large">
             <div class="o-grid__cell o-grid__cell--width-40">
               <a href="https://www.browserstack.com">
-                <img class="o-image" src="/assets/img/browserstack.png" alt="browserstack sponser" />
+                <st-img class="o-image" src="/assets/img/browserstack.png" alt="browserstack sponser" />
               </a>
             </div>
             <div class="o-grid__cell o-grid__cell--width-20">
               <a href="https://www.jetbrains.com/webstorm">
-                <img class="o-image" src="/assets/img/webstorm.png" alt="webstorm sponser" />
+                <st-img class="o-image" src="/assets/img/webstorm.png" alt="webstorm sponser" />
               </a>
             </div>
             <div class="o-grid__cell o-grid__cell--width-40">
               <a href="https://www.algolia.com">
-                <img class="o-image" src="/assets/img/algolia.png" alt="algolia sponser" />
+                <st-img class="o-image" src="/assets/img/algolia.png" alt="algolia sponser" />
               </a>
             </div>
           </div>

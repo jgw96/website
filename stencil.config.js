@@ -5,12 +5,19 @@ exports.config = {
         'blaze-site',
         'site-header',
         'site-nav',
-        'page-template',
         'github-corner',
-        'demo-markup',
         'carbon-ad',
-        'home-page',
-        'install-page',
+        'home-page'
+      ]
+    },
+    {
+      components: ['page-template', 'demo-markup']
+    },
+    {
+      components: ['install-page']
+    },
+    {
+      components: [
         'about-page',
         'custom-build',
         'generics-global',
@@ -54,7 +61,8 @@ exports.config = {
     }
   ],
   collections: [
-    { name: '@stencil/router' }
+    { name: '@stencil/router' },
+    { name: 'st-img' }
   ]
 };
 
