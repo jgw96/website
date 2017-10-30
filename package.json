@@ -7,7 +7,9 @@
   ],
   "scripts": {
     "clean": "rm -rf ./www",
-    "build": "npm run clean && gulp && stencil build --prerender",
+    "build:js": "stencil build --prerender",
+    "build:css": "gulp",
+    "build": "npm run clean && npm run build:css && npm run build:js",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
     "serve": "stencil-dev-server",
     "start": "npm run dev"
