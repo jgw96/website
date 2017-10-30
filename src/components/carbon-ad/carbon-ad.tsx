@@ -32,7 +32,6 @@ export class CarbonAd {
   }
 
   loadAd() {
-    console.log('loading');
     this.src = '//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=blazecsscom';
   }
 

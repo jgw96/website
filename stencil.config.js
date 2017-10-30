@@ -11,15 +11,18 @@ exports.config = {
       ]
     },
     {
-      components: ['page-template', 'demo-markup']
-    },
-    {
-      components: ['install-page']
+      components: [
+        'page-template',
+        'demo-markup']
     },
     {
       components: [
+        'install-page',
         'about-page',
-        'custom-build',
+        'custom-build']
+    },
+    {
+      components: [
         'generics-global',
         'objects-containers',
         'objects-grid',
@@ -27,7 +30,11 @@ exports.config = {
         'objects-images',
         'objects-drawers',
         'objects-medias',
-        'objects-modals',
+        'objects-modals'
+      ]
+    },
+    {
+      components: [
         'components-accordions',
         'components-addresses',
         'components-alerts',
@@ -50,7 +57,11 @@ exports.config = {
         'components-tabs',
         'components-toggles',
         'components-tooltips',
-        'components-trees',
+        'components-trees'
+      ]
+    },
+    {
+      components: [
         'utils-alignment',
         'utils-boxing',
         'utils-colors',

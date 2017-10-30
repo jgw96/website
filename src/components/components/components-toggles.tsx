@@ -6,10 +6,6 @@ import { Component, Prop } from '@stencil/core';
 export class ComponentsToggles {
   @Prop() name: string;
 
-  componentWillLoad() {
-    document.title = `${this.name} - Blaze`;
-  }
-
   render() {
     return (
       <page-template name={this.name}>

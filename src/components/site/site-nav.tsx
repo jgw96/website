@@ -1,10 +1,9 @@
 import { Component, State } from "@stencil/core"
-import { allRoutes } from '../../routes/routes';
-import Route from '../../routes/Route';
+import { allRoutes } from '../routes/routes';
+import Route from '../routes/Route';
 
 @Component({
-  tag: 'site-nav',
-  styleUrl: 'site-nav.scss'
+  tag: 'site-nav'
 })
 export class SiteNav {
   @State() isOpen: boolean;

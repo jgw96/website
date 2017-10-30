@@ -1,8 +1,7 @@
 import { Component } from "@stencil/core"
 
 @Component({
-  tag: 'site-header',
-  styleUrl: 'site-header.scss'
+  tag: 'site-header'
 })
 export class SiteHeader {
   render() {

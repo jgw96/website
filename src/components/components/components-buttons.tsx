@@ -1,15 +1,10 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'components-buttons',
-  styleUrl: 'components-buttons.scss'
+  tag: 'components-buttons'
 })
 export class ComponentsButtons {
   @Prop() name: string;
-
-  componentWillLoad() {
-    document.title = `${this.name} - Blaze`;
-  }
 
   render() {
     return (

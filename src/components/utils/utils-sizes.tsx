@@ -6,10 +6,6 @@ import { Component, Prop } from '@stencil/core';
 export class UtilsSizes {
   @Prop() name: string;
 
-  componentWillLoad() {
-    document.title = `${this.name} - Blaze`;
-  }
-
   render() {
     return (
       <page-template name={this.name}>

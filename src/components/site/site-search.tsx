@@ -4,8 +4,7 @@ import { ActiveRouter, RouterHistory } from "@stencil/router";
 declare const algoliasearch: any;
 
 @Component({
-  tag: 'site-search',
-  styleUrl: 'site-search.scss'
+  tag: 'site-search'
 })
 export class SiteSearch {
   @Element() el: HTMLElement;

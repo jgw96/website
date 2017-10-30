@@ -1,9 +1,8 @@
 import { Component } from '@stencil/core';
-import { allRoutes } from '../routes/routes';
+import { allRoutes } from './routes/routes';
 
 @Component({
-  tag: 'blaze-site',
-  styleUrl: 'blaze-site.scss'
+  tag: 'blaze-site'
 })
 export class BlazeSite {
   render() {
@@ -14,10 +13,7 @@ export class BlazeSite {
         <main>
           <stencil-router id="blaze-content">
 
-            <stencil-route url="/"
-              component="home-page"
-              componentProps={{ name: 'Install' }}
-              exact={true} />
+            <stencil-route url="/" component="home-page" exact={true} />
 
             {allRoutes.map(({ routes }) => (
               routes.map(route => (

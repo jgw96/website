@@ -2,8 +2,7 @@ import { Component, Prop } from '@stencil/core';
 import { ActiveRouter, RouterHistory } from "@stencil/router";
 
 @Component({
-  tag: 'home-page',
-  styleUrl: 'home-page.scss'
+  tag: 'home-page'
 })
 export class LandingPage {
   @Prop({ context: 'activeRouter' }) activeRouter: ActiveRouter;
@@ -30,7 +29,7 @@ export class LandingPage {
             with a scalable and maintainable foundation.
           </p>
 
-          <div id='buttonsDiv' class="o-grid o-grid--wrap u-letter-box u-letter-box--large">
+          <div class="o-grid o-grid--wrap u-letter-box u-letter-box--large">
             <div class="o-grid__cell u-letter-box u-letter-box--small o-grid__cell--width-100 o-grid__cell--width-50@small">
               <button onClick={() => this.navigate('/getting-started/install')}
                 class="c-button c-button--brand c-button--block u-large">
@@ -88,7 +87,7 @@ export class LandingPage {
           </div>
         </div>
 
-        <div class="u-centered u-letter-box u-letter-box--super">
+        <div class="u-centered o-homepage-sections">
           <div class="c-homepage-section c-homepage-section--secondary">
             <div class="o-container o-container--xlarge">
               <div class="o-grid o-grid--wrap o-grid--small-full o-grid--medium-full">

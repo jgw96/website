@@ -17,7 +17,9 @@ export class PageTemplate {
           {this.name}
         </h1>
 
-        <slot name="intro"/><carbon-ad/>
+        <slot name="intro"/>
+        
+        <carbon-ad/>
 
         <slot/>
       </section>

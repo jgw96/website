@@ -8,6 +8,35 @@ import '@stencil/router';
 
 import 'st-img';
 
+import { BlazeSite as BlazeSite } from './components/blaze-site';
+
+interface HTMLBlazeSiteElement extends BlazeSite, HTMLElement {
+}
+declare var HTMLBlazeSiteElement: {
+  prototype: HTMLBlazeSiteElement;
+  new (): HTMLBlazeSiteElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "blaze-site": HTMLBlazeSiteElement;
+  }
+  interface ElementTagNameMap {
+      "blaze-site": HTMLBlazeSiteElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "blaze-site": JSXElements.BlazeSiteAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface BlazeSiteAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
+      }
+  }
+}
+
 import { CarbonAd as CarbonAd } from './components/carbon-ad/carbon-ad';
 
 interface HTMLCarbonAdElement extends CarbonAd, HTMLElement {
@@ -33,36 +62,6 @@ declare global {
           mode?: string,
           color?: string,
         
-      }
-  }
-}
-
-import { ComponentsButtons as ComponentsButtons } from './components/components/buttons/components-buttons';
-
-interface HTMLComponentsButtonsElement extends ComponentsButtons, HTMLElement {
-}
-declare var HTMLComponentsButtonsElement: {
-  prototype: HTMLComponentsButtonsElement;
-  new (): HTMLComponentsButtonsElement;
-};
-declare global {
-  interface HTMLElementTagNameMap {
-      "components-buttons": HTMLComponentsButtonsElement;
-  }
-  interface ElementTagNameMap {
-      "components-buttons": HTMLComponentsButtonsElement;
-  }
-  namespace JSX {
-      interface IntrinsicElements {
-          "components-buttons": JSXElements.ComponentsButtonsAttributes;
-      }
-  }
-  namespace JSXElements {
-      export interface ComponentsButtonsAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
       }
   }
 }
@@ -269,6 +268,36 @@ declare global {
   }
   namespace JSXElements {
       export interface ComponentsBubblesAttributes extends HTMLAttributes {
+          mode?: string,
+          color?: string,
+        
+          name?: string
+      }
+  }
+}
+
+import { ComponentsButtons as ComponentsButtons } from './components/components/components-buttons';
+
+interface HTMLComponentsButtonsElement extends ComponentsButtons, HTMLElement {
+}
+declare var HTMLComponentsButtonsElement: {
+  prototype: HTMLComponentsButtonsElement;
+  new (): HTMLComponentsButtonsElement;
+};
+declare global {
+  interface HTMLElementTagNameMap {
+      "components-buttons": HTMLComponentsButtonsElement;
+  }
+  interface ElementTagNameMap {
+      "components-buttons": HTMLComponentsButtonsElement;
+  }
+  namespace JSX {
+      interface IntrinsicElements {
+          "components-buttons": JSXElements.ComponentsButtonsAttributes;
+      }
+  }
+  namespace JSXElements {
+      export interface ComponentsButtonsAttributes extends HTMLAttributes {
           mode?: string,
           color?: string,
         
@@ -667,7 +696,7 @@ declare global {
   }
 }
 
-import { ComponentsToasts as ComponentsToasts } from './components/components/components-toats';
+import { ComponentsToasts as ComponentsToasts } from './components/components/components-toasts';
 
 interface HTMLComponentsToastsElement extends ComponentsToasts, HTMLElement {
 }
@@ -970,7 +999,7 @@ declare global {
   }
 }
 
-import { LandingPage as HomePage } from './components/home-page/home-page';
+import { LandingPage as HomePage } from './components/home/home-page';
 
 interface HTMLHomePageElement extends HomePage, HTMLElement {
 }
@@ -1209,35 +1238,6 @@ declare global {
   }
 }
 
-import { BlazeSite as BlazeSite } from './components/site/blaze-site';
-
-interface HTMLBlazeSiteElement extends BlazeSite, HTMLElement {
-}
-declare var HTMLBlazeSiteElement: {
-  prototype: HTMLBlazeSiteElement;
-  new (): HTMLBlazeSiteElement;
-};
-declare global {
-  interface HTMLElementTagNameMap {
-      "blaze-site": HTMLBlazeSiteElement;
-  }
-  interface ElementTagNameMap {
-      "blaze-site": HTMLBlazeSiteElement;
-  }
-  namespace JSX {
-      interface IntrinsicElements {
-          "blaze-site": JSXElements.BlazeSiteAttributes;
-      }
-  }
-  namespace JSXElements {
-      export interface BlazeSiteAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-      }
-  }
-}
-
 import { GithubCorner as GithubCorner } from './components/site/github-corner/github-corner';
 
 interface HTMLGithubCornerElement extends GithubCorner, HTMLElement {
@@ -1297,7 +1297,7 @@ declare global {
   }
 }
 
-import { SiteHeader as SiteHeader } from './components/site/site-header/site-header';
+import { SiteHeader as SiteHeader } from './components/site/site-header';
 
 interface HTMLSiteHeaderElement extends SiteHeader, HTMLElement {
 }
@@ -1326,7 +1326,7 @@ declare global {
   }
 }
 
-import { SiteNav as SiteNav } from './components/site/site-nav/site-nav';
+import { SiteNav as SiteNav } from './components/site/site-nav';
 
 interface HTMLSiteNavElement extends SiteNav, HTMLElement {
 }
@@ -1355,7 +1355,7 @@ declare global {
   }
 }
 
-import { SiteSearch as SiteSearch } from './components/site/site-search/site-search';
+import { SiteSearch as SiteSearch } from './components/site/site-search';
 
 interface HTMLSiteSearchElement extends SiteSearch, HTMLElement {
 }
