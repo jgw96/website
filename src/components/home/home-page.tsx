@@ -83,7 +83,7 @@ export class LandingPage {
           </div>
 
           <div>
-            <span class="c-badge c-badge--success">v3.6.0</span>
+            <span class="c-badge c-badge--success">v3.6.1</span>
           </div>
         </div>
 

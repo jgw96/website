@@ -7,7 +7,9 @@ export class PageTemplate {
   @Prop() name: string;
 
   componentWillLoad() {
-    document.title = `${this.name} - Blaze`;
+    if (this.name) {
+      document.title = `${this.name} - Blaze`;
+    }
   }
 
   render() {
