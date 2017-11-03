@@ -21,7 +21,7 @@ export class LandingPage {
       <div>
         <div class="o-container o-container--small u-centered">
           <h1 class="c-heading c-site-header">
-            Blaze <span class="c-site-header__highlight">CSS</span>
+            Blaze <span class="c-site-header__highlight">UI</span>
           </h1>
 
           <p class="u-large">
