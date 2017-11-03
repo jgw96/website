@@ -8,7 +8,7 @@ export class LandingPage {
   @Prop({ context: 'activeRouter' }) activeRouter: ActiveRouter;
 
   constructor() {
-    document.title = 'Blaze CSS - Open Source Modular CSS Toolkit';
+    document.title = 'Blaze - Open Source Modular UI Toolkit';
   }
 
   navigate(url) {
@@ -83,7 +83,7 @@ export class LandingPage {
           </div>
 
           <div>
-            <span class="c-badge c-badge--success">v3.6.1</span>
+            <span class="c-badge c-badge--success">v3.6.2</span>
           </div>
         </div>
 

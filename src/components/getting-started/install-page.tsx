@@ -24,11 +24,7 @@ export class InstallPage {
           Link to it by adding the following to your <code class="c-code">{`<head></head>`}</code>.
         </p>
 
-        <pre class="c-pre">
-          <code class="c-code c-code--multiline">
-            {`<link rel="stylesheet" href="https://unpkg.com/blaze">`}
-          </code>
-        </pre>
+        <demo-markup demo={false} language="html" code={`<link rel="stylesheet" href="https://unpkg.com/blaze">`} />
 
         <h2 id="modules" class="c-heading u-xlarge">Modules</h2>
 
@@ -37,15 +33,11 @@ export class InstallPage {
           only want bits and pieces of Blaze and not the whole toolkit.
         </p>
 
-        <pre class="c-pre">
-          <code class="c-code c-code--multiline">
-            {`<link rel="stylesheet" href="https://unpkg.com/blaze/dist/generics.global.min.css">
+        <demo-markup demo={false} language="html" code={`<link rel="stylesheet" href="https://unpkg.com/blaze/dist/generics.global.min.css">
 <link rel="stylesheet" href="https://unpkg.com/blaze/dist/objects.grid.min.css">
 <link rel="stylesheet" href="https://unpkg.com/blaze/dist/components.typography.min.css">
 <link rel="stylesheet" href="https://unpkg.com/blaze/dist/components.buttons.min.css">
-...etc...`}
-          </code>
-        </pre>
+...etc...`} />
 
         <p class="c-paragraph">
           <a href="https://unpkg.com/blaze/dist/" class="c-link">See all modules available on the CDN</a>
@@ -63,11 +55,7 @@ export class InstallPage {
           Bootstrap or Foundation:
         </p>
 
-        <pre class="c-pre html">
-          <code class="c-code c-code--multiline">
-            {`<button type="button">Button</button>`}
-          </code>
-        </pre>
+        <demo-markup demo={false} language="html" code={`<button type="button">Button</button>`} />
 
         <p class="c-paragraph">
           <button type="button">Button</button>
@@ -77,11 +65,7 @@ export class InstallPage {
           You need to apply our button classes:
         </p>
 
-        <pre class="c-pre html">
-          <code class="c-code c-code--multiline">
-            {`<button class="c-button" type="button">Button</button>`}
-          </code>
-        </pre>
+        <demo-markup demo={false} language="html" code={`<button class="c-button" type="button">Button</button>`} />
 
         <p class="c-paragraph">
           <button class="c-button" type="button">Button</button>

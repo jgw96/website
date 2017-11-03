@@ -4,14 +4,8 @@
 @import "../../node_modules/blaze/scss/mixins/_tools.mediaqueries";
 
 body {
-  font-size: 14px;
+  font-size: 16px;
   overflow-x: hidden;
-}
-
-@include screen--medium-and-up {
-  body {
-    font-size: 16px;
-  }
 }
 
 @include screen--large-and-up {

@@ -10,7 +10,7 @@ export class ComponentsButtons {
     return (
       <page-template name={this.name}>
         <p slot="intro" class="c-paragraph">
-          Probably the first thing people look at when choosing a CSS toolkit. The common button!
+          Probably the first thing people look at when choosing a UI toolkit. The common button!
         </p>
 
         <h2 class="c-heading u-xlarge">
