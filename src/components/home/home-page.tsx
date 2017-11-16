@@ -83,7 +83,7 @@ export class LandingPage {
           </div>
 
           <div>
-            <span class="c-badge c-badge--success">v3.6.2</span>
+            <kbd class="c-kbd">$ npm install blaze --save</kbd>
           </div>
         </div>
 
