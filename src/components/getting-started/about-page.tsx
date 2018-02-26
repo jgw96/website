@@ -18,7 +18,7 @@ export class AboutPage {
 
         <h2 id="opt-in" class="c-heading u-xlarge">
           <i class="fa fa-hand-paper-o"></i>
-          <span class="u-pillar-box--small">Opt-in</span>
+          <span class="u-pillar-box-small">Opt-in</span>
         </h2>
 
         <p class="c-paragraph">
@@ -33,7 +33,7 @@ export class AboutPage {
 
         <h2 id="bem-itcss" class="c-heading u-xlarge">
           <i class="fa fa-play" style={{ transform: 'rotate(90deg)' }}></i>
-          <span class="u-pillar-box--small">BEM and ITCSS</span></h2>
+          <span class="u-pillar-box-small">BEM and ITCSS</span></h2>
 
         <p class="c-paragraph">
           Blaze follows <span class="c-text--loud">BEM</span> and
@@ -49,7 +49,7 @@ export class AboutPage {
 
         <h2 id="components" class="c-heading u-xlarge">
           <i class="fa fa-sliders"></i>
-          <span class="u-pillar-box--small">Components</span>
+          <span class="u-pillar-box-small">Components</span>
         </h2>
 
         <p class="c-paragraph">

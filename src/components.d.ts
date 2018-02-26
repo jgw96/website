@@ -4,1563 +4,1579 @@
  * and imports for stencil collections that might be configured in your stencil.config.js file
  */
 
+import 'st-img';
 import '@stencil/router';
 
-import 'st-img';
 
-import { BlazeSite as BlazeSite } from './components/blaze-site';
-
-interface HTMLBlazeSiteElement extends BlazeSite, HTMLElement {
-}
-declare var HTMLBlazeSiteElement: {
-  prototype: HTMLBlazeSiteElement;
-  new (): HTMLBlazeSiteElement;
-};
 declare global {
+  interface HTMLStencilElement extends HTMLElement {
+    componentOnReady(): Promise<this>;
+    componentOnReady(done: (ele?: this) => void): void;
+  }
+}
+
+
+
+import {
+  BlazeSite as BlazeSite
+} from './components/blaze-site';
+
+declare global {
+  interface HTMLBlazeSiteElement extends BlazeSite, HTMLStencilElement {
+  }
+  var HTMLBlazeSiteElement: {
+    prototype: HTMLBlazeSiteElement;
+    new (): HTMLBlazeSiteElement;
+  };
   interface HTMLElementTagNameMap {
-      "blaze-site": HTMLBlazeSiteElement;
+    "blaze-site": HTMLBlazeSiteElement;
   }
   interface ElementTagNameMap {
-      "blaze-site": HTMLBlazeSiteElement;
+    "blaze-site": HTMLBlazeSiteElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "blaze-site": JSXElements.BlazeSiteAttributes;
-      }
+    interface IntrinsicElements {
+      "blaze-site": JSXElements.BlazeSiteAttributes;
+    }
   }
   namespace JSXElements {
-      export interface BlazeSiteAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-      }
+    export interface BlazeSiteAttributes extends HTMLAttributes {
+      
+    }
   }
 }
 
-import { CarbonAd as CarbonAd } from './components/carbon-ad/carbon-ad';
 
-interface HTMLCarbonAdElement extends CarbonAd, HTMLElement {
-}
-declare var HTMLCarbonAdElement: {
-  prototype: HTMLCarbonAdElement;
-  new (): HTMLCarbonAdElement;
-};
+import {
+  CarbonAd as CarbonAd
+} from './components/carbon-ad/carbon-ad';
+
 declare global {
+  interface HTMLCarbonAdElement extends CarbonAd, HTMLStencilElement {
+  }
+  var HTMLCarbonAdElement: {
+    prototype: HTMLCarbonAdElement;
+    new (): HTMLCarbonAdElement;
+  };
   interface HTMLElementTagNameMap {
-      "carbon-ad": HTMLCarbonAdElement;
+    "carbon-ad": HTMLCarbonAdElement;
   }
   interface ElementTagNameMap {
-      "carbon-ad": HTMLCarbonAdElement;
+    "carbon-ad": HTMLCarbonAdElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "carbon-ad": JSXElements.CarbonAdAttributes;
-      }
+    interface IntrinsicElements {
+      "carbon-ad": JSXElements.CarbonAdAttributes;
+    }
   }
   namespace JSXElements {
-      export interface CarbonAdAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-      }
+    export interface CarbonAdAttributes extends HTMLAttributes {
+      
+    }
   }
 }
 
-import { ComponentsAccordions as ComponentsAccordions } from './components/components/components-accordions';
 
-interface HTMLComponentsAccordionsElement extends ComponentsAccordions, HTMLElement {
-}
-declare var HTMLComponentsAccordionsElement: {
-  prototype: HTMLComponentsAccordionsElement;
-  new (): HTMLComponentsAccordionsElement;
-};
+import {
+  ComponentsAccordions as ComponentsAccordions
+} from './components/components/components-accordions';
+
 declare global {
+  interface HTMLComponentsAccordionsElement extends ComponentsAccordions, HTMLStencilElement {
+  }
+  var HTMLComponentsAccordionsElement: {
+    prototype: HTMLComponentsAccordionsElement;
+    new (): HTMLComponentsAccordionsElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-accordions": HTMLComponentsAccordionsElement;
+    "components-accordions": HTMLComponentsAccordionsElement;
   }
   interface ElementTagNameMap {
-      "components-accordions": HTMLComponentsAccordionsElement;
+    "components-accordions": HTMLComponentsAccordionsElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-accordions": JSXElements.ComponentsAccordionsAttributes;
-      }
+    interface IntrinsicElements {
+      "components-accordions": JSXElements.ComponentsAccordionsAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsAccordionsAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsAccordionsAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsAddresses as ComponentsAddresses } from './components/components/components-addresses';
 
-interface HTMLComponentsAddressesElement extends ComponentsAddresses, HTMLElement {
-}
-declare var HTMLComponentsAddressesElement: {
-  prototype: HTMLComponentsAddressesElement;
-  new (): HTMLComponentsAddressesElement;
-};
+import {
+  ComponentsAddresses as ComponentsAddresses
+} from './components/components/components-addresses';
+
 declare global {
+  interface HTMLComponentsAddressesElement extends ComponentsAddresses, HTMLStencilElement {
+  }
+  var HTMLComponentsAddressesElement: {
+    prototype: HTMLComponentsAddressesElement;
+    new (): HTMLComponentsAddressesElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-addresses": HTMLComponentsAddressesElement;
+    "components-addresses": HTMLComponentsAddressesElement;
   }
   interface ElementTagNameMap {
-      "components-addresses": HTMLComponentsAddressesElement;
+    "components-addresses": HTMLComponentsAddressesElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-addresses": JSXElements.ComponentsAddressesAttributes;
-      }
+    interface IntrinsicElements {
+      "components-addresses": JSXElements.ComponentsAddressesAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsAddressesAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsAddressesAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsAlerts as ComponentsAlerts } from './components/components/components-alerts';
 
-interface HTMLComponentsAlertsElement extends ComponentsAlerts, HTMLElement {
-}
-declare var HTMLComponentsAlertsElement: {
-  prototype: HTMLComponentsAlertsElement;
-  new (): HTMLComponentsAlertsElement;
-};
+import {
+  ComponentsAlerts as ComponentsAlerts
+} from './components/components/components-alerts';
+
 declare global {
+  interface HTMLComponentsAlertsElement extends ComponentsAlerts, HTMLStencilElement {
+  }
+  var HTMLComponentsAlertsElement: {
+    prototype: HTMLComponentsAlertsElement;
+    new (): HTMLComponentsAlertsElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-alerts": HTMLComponentsAlertsElement;
+    "components-alerts": HTMLComponentsAlertsElement;
   }
   interface ElementTagNameMap {
-      "components-alerts": HTMLComponentsAlertsElement;
+    "components-alerts": HTMLComponentsAlertsElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-alerts": JSXElements.ComponentsAlertsAttributes;
-      }
+    interface IntrinsicElements {
+      "components-alerts": JSXElements.ComponentsAlertsAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsAlertsAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsAlertsAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsAvatars as ComponentsAvatars } from './components/components/components-avatars';
 
-interface HTMLComponentsAvatarsElement extends ComponentsAvatars, HTMLElement {
-}
-declare var HTMLComponentsAvatarsElement: {
-  prototype: HTMLComponentsAvatarsElement;
-  new (): HTMLComponentsAvatarsElement;
-};
+import {
+  ComponentsAvatars as ComponentsAvatars
+} from './components/components/components-avatars';
+
 declare global {
+  interface HTMLComponentsAvatarsElement extends ComponentsAvatars, HTMLStencilElement {
+  }
+  var HTMLComponentsAvatarsElement: {
+    prototype: HTMLComponentsAvatarsElement;
+    new (): HTMLComponentsAvatarsElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-avatars": HTMLComponentsAvatarsElement;
+    "components-avatars": HTMLComponentsAvatarsElement;
   }
   interface ElementTagNameMap {
-      "components-avatars": HTMLComponentsAvatarsElement;
+    "components-avatars": HTMLComponentsAvatarsElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-avatars": JSXElements.ComponentsAvatarsAttributes;
-      }
+    interface IntrinsicElements {
+      "components-avatars": JSXElements.ComponentsAvatarsAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsAvatarsAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsAvatarsAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsBadges as ComponentsBadges } from './components/components/components-badges';
 
-interface HTMLComponentsBadgesElement extends ComponentsBadges, HTMLElement {
-}
-declare var HTMLComponentsBadgesElement: {
-  prototype: HTMLComponentsBadgesElement;
-  new (): HTMLComponentsBadgesElement;
-};
+import {
+  ComponentsBadges as ComponentsBadges
+} from './components/components/components-badges';
+
 declare global {
+  interface HTMLComponentsBadgesElement extends ComponentsBadges, HTMLStencilElement {
+  }
+  var HTMLComponentsBadgesElement: {
+    prototype: HTMLComponentsBadgesElement;
+    new (): HTMLComponentsBadgesElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-badges": HTMLComponentsBadgesElement;
+    "components-badges": HTMLComponentsBadgesElement;
   }
   interface ElementTagNameMap {
-      "components-badges": HTMLComponentsBadgesElement;
+    "components-badges": HTMLComponentsBadgesElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-badges": JSXElements.ComponentsBadgesAttributes;
-      }
+    interface IntrinsicElements {
+      "components-badges": JSXElements.ComponentsBadgesAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsBadgesAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsBadgesAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsBreadcrumbs as ComponentsBreadcrumbs } from './components/components/components-breadcrumbs';
 
-interface HTMLComponentsBreadcrumbsElement extends ComponentsBreadcrumbs, HTMLElement {
-}
-declare var HTMLComponentsBreadcrumbsElement: {
-  prototype: HTMLComponentsBreadcrumbsElement;
-  new (): HTMLComponentsBreadcrumbsElement;
-};
+import {
+  ComponentsBreadcrumbs as ComponentsBreadcrumbs
+} from './components/components/components-breadcrumbs';
+
 declare global {
+  interface HTMLComponentsBreadcrumbsElement extends ComponentsBreadcrumbs, HTMLStencilElement {
+  }
+  var HTMLComponentsBreadcrumbsElement: {
+    prototype: HTMLComponentsBreadcrumbsElement;
+    new (): HTMLComponentsBreadcrumbsElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-breadcrumbs": HTMLComponentsBreadcrumbsElement;
+    "components-breadcrumbs": HTMLComponentsBreadcrumbsElement;
   }
   interface ElementTagNameMap {
-      "components-breadcrumbs": HTMLComponentsBreadcrumbsElement;
+    "components-breadcrumbs": HTMLComponentsBreadcrumbsElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-breadcrumbs": JSXElements.ComponentsBreadcrumbsAttributes;
-      }
+    interface IntrinsicElements {
+      "components-breadcrumbs": JSXElements.ComponentsBreadcrumbsAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsBreadcrumbsAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsBreadcrumbsAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsBubbles as ComponentsBubbles } from './components/components/components-bubbles';
 
-interface HTMLComponentsBubblesElement extends ComponentsBubbles, HTMLElement {
-}
-declare var HTMLComponentsBubblesElement: {
-  prototype: HTMLComponentsBubblesElement;
-  new (): HTMLComponentsBubblesElement;
-};
+import {
+  ComponentsBubbles as ComponentsBubbles
+} from './components/components/components-bubbles';
+
 declare global {
+  interface HTMLComponentsBubblesElement extends ComponentsBubbles, HTMLStencilElement {
+  }
+  var HTMLComponentsBubblesElement: {
+    prototype: HTMLComponentsBubblesElement;
+    new (): HTMLComponentsBubblesElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-bubbles": HTMLComponentsBubblesElement;
+    "components-bubbles": HTMLComponentsBubblesElement;
   }
   interface ElementTagNameMap {
-      "components-bubbles": HTMLComponentsBubblesElement;
+    "components-bubbles": HTMLComponentsBubblesElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-bubbles": JSXElements.ComponentsBubblesAttributes;
-      }
+    interface IntrinsicElements {
+      "components-bubbles": JSXElements.ComponentsBubblesAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsBubblesAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsBubblesAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsButtons as ComponentsButtons } from './components/components/components-buttons';
 
-interface HTMLComponentsButtonsElement extends ComponentsButtons, HTMLElement {
-}
-declare var HTMLComponentsButtonsElement: {
-  prototype: HTMLComponentsButtonsElement;
-  new (): HTMLComponentsButtonsElement;
-};
+import {
+  ComponentsButtons as ComponentsButtons
+} from './components/components/components-buttons';
+
 declare global {
+  interface HTMLComponentsButtonsElement extends ComponentsButtons, HTMLStencilElement {
+  }
+  var HTMLComponentsButtonsElement: {
+    prototype: HTMLComponentsButtonsElement;
+    new (): HTMLComponentsButtonsElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-buttons": HTMLComponentsButtonsElement;
+    "components-buttons": HTMLComponentsButtonsElement;
   }
   interface ElementTagNameMap {
-      "components-buttons": HTMLComponentsButtonsElement;
+    "components-buttons": HTMLComponentsButtonsElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-buttons": JSXElements.ComponentsButtonsAttributes;
-      }
+    interface IntrinsicElements {
+      "components-buttons": JSXElements.ComponentsButtonsAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsButtonsAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsButtonsAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsCalendars as ComponentsCalendars } from './components/components/components-calendars';
 
-interface HTMLComponentsCalendarsElement extends ComponentsCalendars, HTMLElement {
-}
-declare var HTMLComponentsCalendarsElement: {
-  prototype: HTMLComponentsCalendarsElement;
-  new (): HTMLComponentsCalendarsElement;
-};
+import {
+  ComponentsCalendars as ComponentsCalendars
+} from './components/components/components-calendars';
+
 declare global {
+  interface HTMLComponentsCalendarsElement extends ComponentsCalendars, HTMLStencilElement {
+  }
+  var HTMLComponentsCalendarsElement: {
+    prototype: HTMLComponentsCalendarsElement;
+    new (): HTMLComponentsCalendarsElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-calendars": HTMLComponentsCalendarsElement;
+    "components-calendars": HTMLComponentsCalendarsElement;
   }
   interface ElementTagNameMap {
-      "components-calendars": HTMLComponentsCalendarsElement;
+    "components-calendars": HTMLComponentsCalendarsElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-calendars": JSXElements.ComponentsCalendarsAttributes;
-      }
+    interface IntrinsicElements {
+      "components-calendars": JSXElements.ComponentsCalendarsAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsCalendarsAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsCalendarsAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsCards as ComponentsCards } from './components/components/components-cards';
 
-interface HTMLComponentsCardsElement extends ComponentsCards, HTMLElement {
-}
-declare var HTMLComponentsCardsElement: {
-  prototype: HTMLComponentsCardsElement;
-  new (): HTMLComponentsCardsElement;
-};
+import {
+  ComponentsCards as ComponentsCards
+} from './components/components/components-cards';
+
 declare global {
+  interface HTMLComponentsCardsElement extends ComponentsCards, HTMLStencilElement {
+  }
+  var HTMLComponentsCardsElement: {
+    prototype: HTMLComponentsCardsElement;
+    new (): HTMLComponentsCardsElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-cards": HTMLComponentsCardsElement;
+    "components-cards": HTMLComponentsCardsElement;
   }
   interface ElementTagNameMap {
-      "components-cards": HTMLComponentsCardsElement;
+    "components-cards": HTMLComponentsCardsElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-cards": JSXElements.ComponentsCardsAttributes;
-      }
+    interface IntrinsicElements {
+      "components-cards": JSXElements.ComponentsCardsAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsCardsAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsCardsAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsHeadings as ComponentsHeadings } from './components/components/components-headings';
 
-interface HTMLComponentsHeadingsElement extends ComponentsHeadings, HTMLElement {
-}
-declare var HTMLComponentsHeadingsElement: {
-  prototype: HTMLComponentsHeadingsElement;
-  new (): HTMLComponentsHeadingsElement;
-};
+import {
+  ComponentsHeadings as ComponentsHeadings
+} from './components/components/components-headings';
+
 declare global {
+  interface HTMLComponentsHeadingsElement extends ComponentsHeadings, HTMLStencilElement {
+  }
+  var HTMLComponentsHeadingsElement: {
+    prototype: HTMLComponentsHeadingsElement;
+    new (): HTMLComponentsHeadingsElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-headings": HTMLComponentsHeadingsElement;
+    "components-headings": HTMLComponentsHeadingsElement;
   }
   interface ElementTagNameMap {
-      "components-headings": HTMLComponentsHeadingsElement;
+    "components-headings": HTMLComponentsHeadingsElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-headings": JSXElements.ComponentsHeadingsAttributes;
-      }
+    interface IntrinsicElements {
+      "components-headings": JSXElements.ComponentsHeadingsAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsHeadingsAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsHeadingsAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsInputs as ComponentsInputs } from './components/components/components-inputs';
 
-interface HTMLComponentsInputsElement extends ComponentsInputs, HTMLElement {
-}
-declare var HTMLComponentsInputsElement: {
-  prototype: HTMLComponentsInputsElement;
-  new (): HTMLComponentsInputsElement;
-};
+import {
+  ComponentsInputs as ComponentsInputs
+} from './components/components/components-inputs';
+
 declare global {
+  interface HTMLComponentsInputsElement extends ComponentsInputs, HTMLStencilElement {
+  }
+  var HTMLComponentsInputsElement: {
+    prototype: HTMLComponentsInputsElement;
+    new (): HTMLComponentsInputsElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-inputs": HTMLComponentsInputsElement;
+    "components-inputs": HTMLComponentsInputsElement;
   }
   interface ElementTagNameMap {
-      "components-inputs": HTMLComponentsInputsElement;
+    "components-inputs": HTMLComponentsInputsElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-inputs": JSXElements.ComponentsInputsAttributes;
-      }
+    interface IntrinsicElements {
+      "components-inputs": JSXElements.ComponentsInputsAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsInputsAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsInputsAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsLists as ComponentsLists } from './components/components/components-lists';
 
-interface HTMLComponentsListsElement extends ComponentsLists, HTMLElement {
-}
-declare var HTMLComponentsListsElement: {
-  prototype: HTMLComponentsListsElement;
-  new (): HTMLComponentsListsElement;
-};
+import {
+  ComponentsLists as ComponentsLists
+} from './components/components/components-lists';
+
 declare global {
+  interface HTMLComponentsListsElement extends ComponentsLists, HTMLStencilElement {
+  }
+  var HTMLComponentsListsElement: {
+    prototype: HTMLComponentsListsElement;
+    new (): HTMLComponentsListsElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-lists": HTMLComponentsListsElement;
+    "components-lists": HTMLComponentsListsElement;
   }
   interface ElementTagNameMap {
-      "components-lists": HTMLComponentsListsElement;
+    "components-lists": HTMLComponentsListsElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-lists": JSXElements.ComponentsListsAttributes;
-      }
+    interface IntrinsicElements {
+      "components-lists": JSXElements.ComponentsListsAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsListsAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsListsAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsMenus as ComponentsMenus } from './components/components/components-menus';
 
-interface HTMLComponentsMenusElement extends ComponentsMenus, HTMLElement {
-}
-declare var HTMLComponentsMenusElement: {
-  prototype: HTMLComponentsMenusElement;
-  new (): HTMLComponentsMenusElement;
-};
+import {
+  ComponentsMenus as ComponentsMenus
+} from './components/components/components-menus';
+
 declare global {
+  interface HTMLComponentsMenusElement extends ComponentsMenus, HTMLStencilElement {
+  }
+  var HTMLComponentsMenusElement: {
+    prototype: HTMLComponentsMenusElement;
+    new (): HTMLComponentsMenusElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-menus": HTMLComponentsMenusElement;
+    "components-menus": HTMLComponentsMenusElement;
   }
   interface ElementTagNameMap {
-      "components-menus": HTMLComponentsMenusElement;
+    "components-menus": HTMLComponentsMenusElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-menus": JSXElements.ComponentsMenusAttributes;
-      }
+    interface IntrinsicElements {
+      "components-menus": JSXElements.ComponentsMenusAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsMenusAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsMenusAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsNavs as ComponentsNavs } from './components/components/components-navs';
 
-interface HTMLComponentsNavsElement extends ComponentsNavs, HTMLElement {
-}
-declare var HTMLComponentsNavsElement: {
-  prototype: HTMLComponentsNavsElement;
-  new (): HTMLComponentsNavsElement;
-};
+import {
+  ComponentsNavs as ComponentsNavs
+} from './components/components/components-navs';
+
 declare global {
+  interface HTMLComponentsNavsElement extends ComponentsNavs, HTMLStencilElement {
+  }
+  var HTMLComponentsNavsElement: {
+    prototype: HTMLComponentsNavsElement;
+    new (): HTMLComponentsNavsElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-navs": HTMLComponentsNavsElement;
+    "components-navs": HTMLComponentsNavsElement;
   }
   interface ElementTagNameMap {
-      "components-navs": HTMLComponentsNavsElement;
+    "components-navs": HTMLComponentsNavsElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-navs": JSXElements.ComponentsNavsAttributes;
-      }
+    interface IntrinsicElements {
+      "components-navs": JSXElements.ComponentsNavsAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsNavsAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsNavsAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsOverlays as ComponentsOverlays } from './components/components/components-overlays';
 
-interface HTMLComponentsOverlaysElement extends ComponentsOverlays, HTMLElement {
-}
-declare var HTMLComponentsOverlaysElement: {
-  prototype: HTMLComponentsOverlaysElement;
-  new (): HTMLComponentsOverlaysElement;
-};
+import {
+  ComponentsOverlays as ComponentsOverlays
+} from './components/components/components-overlays';
+
 declare global {
+  interface HTMLComponentsOverlaysElement extends ComponentsOverlays, HTMLStencilElement {
+  }
+  var HTMLComponentsOverlaysElement: {
+    prototype: HTMLComponentsOverlaysElement;
+    new (): HTMLComponentsOverlaysElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-overlays": HTMLComponentsOverlaysElement;
+    "components-overlays": HTMLComponentsOverlaysElement;
   }
   interface ElementTagNameMap {
-      "components-overlays": HTMLComponentsOverlaysElement;
+    "components-overlays": HTMLComponentsOverlaysElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-overlays": JSXElements.ComponentsOverlaysAttributes;
-      }
+    interface IntrinsicElements {
+      "components-overlays": JSXElements.ComponentsOverlaysAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsOverlaysAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsOverlaysAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsPagination as ComponentsPagination } from './components/components/components-pagination';
 
-interface HTMLComponentsPaginationElement extends ComponentsPagination, HTMLElement {
-}
-declare var HTMLComponentsPaginationElement: {
-  prototype: HTMLComponentsPaginationElement;
-  new (): HTMLComponentsPaginationElement;
-};
+import {
+  ComponentsPagination as ComponentsPagination
+} from './components/components/components-pagination';
+
 declare global {
+  interface HTMLComponentsPaginationElement extends ComponentsPagination, HTMLStencilElement {
+  }
+  var HTMLComponentsPaginationElement: {
+    prototype: HTMLComponentsPaginationElement;
+    new (): HTMLComponentsPaginationElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-pagination": HTMLComponentsPaginationElement;
+    "components-pagination": HTMLComponentsPaginationElement;
   }
   interface ElementTagNameMap {
-      "components-pagination": HTMLComponentsPaginationElement;
+    "components-pagination": HTMLComponentsPaginationElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-pagination": JSXElements.ComponentsPaginationAttributes;
-      }
+    interface IntrinsicElements {
+      "components-pagination": JSXElements.ComponentsPaginationAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsPaginationAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsPaginationAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsProgress as ComponentsProgress } from './components/components/components-progress';
 
-interface HTMLComponentsProgressElement extends ComponentsProgress, HTMLElement {
-}
-declare var HTMLComponentsProgressElement: {
-  prototype: HTMLComponentsProgressElement;
-  new (): HTMLComponentsProgressElement;
-};
+import {
+  ComponentsProgress as ComponentsProgress
+} from './components/components/components-progress';
+
 declare global {
+  interface HTMLComponentsProgressElement extends ComponentsProgress, HTMLStencilElement {
+  }
+  var HTMLComponentsProgressElement: {
+    prototype: HTMLComponentsProgressElement;
+    new (): HTMLComponentsProgressElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-progress": HTMLComponentsProgressElement;
+    "components-progress": HTMLComponentsProgressElement;
   }
   interface ElementTagNameMap {
-      "components-progress": HTMLComponentsProgressElement;
+    "components-progress": HTMLComponentsProgressElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-progress": JSXElements.ComponentsProgressAttributes;
-      }
+    interface IntrinsicElements {
+      "components-progress": JSXElements.ComponentsProgressAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsProgressAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsProgressAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsRanges as ComponentsRanges } from './components/components/components-ranges';
 
-interface HTMLComponentsRangesElement extends ComponentsRanges, HTMLElement {
-}
-declare var HTMLComponentsRangesElement: {
-  prototype: HTMLComponentsRangesElement;
-  new (): HTMLComponentsRangesElement;
-};
+import {
+  ComponentsRanges as ComponentsRanges
+} from './components/components/components-ranges';
+
 declare global {
+  interface HTMLComponentsRangesElement extends ComponentsRanges, HTMLStencilElement {
+  }
+  var HTMLComponentsRangesElement: {
+    prototype: HTMLComponentsRangesElement;
+    new (): HTMLComponentsRangesElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-ranges": HTMLComponentsRangesElement;
+    "components-ranges": HTMLComponentsRangesElement;
   }
   interface ElementTagNameMap {
-      "components-ranges": HTMLComponentsRangesElement;
+    "components-ranges": HTMLComponentsRangesElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-ranges": JSXElements.ComponentsRangesAttributes;
-      }
+    interface IntrinsicElements {
+      "components-ranges": JSXElements.ComponentsRangesAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsRangesAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsRangesAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentTables as ComponentsTables } from './components/components/components-tables';
 
-interface HTMLComponentsTablesElement extends ComponentsTables, HTMLElement {
-}
-declare var HTMLComponentsTablesElement: {
-  prototype: HTMLComponentsTablesElement;
-  new (): HTMLComponentsTablesElement;
-};
+import {
+  ComponentTables as ComponentsTables
+} from './components/components/components-tables';
+
 declare global {
+  interface HTMLComponentsTablesElement extends ComponentsTables, HTMLStencilElement {
+  }
+  var HTMLComponentsTablesElement: {
+    prototype: HTMLComponentsTablesElement;
+    new (): HTMLComponentsTablesElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-tables": HTMLComponentsTablesElement;
+    "components-tables": HTMLComponentsTablesElement;
   }
   interface ElementTagNameMap {
-      "components-tables": HTMLComponentsTablesElement;
+    "components-tables": HTMLComponentsTablesElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-tables": JSXElements.ComponentsTablesAttributes;
-      }
+    interface IntrinsicElements {
+      "components-tables": JSXElements.ComponentsTablesAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsTablesAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsTablesAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsTabs as ComponentsTabs } from './components/components/components-tabs';
 
-interface HTMLComponentsTabsElement extends ComponentsTabs, HTMLElement {
-}
-declare var HTMLComponentsTabsElement: {
-  prototype: HTMLComponentsTabsElement;
-  new (): HTMLComponentsTabsElement;
-};
+import {
+  ComponentsTabs as ComponentsTabs
+} from './components/components/components-tabs';
+
 declare global {
+  interface HTMLComponentsTabsElement extends ComponentsTabs, HTMLStencilElement {
+  }
+  var HTMLComponentsTabsElement: {
+    prototype: HTMLComponentsTabsElement;
+    new (): HTMLComponentsTabsElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-tabs": HTMLComponentsTabsElement;
+    "components-tabs": HTMLComponentsTabsElement;
   }
   interface ElementTagNameMap {
-      "components-tabs": HTMLComponentsTabsElement;
+    "components-tabs": HTMLComponentsTabsElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-tabs": JSXElements.ComponentsTabsAttributes;
-      }
+    interface IntrinsicElements {
+      "components-tabs": JSXElements.ComponentsTabsAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsTabsAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsTabsAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsToasts as ComponentsToasts } from './components/components/components-toasts';
 
-interface HTMLComponentsToastsElement extends ComponentsToasts, HTMLElement {
-}
-declare var HTMLComponentsToastsElement: {
-  prototype: HTMLComponentsToastsElement;
-  new (): HTMLComponentsToastsElement;
-};
+import {
+  ComponentsToasts as ComponentsToasts
+} from './components/components/components-toasts';
+
 declare global {
+  interface HTMLComponentsToastsElement extends ComponentsToasts, HTMLStencilElement {
+  }
+  var HTMLComponentsToastsElement: {
+    prototype: HTMLComponentsToastsElement;
+    new (): HTMLComponentsToastsElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-toasts": HTMLComponentsToastsElement;
+    "components-toasts": HTMLComponentsToastsElement;
   }
   interface ElementTagNameMap {
-      "components-toasts": HTMLComponentsToastsElement;
+    "components-toasts": HTMLComponentsToastsElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-toasts": JSXElements.ComponentsToastsAttributes;
-      }
+    interface IntrinsicElements {
+      "components-toasts": JSXElements.ComponentsToastsAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsToastsAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsToastsAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsToggles as ComponentsToggles } from './components/components/components-toggles';
 
-interface HTMLComponentsTogglesElement extends ComponentsToggles, HTMLElement {
-}
-declare var HTMLComponentsTogglesElement: {
-  prototype: HTMLComponentsTogglesElement;
-  new (): HTMLComponentsTogglesElement;
-};
+import {
+  ComponentsToggles as ComponentsToggles
+} from './components/components/components-toggles';
+
 declare global {
+  interface HTMLComponentsTogglesElement extends ComponentsToggles, HTMLStencilElement {
+  }
+  var HTMLComponentsTogglesElement: {
+    prototype: HTMLComponentsTogglesElement;
+    new (): HTMLComponentsTogglesElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-toggles": HTMLComponentsTogglesElement;
+    "components-toggles": HTMLComponentsTogglesElement;
   }
   interface ElementTagNameMap {
-      "components-toggles": HTMLComponentsTogglesElement;
+    "components-toggles": HTMLComponentsTogglesElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-toggles": JSXElements.ComponentsTogglesAttributes;
-      }
+    interface IntrinsicElements {
+      "components-toggles": JSXElements.ComponentsTogglesAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsTogglesAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsTogglesAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsTooltips as ComponentsTooltips } from './components/components/components-tooltips';
 
-interface HTMLComponentsTooltipsElement extends ComponentsTooltips, HTMLElement {
-}
-declare var HTMLComponentsTooltipsElement: {
-  prototype: HTMLComponentsTooltipsElement;
-  new (): HTMLComponentsTooltipsElement;
-};
+import {
+  ComponentsTooltips as ComponentsTooltips
+} from './components/components/components-tooltips';
+
 declare global {
+  interface HTMLComponentsTooltipsElement extends ComponentsTooltips, HTMLStencilElement {
+  }
+  var HTMLComponentsTooltipsElement: {
+    prototype: HTMLComponentsTooltipsElement;
+    new (): HTMLComponentsTooltipsElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-tooltips": HTMLComponentsTooltipsElement;
+    "components-tooltips": HTMLComponentsTooltipsElement;
   }
   interface ElementTagNameMap {
-      "components-tooltips": HTMLComponentsTooltipsElement;
+    "components-tooltips": HTMLComponentsTooltipsElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-tooltips": JSXElements.ComponentsTooltipsAttributes;
-      }
+    interface IntrinsicElements {
+      "components-tooltips": JSXElements.ComponentsTooltipsAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsTooltipsAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsTooltipsAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsTrees as ComponentsTrees } from './components/components/components-trees';
 
-interface HTMLComponentsTreesElement extends ComponentsTrees, HTMLElement {
-}
-declare var HTMLComponentsTreesElement: {
-  prototype: HTMLComponentsTreesElement;
-  new (): HTMLComponentsTreesElement;
-};
+import {
+  ComponentsTrees as ComponentsTrees
+} from './components/components/components-trees';
+
 declare global {
+  interface HTMLComponentsTreesElement extends ComponentsTrees, HTMLStencilElement {
+  }
+  var HTMLComponentsTreesElement: {
+    prototype: HTMLComponentsTreesElement;
+    new (): HTMLComponentsTreesElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-trees": HTMLComponentsTreesElement;
+    "components-trees": HTMLComponentsTreesElement;
   }
   interface ElementTagNameMap {
-      "components-trees": HTMLComponentsTreesElement;
+    "components-trees": HTMLComponentsTreesElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-trees": JSXElements.ComponentsTreesAttributes;
-      }
+    interface IntrinsicElements {
+      "components-trees": JSXElements.ComponentsTreesAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsTreesAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsTreesAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ComponentsTypography as ComponentsTypography } from './components/components/components-typography';
 
-interface HTMLComponentsTypographyElement extends ComponentsTypography, HTMLElement {
-}
-declare var HTMLComponentsTypographyElement: {
-  prototype: HTMLComponentsTypographyElement;
-  new (): HTMLComponentsTypographyElement;
-};
+import {
+  ComponentsTypography as ComponentsTypography
+} from './components/components/components-typography';
+
 declare global {
+  interface HTMLComponentsTypographyElement extends ComponentsTypography, HTMLStencilElement {
+  }
+  var HTMLComponentsTypographyElement: {
+    prototype: HTMLComponentsTypographyElement;
+    new (): HTMLComponentsTypographyElement;
+  };
   interface HTMLElementTagNameMap {
-      "components-typography": HTMLComponentsTypographyElement;
+    "components-typography": HTMLComponentsTypographyElement;
   }
   interface ElementTagNameMap {
-      "components-typography": HTMLComponentsTypographyElement;
+    "components-typography": HTMLComponentsTypographyElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "components-typography": JSXElements.ComponentsTypographyAttributes;
-      }
+    interface IntrinsicElements {
+      "components-typography": JSXElements.ComponentsTypographyAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ComponentsTypographyAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ComponentsTypographyAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { DemoMarkup as DemoMarkup } from './components/demo-markup/demo-markup';
 
-interface HTMLDemoMarkupElement extends DemoMarkup, HTMLElement {
-}
-declare var HTMLDemoMarkupElement: {
-  prototype: HTMLDemoMarkupElement;
-  new (): HTMLDemoMarkupElement;
-};
+import {
+  DemoMarkup as DemoMarkup
+} from './components/demo-markup/demo-markup';
+
 declare global {
+  interface HTMLDemoMarkupElement extends DemoMarkup, HTMLStencilElement {
+  }
+  var HTMLDemoMarkupElement: {
+    prototype: HTMLDemoMarkupElement;
+    new (): HTMLDemoMarkupElement;
+  };
   interface HTMLElementTagNameMap {
-      "demo-markup": HTMLDemoMarkupElement;
+    "demo-markup": HTMLDemoMarkupElement;
   }
   interface ElementTagNameMap {
-      "demo-markup": HTMLDemoMarkupElement;
+    "demo-markup": HTMLDemoMarkupElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "demo-markup": JSXElements.DemoMarkupAttributes;
-      }
+    interface IntrinsicElements {
+      "demo-markup": JSXElements.DemoMarkupAttributes;
+    }
   }
   namespace JSXElements {
-      export interface DemoMarkupAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          classes?: string,
-          code?: string,
-          language?: string,
-          demo?: boolean
-      }
+    export interface DemoMarkupAttributes extends HTMLAttributes {
+      classes?: string;
+      code?: string;
+      demo?: boolean;
+      language?: string;
+    }
   }
 }
 
-import { GenericsGlobal as GenericsGlobal } from './components/generics/generics-global';
 
-interface HTMLGenericsGlobalElement extends GenericsGlobal, HTMLElement {
-}
-declare var HTMLGenericsGlobalElement: {
-  prototype: HTMLGenericsGlobalElement;
-  new (): HTMLGenericsGlobalElement;
-};
+import {
+  GenericsGlobal as GenericsGlobal
+} from './components/generics/generics-global';
+
 declare global {
+  interface HTMLGenericsGlobalElement extends GenericsGlobal, HTMLStencilElement {
+  }
+  var HTMLGenericsGlobalElement: {
+    prototype: HTMLGenericsGlobalElement;
+    new (): HTMLGenericsGlobalElement;
+  };
   interface HTMLElementTagNameMap {
-      "generics-global": HTMLGenericsGlobalElement;
+    "generics-global": HTMLGenericsGlobalElement;
   }
   interface ElementTagNameMap {
-      "generics-global": HTMLGenericsGlobalElement;
+    "generics-global": HTMLGenericsGlobalElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "generics-global": JSXElements.GenericsGlobalAttributes;
-      }
+    interface IntrinsicElements {
+      "generics-global": JSXElements.GenericsGlobalAttributes;
+    }
   }
   namespace JSXElements {
-      export interface GenericsGlobalAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface GenericsGlobalAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { AboutPage as AboutPage } from './components/getting-started/about-page';
 
-interface HTMLAboutPageElement extends AboutPage, HTMLElement {
-}
-declare var HTMLAboutPageElement: {
-  prototype: HTMLAboutPageElement;
-  new (): HTMLAboutPageElement;
-};
+import {
+  AboutPage as AboutPage
+} from './components/getting-started/about-page';
+
 declare global {
+  interface HTMLAboutPageElement extends AboutPage, HTMLStencilElement {
+  }
+  var HTMLAboutPageElement: {
+    prototype: HTMLAboutPageElement;
+    new (): HTMLAboutPageElement;
+  };
   interface HTMLElementTagNameMap {
-      "about-page": HTMLAboutPageElement;
+    "about-page": HTMLAboutPageElement;
   }
   interface ElementTagNameMap {
-      "about-page": HTMLAboutPageElement;
+    "about-page": HTMLAboutPageElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "about-page": JSXElements.AboutPageAttributes;
-      }
+    interface IntrinsicElements {
+      "about-page": JSXElements.AboutPageAttributes;
+    }
   }
   namespace JSXElements {
-      export interface AboutPageAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface AboutPageAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { CustomBuild as CustomBuild } from './components/getting-started/custom-build';
 
-interface HTMLCustomBuildElement extends CustomBuild, HTMLElement {
-}
-declare var HTMLCustomBuildElement: {
-  prototype: HTMLCustomBuildElement;
-  new (): HTMLCustomBuildElement;
-};
+import {
+  CustomBuild as CustomBuild
+} from './components/getting-started/custom-build';
+
 declare global {
+  interface HTMLCustomBuildElement extends CustomBuild, HTMLStencilElement {
+  }
+  var HTMLCustomBuildElement: {
+    prototype: HTMLCustomBuildElement;
+    new (): HTMLCustomBuildElement;
+  };
   interface HTMLElementTagNameMap {
-      "custom-build": HTMLCustomBuildElement;
+    "custom-build": HTMLCustomBuildElement;
   }
   interface ElementTagNameMap {
-      "custom-build": HTMLCustomBuildElement;
+    "custom-build": HTMLCustomBuildElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "custom-build": JSXElements.CustomBuildAttributes;
-      }
+    interface IntrinsicElements {
+      "custom-build": JSXElements.CustomBuildAttributes;
+    }
   }
   namespace JSXElements {
-      export interface CustomBuildAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface CustomBuildAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { InstallPage as InstallPage } from './components/getting-started/install-page';
 
-interface HTMLInstallPageElement extends InstallPage, HTMLElement {
-}
-declare var HTMLInstallPageElement: {
-  prototype: HTMLInstallPageElement;
-  new (): HTMLInstallPageElement;
-};
+import {
+  InstallPage as InstallPage
+} from './components/getting-started/install-page';
+
 declare global {
+  interface HTMLInstallPageElement extends InstallPage, HTMLStencilElement {
+  }
+  var HTMLInstallPageElement: {
+    prototype: HTMLInstallPageElement;
+    new (): HTMLInstallPageElement;
+  };
   interface HTMLElementTagNameMap {
-      "install-page": HTMLInstallPageElement;
+    "install-page": HTMLInstallPageElement;
   }
   interface ElementTagNameMap {
-      "install-page": HTMLInstallPageElement;
+    "install-page": HTMLInstallPageElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "install-page": JSXElements.InstallPageAttributes;
-      }
+    interface IntrinsicElements {
+      "install-page": JSXElements.InstallPageAttributes;
+    }
   }
   namespace JSXElements {
-      export interface InstallPageAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface InstallPageAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { LandingPage as HomePage } from './components/home/home-page';
 
-interface HTMLHomePageElement extends HomePage, HTMLElement {
-}
-declare var HTMLHomePageElement: {
-  prototype: HTMLHomePageElement;
-  new (): HTMLHomePageElement;
-};
+import {
+  LandingPage as HomePage
+} from './components/home/home-page';
+
 declare global {
+  interface HTMLHomePageElement extends HomePage, HTMLStencilElement {
+  }
+  var HTMLHomePageElement: {
+    prototype: HTMLHomePageElement;
+    new (): HTMLHomePageElement;
+  };
   interface HTMLElementTagNameMap {
-      "home-page": HTMLHomePageElement;
+    "home-page": HTMLHomePageElement;
   }
   interface ElementTagNameMap {
-      "home-page": HTMLHomePageElement;
+    "home-page": HTMLHomePageElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "home-page": JSXElements.HomePageAttributes;
-      }
+    interface IntrinsicElements {
+      "home-page": JSXElements.HomePageAttributes;
+    }
   }
   namespace JSXElements {
-      export interface HomePageAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-      }
+    export interface HomePageAttributes extends HTMLAttributes {
+      
+    }
   }
 }
 
-import { ObjectsContainers as ObjectsContainers } from './components/objects/objects-containers';
 
-interface HTMLObjectsContainersElement extends ObjectsContainers, HTMLElement {
-}
-declare var HTMLObjectsContainersElement: {
-  prototype: HTMLObjectsContainersElement;
-  new (): HTMLObjectsContainersElement;
-};
+import {
+  ObjectsContainers as ObjectsContainers
+} from './components/objects/objects-containers';
+
 declare global {
+  interface HTMLObjectsContainersElement extends ObjectsContainers, HTMLStencilElement {
+  }
+  var HTMLObjectsContainersElement: {
+    prototype: HTMLObjectsContainersElement;
+    new (): HTMLObjectsContainersElement;
+  };
   interface HTMLElementTagNameMap {
-      "objects-containers": HTMLObjectsContainersElement;
+    "objects-containers": HTMLObjectsContainersElement;
   }
   interface ElementTagNameMap {
-      "objects-containers": HTMLObjectsContainersElement;
+    "objects-containers": HTMLObjectsContainersElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "objects-containers": JSXElements.ObjectsContainersAttributes;
-      }
+    interface IntrinsicElements {
+      "objects-containers": JSXElements.ObjectsContainersAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ObjectsContainersAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ObjectsContainersAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ObjectsDrawers as ObjectsDrawers } from './components/objects/objects-drawers';
 
-interface HTMLObjectsDrawersElement extends ObjectsDrawers, HTMLElement {
-}
-declare var HTMLObjectsDrawersElement: {
-  prototype: HTMLObjectsDrawersElement;
-  new (): HTMLObjectsDrawersElement;
-};
+import {
+  ObjectsDrawers as ObjectsDrawers
+} from './components/objects/objects-drawers';
+
 declare global {
+  interface HTMLObjectsDrawersElement extends ObjectsDrawers, HTMLStencilElement {
+  }
+  var HTMLObjectsDrawersElement: {
+    prototype: HTMLObjectsDrawersElement;
+    new (): HTMLObjectsDrawersElement;
+  };
   interface HTMLElementTagNameMap {
-      "objects-drawers": HTMLObjectsDrawersElement;
+    "objects-drawers": HTMLObjectsDrawersElement;
   }
   interface ElementTagNameMap {
-      "objects-drawers": HTMLObjectsDrawersElement;
+    "objects-drawers": HTMLObjectsDrawersElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "objects-drawers": JSXElements.ObjectsDrawersAttributes;
-      }
+    interface IntrinsicElements {
+      "objects-drawers": JSXElements.ObjectsDrawersAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ObjectsDrawersAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ObjectsDrawersAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ObjectsGrid as ObjectsGrid } from './components/objects/objects-grid';
 
-interface HTMLObjectsGridElement extends ObjectsGrid, HTMLElement {
-}
-declare var HTMLObjectsGridElement: {
-  prototype: HTMLObjectsGridElement;
-  new (): HTMLObjectsGridElement;
-};
+import {
+  ObjectsGrid as ObjectsGrid
+} from './components/objects/objects-grid';
+
 declare global {
+  interface HTMLObjectsGridElement extends ObjectsGrid, HTMLStencilElement {
+  }
+  var HTMLObjectsGridElement: {
+    prototype: HTMLObjectsGridElement;
+    new (): HTMLObjectsGridElement;
+  };
   interface HTMLElementTagNameMap {
-      "objects-grid": HTMLObjectsGridElement;
+    "objects-grid": HTMLObjectsGridElement;
   }
   interface ElementTagNameMap {
-      "objects-grid": HTMLObjectsGridElement;
+    "objects-grid": HTMLObjectsGridElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "objects-grid": JSXElements.ObjectsGridAttributes;
-      }
+    interface IntrinsicElements {
+      "objects-grid": JSXElements.ObjectsGridAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ObjectsGridAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ObjectsGridAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ObjectsImages as ObjectsImages } from './components/objects/objects-images';
 
-interface HTMLObjectsImagesElement extends ObjectsImages, HTMLElement {
-}
-declare var HTMLObjectsImagesElement: {
-  prototype: HTMLObjectsImagesElement;
-  new (): HTMLObjectsImagesElement;
-};
+import {
+  ObjectsImages as ObjectsImages
+} from './components/objects/objects-images';
+
 declare global {
+  interface HTMLObjectsImagesElement extends ObjectsImages, HTMLStencilElement {
+  }
+  var HTMLObjectsImagesElement: {
+    prototype: HTMLObjectsImagesElement;
+    new (): HTMLObjectsImagesElement;
+  };
   interface HTMLElementTagNameMap {
-      "objects-images": HTMLObjectsImagesElement;
+    "objects-images": HTMLObjectsImagesElement;
   }
   interface ElementTagNameMap {
-      "objects-images": HTMLObjectsImagesElement;
+    "objects-images": HTMLObjectsImagesElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "objects-images": JSXElements.ObjectsImagesAttributes;
-      }
+    interface IntrinsicElements {
+      "objects-images": JSXElements.ObjectsImagesAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ObjectsImagesAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ObjectsImagesAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ObjectsMedias as ObjectsMedias } from './components/objects/objects-medias';
 
-interface HTMLObjectsMediasElement extends ObjectsMedias, HTMLElement {
-}
-declare var HTMLObjectsMediasElement: {
-  prototype: HTMLObjectsMediasElement;
-  new (): HTMLObjectsMediasElement;
-};
+import {
+  ObjectsMedias as ObjectsMedias
+} from './components/objects/objects-medias';
+
 declare global {
+  interface HTMLObjectsMediasElement extends ObjectsMedias, HTMLStencilElement {
+  }
+  var HTMLObjectsMediasElement: {
+    prototype: HTMLObjectsMediasElement;
+    new (): HTMLObjectsMediasElement;
+  };
   interface HTMLElementTagNameMap {
-      "objects-medias": HTMLObjectsMediasElement;
+    "objects-medias": HTMLObjectsMediasElement;
   }
   interface ElementTagNameMap {
-      "objects-medias": HTMLObjectsMediasElement;
+    "objects-medias": HTMLObjectsMediasElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "objects-medias": JSXElements.ObjectsMediasAttributes;
-      }
+    interface IntrinsicElements {
+      "objects-medias": JSXElements.ObjectsMediasAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ObjectsMediasAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ObjectsMediasAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ObjectsModals as ObjectsModals } from './components/objects/objects-modals';
 
-interface HTMLObjectsModalsElement extends ObjectsModals, HTMLElement {
-}
-declare var HTMLObjectsModalsElement: {
-  prototype: HTMLObjectsModalsElement;
-  new (): HTMLObjectsModalsElement;
-};
+import {
+  ObjectsModals as ObjectsModals
+} from './components/objects/objects-modals';
+
 declare global {
+  interface HTMLObjectsModalsElement extends ObjectsModals, HTMLStencilElement {
+  }
+  var HTMLObjectsModalsElement: {
+    prototype: HTMLObjectsModalsElement;
+    new (): HTMLObjectsModalsElement;
+  };
   interface HTMLElementTagNameMap {
-      "objects-modals": HTMLObjectsModalsElement;
+    "objects-modals": HTMLObjectsModalsElement;
   }
   interface ElementTagNameMap {
-      "objects-modals": HTMLObjectsModalsElement;
+    "objects-modals": HTMLObjectsModalsElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "objects-modals": JSXElements.ObjectsModalsAttributes;
-      }
+    interface IntrinsicElements {
+      "objects-modals": JSXElements.ObjectsModalsAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ObjectsModalsAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ObjectsModalsAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { ObjectsPanels as ObjectsPanels } from './components/objects/objects-panels';
 
-interface HTMLObjectsPanelsElement extends ObjectsPanels, HTMLElement {
-}
-declare var HTMLObjectsPanelsElement: {
-  prototype: HTMLObjectsPanelsElement;
-  new (): HTMLObjectsPanelsElement;
-};
+import {
+  ObjectsPanels as ObjectsPanels
+} from './components/objects/objects-panels';
+
 declare global {
+  interface HTMLObjectsPanelsElement extends ObjectsPanels, HTMLStencilElement {
+  }
+  var HTMLObjectsPanelsElement: {
+    prototype: HTMLObjectsPanelsElement;
+    new (): HTMLObjectsPanelsElement;
+  };
   interface HTMLElementTagNameMap {
-      "objects-panels": HTMLObjectsPanelsElement;
+    "objects-panels": HTMLObjectsPanelsElement;
   }
   interface ElementTagNameMap {
-      "objects-panels": HTMLObjectsPanelsElement;
+    "objects-panels": HTMLObjectsPanelsElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "objects-panels": JSXElements.ObjectsPanelsAttributes;
-      }
+    interface IntrinsicElements {
+      "objects-panels": JSXElements.ObjectsPanelsAttributes;
+    }
   }
   namespace JSXElements {
-      export interface ObjectsPanelsAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface ObjectsPanelsAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { GithubCorner as GithubCorner } from './components/site/github-corner/github-corner';
 
-interface HTMLGithubCornerElement extends GithubCorner, HTMLElement {
-}
-declare var HTMLGithubCornerElement: {
-  prototype: HTMLGithubCornerElement;
-  new (): HTMLGithubCornerElement;
-};
+import {
+  GithubCorner as GithubCorner
+} from './components/site/github-corner/github-corner';
+
 declare global {
+  interface HTMLGithubCornerElement extends GithubCorner, HTMLStencilElement {
+  }
+  var HTMLGithubCornerElement: {
+    prototype: HTMLGithubCornerElement;
+    new (): HTMLGithubCornerElement;
+  };
   interface HTMLElementTagNameMap {
-      "github-corner": HTMLGithubCornerElement;
+    "github-corner": HTMLGithubCornerElement;
   }
   interface ElementTagNameMap {
-      "github-corner": HTMLGithubCornerElement;
+    "github-corner": HTMLGithubCornerElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "github-corner": JSXElements.GithubCornerAttributes;
-      }
+    interface IntrinsicElements {
+      "github-corner": JSXElements.GithubCornerAttributes;
+    }
   }
   namespace JSXElements {
-      export interface GithubCornerAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-      }
+    export interface GithubCornerAttributes extends HTMLAttributes {
+      
+    }
   }
 }
 
-import { PageTemplate as PageTemplate } from './components/site/page-template';
 
-interface HTMLPageTemplateElement extends PageTemplate, HTMLElement {
-}
-declare var HTMLPageTemplateElement: {
-  prototype: HTMLPageTemplateElement;
-  new (): HTMLPageTemplateElement;
-};
+import {
+  PageTemplate as PageTemplate
+} from './components/site/page-template';
+
 declare global {
+  interface HTMLPageTemplateElement extends PageTemplate, HTMLStencilElement {
+  }
+  var HTMLPageTemplateElement: {
+    prototype: HTMLPageTemplateElement;
+    new (): HTMLPageTemplateElement;
+  };
   interface HTMLElementTagNameMap {
-      "page-template": HTMLPageTemplateElement;
+    "page-template": HTMLPageTemplateElement;
   }
   interface ElementTagNameMap {
-      "page-template": HTMLPageTemplateElement;
+    "page-template": HTMLPageTemplateElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "page-template": JSXElements.PageTemplateAttributes;
-      }
+    interface IntrinsicElements {
+      "page-template": JSXElements.PageTemplateAttributes;
+    }
   }
   namespace JSXElements {
-      export interface PageTemplateAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface PageTemplateAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { SiteHeader as SiteHeader } from './components/site/site-header';
 
-interface HTMLSiteHeaderElement extends SiteHeader, HTMLElement {
-}
-declare var HTMLSiteHeaderElement: {
-  prototype: HTMLSiteHeaderElement;
-  new (): HTMLSiteHeaderElement;
-};
+import {
+  SiteHeader as SiteHeader
+} from './components/site/site-header';
+
 declare global {
+  interface HTMLSiteHeaderElement extends SiteHeader, HTMLStencilElement {
+  }
+  var HTMLSiteHeaderElement: {
+    prototype: HTMLSiteHeaderElement;
+    new (): HTMLSiteHeaderElement;
+  };
   interface HTMLElementTagNameMap {
-      "site-header": HTMLSiteHeaderElement;
+    "site-header": HTMLSiteHeaderElement;
   }
   interface ElementTagNameMap {
-      "site-header": HTMLSiteHeaderElement;
+    "site-header": HTMLSiteHeaderElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "site-header": JSXElements.SiteHeaderAttributes;
-      }
+    interface IntrinsicElements {
+      "site-header": JSXElements.SiteHeaderAttributes;
+    }
   }
   namespace JSXElements {
-      export interface SiteHeaderAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-      }
+    export interface SiteHeaderAttributes extends HTMLAttributes {
+      
+    }
   }
 }
 
-import { SiteNav as SiteNav } from './components/site/site-nav';
 
-interface HTMLSiteNavElement extends SiteNav, HTMLElement {
-}
-declare var HTMLSiteNavElement: {
-  prototype: HTMLSiteNavElement;
-  new (): HTMLSiteNavElement;
-};
+import {
+  SiteNav as SiteNav
+} from './components/site/site-nav';
+
 declare global {
+  interface HTMLSiteNavElement extends SiteNav, HTMLStencilElement {
+  }
+  var HTMLSiteNavElement: {
+    prototype: HTMLSiteNavElement;
+    new (): HTMLSiteNavElement;
+  };
   interface HTMLElementTagNameMap {
-      "site-nav": HTMLSiteNavElement;
+    "site-nav": HTMLSiteNavElement;
   }
   interface ElementTagNameMap {
-      "site-nav": HTMLSiteNavElement;
+    "site-nav": HTMLSiteNavElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "site-nav": JSXElements.SiteNavAttributes;
-      }
+    interface IntrinsicElements {
+      "site-nav": JSXElements.SiteNavAttributes;
+    }
   }
   namespace JSXElements {
-      export interface SiteNavAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-      }
+    export interface SiteNavAttributes extends HTMLAttributes {
+      
+    }
   }
 }
 
-import { SiteSearch as SiteSearch } from './components/site/site-search';
 
-interface HTMLSiteSearchElement extends SiteSearch, HTMLElement {
-}
-declare var HTMLSiteSearchElement: {
-  prototype: HTMLSiteSearchElement;
-  new (): HTMLSiteSearchElement;
-};
+import {
+  SiteSearch as SiteSearch
+} from './components/site/site-search';
+
 declare global {
+  interface HTMLSiteSearchElement extends SiteSearch, HTMLStencilElement {
+  }
+  var HTMLSiteSearchElement: {
+    prototype: HTMLSiteSearchElement;
+    new (): HTMLSiteSearchElement;
+  };
   interface HTMLElementTagNameMap {
-      "site-search": HTMLSiteSearchElement;
+    "site-search": HTMLSiteSearchElement;
   }
   interface ElementTagNameMap {
-      "site-search": HTMLSiteSearchElement;
+    "site-search": HTMLSiteSearchElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "site-search": JSXElements.SiteSearchAttributes;
-      }
+    interface IntrinsicElements {
+      "site-search": JSXElements.SiteSearchAttributes;
+    }
   }
   namespace JSXElements {
-      export interface SiteSearchAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-      }
+    export interface SiteSearchAttributes extends HTMLAttributes {
+      
+    }
   }
 }
 
-import { UtilsAlignment as UtilsAlignment } from './components/utils/utils-alignment';
 
-interface HTMLUtilsAlignmentElement extends UtilsAlignment, HTMLElement {
-}
-declare var HTMLUtilsAlignmentElement: {
-  prototype: HTMLUtilsAlignmentElement;
-  new (): HTMLUtilsAlignmentElement;
-};
+import {
+  UtilsAlignment as UtilsAlignment
+} from './components/utils/utils-alignment';
+
 declare global {
+  interface HTMLUtilsAlignmentElement extends UtilsAlignment, HTMLStencilElement {
+  }
+  var HTMLUtilsAlignmentElement: {
+    prototype: HTMLUtilsAlignmentElement;
+    new (): HTMLUtilsAlignmentElement;
+  };
   interface HTMLElementTagNameMap {
-      "utils-alignment": HTMLUtilsAlignmentElement;
+    "utils-alignment": HTMLUtilsAlignmentElement;
   }
   interface ElementTagNameMap {
-      "utils-alignment": HTMLUtilsAlignmentElement;
+    "utils-alignment": HTMLUtilsAlignmentElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "utils-alignment": JSXElements.UtilsAlignmentAttributes;
-      }
+    interface IntrinsicElements {
+      "utils-alignment": JSXElements.UtilsAlignmentAttributes;
+    }
   }
   namespace JSXElements {
-      export interface UtilsAlignmentAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface UtilsAlignmentAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { UtilsBoxing as UtilsBoxing } from './components/utils/utils-boxing';
 
-interface HTMLUtilsBoxingElement extends UtilsBoxing, HTMLElement {
-}
-declare var HTMLUtilsBoxingElement: {
-  prototype: HTMLUtilsBoxingElement;
-  new (): HTMLUtilsBoxingElement;
-};
+import {
+  UtilsBoxing as UtilsBoxing
+} from './components/utils/utils-boxing';
+
 declare global {
+  interface HTMLUtilsBoxingElement extends UtilsBoxing, HTMLStencilElement {
+  }
+  var HTMLUtilsBoxingElement: {
+    prototype: HTMLUtilsBoxingElement;
+    new (): HTMLUtilsBoxingElement;
+  };
   interface HTMLElementTagNameMap {
-      "utils-boxing": HTMLUtilsBoxingElement;
+    "utils-boxing": HTMLUtilsBoxingElement;
   }
   interface ElementTagNameMap {
-      "utils-boxing": HTMLUtilsBoxingElement;
+    "utils-boxing": HTMLUtilsBoxingElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "utils-boxing": JSXElements.UtilsBoxingAttributes;
-      }
+    interface IntrinsicElements {
+      "utils-boxing": JSXElements.UtilsBoxingAttributes;
+    }
   }
   namespace JSXElements {
-      export interface UtilsBoxingAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface UtilsBoxingAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { UtilsColors as UtilsColors } from './components/utils/utils-colors';
 
-interface HTMLUtilsColorsElement extends UtilsColors, HTMLElement {
-}
-declare var HTMLUtilsColorsElement: {
-  prototype: HTMLUtilsColorsElement;
-  new (): HTMLUtilsColorsElement;
-};
+import {
+  UtilsColors as UtilsColors
+} from './components/utils/utils-colors';
+
 declare global {
+  interface HTMLUtilsColorsElement extends UtilsColors, HTMLStencilElement {
+  }
+  var HTMLUtilsColorsElement: {
+    prototype: HTMLUtilsColorsElement;
+    new (): HTMLUtilsColorsElement;
+  };
   interface HTMLElementTagNameMap {
-      "utils-colors": HTMLUtilsColorsElement;
+    "utils-colors": HTMLUtilsColorsElement;
   }
   interface ElementTagNameMap {
-      "utils-colors": HTMLUtilsColorsElement;
+    "utils-colors": HTMLUtilsColorsElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "utils-colors": JSXElements.UtilsColorsAttributes;
-      }
+    interface IntrinsicElements {
+      "utils-colors": JSXElements.UtilsColorsAttributes;
+    }
   }
   namespace JSXElements {
-      export interface UtilsColorsAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface UtilsColorsAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { UtilsElevation as UtilsElevation } from './components/utils/utils-elevation';
 
-interface HTMLUtilsElevationElement extends UtilsElevation, HTMLElement {
-}
-declare var HTMLUtilsElevationElement: {
-  prototype: HTMLUtilsElevationElement;
-  new (): HTMLUtilsElevationElement;
-};
+import {
+  UtilsElevation as UtilsElevation
+} from './components/utils/utils-elevation';
+
 declare global {
+  interface HTMLUtilsElevationElement extends UtilsElevation, HTMLStencilElement {
+  }
+  var HTMLUtilsElevationElement: {
+    prototype: HTMLUtilsElevationElement;
+    new (): HTMLUtilsElevationElement;
+  };
   interface HTMLElementTagNameMap {
-      "utils-elevation": HTMLUtilsElevationElement;
+    "utils-elevation": HTMLUtilsElevationElement;
   }
   interface ElementTagNameMap {
-      "utils-elevation": HTMLUtilsElevationElement;
+    "utils-elevation": HTMLUtilsElevationElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "utils-elevation": JSXElements.UtilsElevationAttributes;
-      }
+    interface IntrinsicElements {
+      "utils-elevation": JSXElements.UtilsElevationAttributes;
+    }
   }
   namespace JSXElements {
-      export interface UtilsElevationAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface UtilsElevationAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { UtilsSizes as UtilsSizes } from './components/utils/utils-sizes';
 
-interface HTMLUtilsSizesElement extends UtilsSizes, HTMLElement {
-}
-declare var HTMLUtilsSizesElement: {
-  prototype: HTMLUtilsSizesElement;
-  new (): HTMLUtilsSizesElement;
-};
+import {
+  UtilsSizes as UtilsSizes
+} from './components/utils/utils-sizes';
+
 declare global {
+  interface HTMLUtilsSizesElement extends UtilsSizes, HTMLStencilElement {
+  }
+  var HTMLUtilsSizesElement: {
+    prototype: HTMLUtilsSizesElement;
+    new (): HTMLUtilsSizesElement;
+  };
   interface HTMLElementTagNameMap {
-      "utils-sizes": HTMLUtilsSizesElement;
+    "utils-sizes": HTMLUtilsSizesElement;
   }
   interface ElementTagNameMap {
-      "utils-sizes": HTMLUtilsSizesElement;
+    "utils-sizes": HTMLUtilsSizesElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "utils-sizes": JSXElements.UtilsSizesAttributes;
-      }
+    interface IntrinsicElements {
+      "utils-sizes": JSXElements.UtilsSizesAttributes;
+    }
   }
   namespace JSXElements {
-      export interface UtilsSizesAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface UtilsSizesAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
-import { UtilsVisibility as UtilsVisibility } from './components/utils/utils-visibility';
 
-interface HTMLUtilsVisibilityElement extends UtilsVisibility, HTMLElement {
-}
-declare var HTMLUtilsVisibilityElement: {
-  prototype: HTMLUtilsVisibilityElement;
-  new (): HTMLUtilsVisibilityElement;
-};
+import {
+  UtilsVisibility as UtilsVisibility
+} from './components/utils/utils-visibility';
+
 declare global {
+  interface HTMLUtilsVisibilityElement extends UtilsVisibility, HTMLStencilElement {
+  }
+  var HTMLUtilsVisibilityElement: {
+    prototype: HTMLUtilsVisibilityElement;
+    new (): HTMLUtilsVisibilityElement;
+  };
   interface HTMLElementTagNameMap {
-      "utils-visibility": HTMLUtilsVisibilityElement;
+    "utils-visibility": HTMLUtilsVisibilityElement;
   }
   interface ElementTagNameMap {
-      "utils-visibility": HTMLUtilsVisibilityElement;
+    "utils-visibility": HTMLUtilsVisibilityElement;
   }
   namespace JSX {
-      interface IntrinsicElements {
-          "utils-visibility": JSXElements.UtilsVisibilityAttributes;
-      }
+    interface IntrinsicElements {
+      "utils-visibility": JSXElements.UtilsVisibilityAttributes;
+    }
   }
   namespace JSXElements {
-      export interface UtilsVisibilityAttributes extends HTMLAttributes {
-          mode?: string,
-          color?: string,
-        
-          name?: string
-      }
+    export interface UtilsVisibilityAttributes extends HTMLAttributes {
+      name?: string;
+    }
   }
 }
 
+declare global { namespace JSX { interface StencilJSX {} } }

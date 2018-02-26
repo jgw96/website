@@ -9,9 +9,6 @@ export class InstallPage {
   render() {
     return (
       <page-template name={this.name}>
-        <p slot="intro" class="c-paragraph">
-          You can start using Blaze in a variety of ways:
-        </p>
 
         <h2 id="cdn" class="c-heading u-xlarge">Link via CDN</h2>
 
@@ -20,27 +17,27 @@ export class InstallPage {
         </p>
 
         <p class="c-paragraph">
-          <a class="c-link" href="https://unpkg.com/blaze">blaze.min.css</a> <span class="c-text--loud">contains everything you need</span>.
+          <a class="c-link" href="https://unpkg.com/blaze/scss/dist/blaze.min.css">blaze.min.css</a> <span class="c-text--loud">contains everything you need</span>.
           Link to it by adding the following to your <code class="c-code">{`<head></head>`}</code>.
         </p>
 
-        <demo-markup demo={false} language="html" code={`<link rel="stylesheet" href="https://unpkg.com/blaze">`} />
+        <demo-markup demo={false} language="html" code={`<link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/blaze.min.css">`} />
 
         <h2 id="modules" class="c-heading u-xlarge">Modules</h2>
 
         <p class="c-paragraph">
-          <a class="c-link" href="https://unpkg.com/blaze/dist/">Each module is also available via CDN</a> in-case you
+          <a class="c-link" href="https://unpkg.com/blaze/scss/dist/">Each module is also available via CDN</a> in-case you
           only want bits and pieces of Blaze and not the whole toolkit.
         </p>
 
-        <demo-markup demo={false} language="html" code={`<link rel="stylesheet" href="https://unpkg.com/blaze/dist/generics.global.min.css">
-<link rel="stylesheet" href="https://unpkg.com/blaze/dist/objects.grid.min.css">
-<link rel="stylesheet" href="https://unpkg.com/blaze/dist/components.typography.min.css">
-<link rel="stylesheet" href="https://unpkg.com/blaze/dist/components.buttons.min.css">
+        <demo-markup demo={false} language="html" code={`<link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/generics.global.min.css">
+<link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/objects.grid.min.css">
+<link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/components.typography.min.css">
+<link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/components.buttons.min.css">
 ...etc...`} />
 
         <p class="c-paragraph">
-          <a href="https://unpkg.com/blaze/dist/" class="c-link">See all modules available on the CDN</a>
+          <a href="https://unpkg.com/blaze/scss/dist/" class="c-link">See all modules available on the CDN</a>
         </p>
 
         <h2 id="applying-styles" class="c-heading u-xlarge">Applying Styles</h2>

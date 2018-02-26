@@ -6,41 +6,31 @@
     "dist/"
   ],
   "scripts": {
-    "clean": "rm -rf ./www",
-    "build:js": "stencil build --prerender",
-    "build:css": "gulp",
-    "build": "npm run clean && npm run build:css && npm run build:js",
+    "build": "stencil build --prerender",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
     "serve": "stencil-dev-server",
     "start": "npm run dev"
   },
   "dependencies": {
-    "@stencil/core": "next",
+    "@stencil/core": "^0.6.1",
     "@stencil/router": "latest",
-    "st-img": "^0.2.2"
+    "@stencil/sass": "latest",
+    "blaze-atoms": "1.0.0-4",
+    "blaze-css": "1.0.0-2",
+    "st-img": "0.3.0"
   },
   "devDependencies": {
     "@stencil/dev-server": "latest",
-    "@stencil/utils": "latest",
-    "blaze": "^3.6.2",
-    "file-exists": "~1.0.0",
-    "gulp": "~3.9.1",
-    "gulp-cssnano": "~2.1.2",
-    "gulp-header": "~1.8.7",
-    "gulp-options": "~1.1.1",
-    "gulp-rename": "~1.2.2",
-    "gulp-sass": "~2.3.2",
-    "gulp-sass-lint": "~1.2.0",
-    "run-sequence": "~1.2.1"
+    "@stencil/utils": "latest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BlazeCSS/website.git"
+    "url": "git+https://github.com/BlazeUI/website.git"
   },
   "author": "Gregory Pratt",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/BlazeCSS/website/issues"
+    "url": "https://github.com/BlazeUI/website/issues"
   },
-  "homepage": "http://blazecss.com"
+  "homepage": "https://www.blazeui.com/"
 }

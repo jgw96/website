@@ -24,7 +24,7 @@ export class ObjectsDrawers {
         </p>
 
         <demo-markup language="html" classes="modal-demo"
-                     code={`<div class="c-overlay c-overlay--dismissable"></div>
+                     code={`<div class="c-overlay c-overlay--dismissible"></div>
 <div class="o-drawer u-highest o-drawer--top o-drawer--visible">
   <div class="c-card">
     <header class="c-card__header">
@@ -55,7 +55,7 @@ export class ObjectsDrawers {
         <h3 id="positions-left" class="c-heading u-large mono">.o-drawer--left</h3>
 
         <demo-markup language="html" classes="modal-demo"
-                     code={`<div class="c-overlay c-overlay--dismissable"></div>
+                     code={`<div class="c-overlay c-overlay--dismissible"></div>
 <div class="o-drawer u-highest o-drawer--left o-drawer--visible">
   <div class="c-card">
     <header class="c-card__header">
@@ -79,7 +79,7 @@ export class ObjectsDrawers {
 
         <h3 id="positions-bottom" class="c-heading u-large mono">.o-drawer--bottom</h3>
         <demo-markup language="html" classes="modal-demo"
-                     code={`<div class="c-overlay c-overlay--dismissable"></div>
+                     code={`<div class="c-overlay c-overlay--dismissible"></div>
 <div class="o-drawer u-highest o-drawer--bottom o-drawer--visible">
   <div class="c-card">
     <header class="c-card__header">
@@ -103,7 +103,7 @@ export class ObjectsDrawers {
 
         <h3 id="positions-right" class="c-heading u-large mono">.o-drawer--right</h3>
         <demo-markup language="html" classes="modal-demo"
-                     code={`<div class="c-overlay c-overlay--dismissable"></div>
+                     code={`<div class="c-overlay c-overlay--dismissible"></div>
 <div class="o-drawer u-highest o-drawer--right o-drawer--visible">
   <div class="c-card">
     <header class="c-card__header">

@@ -22,16 +22,16 @@ export class UtilsElevation {
 .u-highest`}/>
 
         <div class="o-grid o-grid--wrap u-centered">
-          <div class="o-grid__cell u-letter-box--large">
+          <div class="o-grid__cell u-letter-box-large">
             <div class="c-avatar u-super"></div>
           </div>
-          <div class="o-grid__cell u-letter-box--large">
+          <div class="o-grid__cell u-letter-box-large">
             <div class="c-avatar u-super u-high"></div>
           </div>
-          <div class="o-grid__cell u-letter-box--large">
+          <div class="o-grid__cell u-letter-box-large">
             <div class="c-avatar u-super u-higher"></div>
           </div>
-          <div class="o-grid__cell u-letter-box--large">
+          <div class="o-grid__cell u-letter-box-large">
             <div class="c-avatar u-super u-highest"></div>
           </div>
         </div>

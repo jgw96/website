@@ -14,7 +14,7 @@ export class PageTemplate {
 
   render() {
     return (
-      <section class="o-container o-container--large u-pillar-box u-pillar-box--medium">
+      <section class="o-container o-container--large u-pillar-box u-pillar-box-medium">
         <h1 class="c-heading u-super">
           {this.name}
         </h1>

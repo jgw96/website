@@ -32,28 +32,28 @@ export class CustomBuild {
         </p>
 
         <div class="o-grid o-grid--wrap o-grid--top">
-          <div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-33@large u-letter-box--small">
+          <div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-33@large u-letter-box-small">
             {
               this.card({
                 heading: 'Step 1',
                 subheading: 'Get Blaze',
                 body: ([<p class="c-paragraph">
-                  Clone <a class="c-link" href="https://github.com/BlazeCSS/blaze">the git repo:</a>
+                  Clone <a class="c-link" href="https://github.com/BlazeUI/blaze">the git repo:</a>
                 </p>,
                   <p class="c-paragraph">
-                    <demo-markup language="bash" demo={false} code={`git clone https://github.com/BlazeCSS/blaze.git`}/>
+                    <demo-markup language="bash" demo={false} code={`git clone https://github.com/BlazeUI/blaze.git`}/>
                   </p>])
               })
             }
           </div>
 
-          <div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-33@large u-letter-box--small">
+          <div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-33@large u-letter-box-small">
             {
               this.card({
                 heading: 'Step 2',
                 subheading: 'Install',
                 body: ([<p class="c-paragraph">
-                  Install node modules:
+                  Install node modules per folder:
                 </p>,
                   <p class="c-paragraph">
                     <demo-markup language="bash" demo={false} code={`npm i gulp -g && npm i`}/>
@@ -62,7 +62,7 @@ export class CustomBuild {
             }
           </div>
 
-          <div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-33@large u-letter-box--small">
+          <div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-33@large u-letter-box-small">
             {
               this.card({
                 heading: 'Step 3',
@@ -77,7 +77,7 @@ export class CustomBuild {
             }
           </div>
 
-          <div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-100@large u-letter-box--small">
+          <div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-100@large u-letter-box-small">
             {
               this.card({
                 heading: 'Ready to go!',

@@ -29,14 +29,14 @@ export class LandingPage {
             with a scalable and maintainable foundation.
           </p>
 
-          <div class="o-grid o-grid--wrap u-letter-box u-letter-box--large">
-            <div class="o-grid__cell u-letter-box u-letter-box--small o-grid__cell--width-100 o-grid__cell--width-50@small">
+          <div class="o-grid o-grid--wrap u-letter-box u-letter-box-large">
+            <div class="o-grid__cell u-letter-box u-letter-box-small o-grid__cell--width-100 o-grid__cell--width-50@small">
               <button onClick={() => this.navigate('/getting-started/install')}
                 class="c-button c-button--brand c-button--block u-large">
                 Getting Started
             </button>
             </div>
-            <div class="o-grid__cell u-letter-box u-letter-box--small o-grid__cell--width-100 o-grid__cell--width-50@small">
+            <div class="o-grid__cell u-letter-box u-letter-box-small o-grid__cell--width-100 o-grid__cell--width-50@small">
               <button onClick={() => this.navigate('/components/buttons')}
                 class="c-button c-button--info c-button--block u-large">
                 Components
@@ -46,7 +46,7 @@ export class LandingPage {
 
           <carbon-ad />
 
-          <div class="o-grid o-grid--center u-letter-box u-letter-box--large">
+          <div class="o-grid o-grid--center u-letter-box u-letter-box-large">
             <div class="o-grid__cell o-grid__cell--width-40">
               <a href="https://www.browserstack.com">
                 <st-img class="o-image" src="/assets/img/browserstack.png" alt="browserstack sponser" />
@@ -64,26 +64,17 @@ export class LandingPage {
             </div>
           </div>
 
-          <div class="u-letter-box u-letter-box--large">
+          <div class="u-letter-box u-letter-box-large">
             <span>
               <a class="c-link" href="https://github.com/BlazeCSS/blaze">
                 <i class="fa fa-github" /> Github
               </a>
             </span>
-            <span class="u-pillar-box u-pillar-box--large">
+            <span class="u-pillar-box u-pillar-box-large">
               <a class="c-link" href="https://gitter.im/BlazeCSS/blaze">
                 <i class="fa fa-comments" /> Chat
               </a>
             </span>
-            <span>
-              <a class="c-link" href="https://www.stickermule.com/uk/marketplace/15481-blaze-css">
-                <i class="fa fa-heart" /> Stickers
-              </a>
-            </span>
-          </div>
-
-          <div>
-            <kbd class="c-kbd">$ npm install blaze --save</kbd>
           </div>
         </div>
 
@@ -100,7 +91,7 @@ export class LandingPage {
                     solve but we think Blaze can provide you with the best of both worlds.
 				          </p>
                 </div>
-                <div class="o-grid__cell o-grid__cell--width-33 u-letter-box--super">
+                <div class="o-grid__cell o-grid__cell--width-33 u-letter-box-super">
                   <i class="fa fa-table fa-5x" style={{ color: '#d3eafd' }}></i>
 
                   <h3 class="c-heading u-xlarge">More than just a grid</h3>
@@ -109,7 +100,7 @@ export class LandingPage {
                     Micro-frameworks tend to sacrifice a lot of usefulness for the file size, leaving the developer wanting more
 				          </p>
                 </div>
-                <div class="o-grid__cell o-grid__cell--width-33 u-window-box--super">
+                <div class="o-grid__cell o-grid__cell--width-33 u-window-box-super">
                   <i class="fa fa-hand-paper-o fa-5x" style={{ color: '#8bc8f9' }}></i>
 
                   <h3 class="c-heading u-xlarge">Opt-in</h3>
@@ -118,7 +109,7 @@ export class LandingPage {
                     Blaze won't automatically take control of any of your design unless you want it to
 				          </p>
                 </div>
-                <div class="o-grid__cell o-grid__cell--width-33 u-window-box--super">
+                <div class="o-grid__cell o-grid__cell--width-33 u-window-box-super">
                   <i class="fa fa-play fa-5x" style={{ color: '#085796', transform: 'rotate(90deg)' }}></i>
 
                   <h3 class="c-heading u-xlarge">BEM and ITCSS</h3>
@@ -138,7 +129,7 @@ export class LandingPage {
                   <h2 class="c-heading u-super">
                     Components<br />
                     <i class="fa fa-sliders" style={{ color: '#0c80df' }}></i>
-                    <i class="u-pillar-box u-pillar-box--medium fa fa-toggle-on pillar-box--small" style={{ color: '#8bc8f9' }}></i>
+                    <i class="u-pillar-box u-pillar-box-medium fa fa-toggle-on pillar-box-small" style={{ color: '#8bc8f9' }}></i>
                     <i class="fa fa-calendar" style={{ color: '#085796' }}></i>
                   </h2>
 
@@ -148,9 +139,9 @@ export class LandingPage {
                     curve and intuitive naming conventions.
                   </p>
                 </div>
-                <div class="o-grid__cell o-grid__cell--width-25 u-window-box--super">
+                <div class="o-grid__cell o-grid__cell--width-25 u-window-box-super">
                   <i class="fa fa-tablet fa-2x" style={{ color: '#d3eafd' }}></i>
-                  <i class="u-pillar-box u-pillar-box--xsmall fa fa-laptop fa-3x" style={{ color: '#8bc8f9' }}></i>
+                  <i class="u-pillar-box u-pillar-box-xsmall fa fa-laptop fa-3x" style={{ color: '#8bc8f9' }}></i>
                   <i class="fa fa-desktop fa-5x" style={{ color: '#085796' }}></i>
 
                   <h3 class="c-heading u-xlarge">Responsive</h3>
@@ -159,7 +150,7 @@ export class LandingPage {
                     Built with a mobile first approach Blaze is fully responsive
 				          </p>
                 </div>
-                <div class="o-grid__cell o-grid__cell--width-25 u-letter-box--super">
+                <div class="o-grid__cell o-grid__cell--width-25 u-letter-box-super">
                   <i class="fa fa-sitemap fa-5x" style={{ color: '#d3eafd' }}></i>
 
                   <h3 class="c-heading u-xlarge">Modular</h3>
@@ -168,7 +159,7 @@ export class LandingPage {
                     You can use any part of Blaze in isolation to make your payload small and focused
 				          </p>
                 </div>
-                <div class="o-grid__cell o-grid__cell--width-25 u-letter-box--super">
+                <div class="o-grid__cell o-grid__cell--width-25 u-letter-box-super">
                   <i class="fa fa-gears fa-5x" style={{ color: '#0c80df' }}></i>
 
                   <h3 class="c-heading u-xlarge">Custom builds</h3>
@@ -177,7 +168,7 @@ export class LandingPage {
                     In 3 easy steps you can have a custom build with easy to use variables and mixins
 				          </p>
                 </div>
-                <div class="o-grid__cell o-grid__cell--width-25 u-letter-box--super">
+                <div class="o-grid__cell o-grid__cell--width-25 u-letter-box-super">
                   <i class="fa fa-balance-scale fa-5x" style={{ color: '#085796' }}></i>
 
                   <h3 class="c-heading u-xlarge">Small size</h3>
@@ -200,7 +191,7 @@ export class LandingPage {
                     Blaze is open source, free and always will be. Pull Requests, suggestions or comments are all welcome and valued.
 				          </p>
                 </div>
-                <div class="o-grid__cell o-grid__cell--width-33 u-letter-box--super">
+                <div class="o-grid__cell o-grid__cell--width-33 u-letter-box-super">
                   <i class="fa fa-github-alt fa-5x" style={{ color: '#8bc8f9' }}></i>
 
                   <h3 class="c-heading u-xlarge">Hosted on Github</h3>
@@ -209,7 +200,7 @@ export class LandingPage {
                     Our project (and this website) is hosted on Github. Blaze <i class="fa fa-heart" style={{ color: '#ef4f52' }}></i> Github!
 				          </p>
                 </div>
-                <div class="o-grid__cell o-grid__cell--width-33 u-letter-box--super">
+                <div class="o-grid__cell o-grid__cell--width-33 u-letter-box-super">
                   <i class="fa fa-gavel fa-5x" style={{ color: '#d3eafd' }}></i>
 
                   <h3 class="c-heading u-xlarge">MIT Licence</h3>
@@ -218,7 +209,7 @@ export class LandingPage {
                     You can benefit from using Blaze in your own way
 				          </p>
                 </div>
-                <div class="o-grid__cell o-grid__cell--width-33 u-letter-box--super">
+                <div class="o-grid__cell o-grid__cell--width-33 u-letter-box-super">
                   <i class="fa fa-code-fork fa-5x" style={{ color: '#0c80df' }}></i>
 
                   <h3 class="c-heading u-xlarge">Contributing</h3>

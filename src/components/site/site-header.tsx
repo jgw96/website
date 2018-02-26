@@ -8,7 +8,7 @@ export class SiteHeader {
     return ([
       <div class="o-page-header o-container o-container--large">
         <site-nav/>
-        <div class="u-centered u-letter-box--small">
+        <div class="u-centered u-letter-box-small">
           <stencil-route-link url="/">
             <img class="o-page-logo" src="/assets/img/blaze.png" alt="blazecss logo"/>
           </stencil-route-link>

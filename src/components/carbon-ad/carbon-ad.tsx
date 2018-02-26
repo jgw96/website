@@ -44,7 +44,7 @@ export class CarbonAd {
 
   render() {
     return (
-      <div class="u-letter-box u-letter-box--medium">
+      <div class="u-letter-box u-letter-box-medium">
         <script async defer type="text/javascript" src={this.src} id="_carbonads_js" />
       </div>
     );

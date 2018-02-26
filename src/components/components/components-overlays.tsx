@@ -23,7 +23,7 @@ export class ComponentsOverlays {
           Variations
         </h2>
 
-        <h3 id="dismissable" class="c-heading u-large c-text--mono">
+        <h3 id="dismissible" class="c-heading u-large c-text--mono">
           .c-overlay--visible
         </h3>
 
@@ -32,16 +32,16 @@ export class ComponentsOverlays {
           the <code class="c-code">.c-overlay--visible</code> modifier.
         </p>
 
-        <h3 id="dismissable" class="c-heading u-large c-text--mono">
-          .c-overlay--dismissable
+        <h3 id="dismissible" class="c-heading u-large c-text--mono">
+          .c-overlay--dismissible
         </h3>
 
         <p class="c-paragraph">
           To give the sense that you can click on an overlay to make it disappear
-          give it the <code class="c-code">.c-overlay--dismissable</code> modifier.
+          give it the <code class="c-code">.c-overlay--dismissible</code> modifier.
         </p>
 
-        <demo-markup language="html" classes="modal-demo" code={`<div class="c-overlay c-overlay--visible c-overlay--dismissable"></div>`}/>
+        <demo-markup language="html" classes="modal-demo" code={`<div class="c-overlay c-overlay--visible c-overlay--dismissible"></div>`}/>
 
         <h3 id="transparent" class="c-heading u-large c-text--mono">
           .c-overlay--transparent
@@ -52,7 +52,7 @@ export class ComponentsOverlays {
           If so use the <code class="c-code">.c-overlay--transparent</code> modifier.
         </p>
 
-        <demo-markup language="html" classes="modal-demo" code={`<div class="c-overlay c-overlay--visible c-overlay--dismissable c-overlay--transparent"></div>`}/>
+        <demo-markup language="html" classes="modal-demo" code={`<div class="c-overlay c-overlay--visible c-overlay--dismissible c-overlay--transparent"></div>`}/>
 
         <h3 id="fullpage" class="c-heading u-large c-text--mono">
           .c-overlay--fullpage

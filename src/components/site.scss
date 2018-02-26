@@ -1,7 +1,7 @@
-@import "../../node_modules/blaze/scss/blaze";
-@import "../../node_modules/blaze/scss/blaze.colors";
-@import "../../node_modules/blaze/scss/mixins/_settings.global";
-@import "../../node_modules/blaze/scss/mixins/_tools.mediaqueries";
+@import "../../node_modules/blaze-css/dist/blaze.min";
+@import "../../node_modules/blaze-css/dist/blaze.colors.min";
+@import "../../node_modules/blaze-css/src/mixins/_settings.global";
+@import "../../node_modules/blaze-css/src/mixins/_tools.mediaqueries";
 
 body {
   font-size: 16px;

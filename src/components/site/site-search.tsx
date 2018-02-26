@@ -47,7 +47,7 @@ export class SiteSearch {
       if (!err && content.hits) {
         return content.hits.forEach((hit) => {
           this.results.push(
-            <stencil-route-link custom={true} class="u-display-block c-card__item" onClick={() => this.onSelect(hit.url)}>
+            <stencil-route-link custom="true" class="u-display-block c-card__item" onClick={() => this.onSelect(hit.url)}>
               {hit.title}
             </stencil-route-link>
           );
@@ -63,7 +63,7 @@ export class SiteSearch {
       <div class={classes}>
         <a class="o-page-header__button o-page-header__button--right c-link c-link--brand"
            onClick={() => this.openSearch()}>
-          Search <i class="fa fa-search u-pillar-box--xsmall"/>
+          Search <i class="fa fa-search u-pillar-box-xsmall"/>
         </a>
         <div class="c-search__container o-grid o-grid--center o-grid--no-gutter">
           <div class="o-grid__cell c-search__input">
@@ -80,7 +80,7 @@ export class SiteSearch {
           </div>
           <div class="c-search__close o-grid__cell--width-fixed u-centered">
             <a class="c-link c-link--brand" onClick={() => this.closeSearch()}>
-              <i class="fa fa-close u-pillar-box--xsmall"/> Close
+              <i class="fa fa-close u-pillar-box-xsmall"/> Close
             </a>
           </div>
         </div>

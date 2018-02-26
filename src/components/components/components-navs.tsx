@@ -92,7 +92,7 @@ export class ComponentsNavs {
         </p>
 
         <demo-markup language="html" code={`<ul class="c-nav c-nav--inline">
-  <span class="c-nav__content u-window-box--none">
+  <span class="c-nav__content u-window-box-none">
     <img class="o-image" src="https://unsplash.it/g/200?random">
   </span>
   <span class="c-nav__item"><i class="fa fa-home"></i> Home</span>

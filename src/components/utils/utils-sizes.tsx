@@ -21,22 +21,22 @@ export class UtilsSizes {
 .u-xlarge
 .u-super`}/>
 
-        <div class="u-letter-box u-letter-box--small">
+        <div class="u-letter-box u-letter-box-small">
           <div class="c-badge c-badge--brand u-xsmall">.u-xsmall</div>
         </div>
-        <div class="u-letter-box u-letter-box--small">
+        <div class="u-letter-box u-letter-box-small">
           <div class="c-badge c-badge--brand u-small">.u-small</div>
         </div>
-        <div class="u-letter-box u-letter-box--small">
+        <div class="u-letter-box u-letter-box-small">
           <div class="c-badge c-badge--brand u-medium">.u-medium</div>
         </div>
-        <div class="u-letter-box u-letter-box--small">
+        <div class="u-letter-box u-letter-box-small">
           <div class="c-badge c-badge--brand u-large">.u-large</div>
         </div>
-        <div class="u-letter-box u-letter-box--small">
+        <div class="u-letter-box u-letter-box-small">
           <div class="c-badge c-badge--brand u-xlarge">.u-xlarge</div>
         </div>
-        <div class="u-letter-box u-letter-box--small">
+        <div class="u-letter-box u-letter-box-small">
           <div class="c-badge c-badge--brand u-super">.u-super</div>
         </div>
 

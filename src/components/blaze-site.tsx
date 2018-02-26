@@ -1,7 +1,9 @@
 import { Component } from '@stencil/core';
 import { allRoutes } from './routes/routes';
+import 'st-img';
 
 @Component({
+  styleUrl: 'site.scss',
   tag: 'blaze-site'
 })
 export class BlazeSite {
