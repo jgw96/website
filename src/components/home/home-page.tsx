@@ -49,17 +49,17 @@ export class LandingPage {
           <div class="o-grid o-grid--center u-letter-box u-letter-box-large">
             <div class="o-grid__cell o-grid__cell--width-40">
               <a href="https://www.browserstack.com">
-                <st-img class="o-image" src="/assets/img/browserstack.png" alt="browserstack sponser" />
+                <img class="o-image" src="/assets/img/browserstack.png" alt="browserstack sponser" />
               </a>
             </div>
             <div class="o-grid__cell o-grid__cell--width-20">
               <a href="https://www.jetbrains.com/webstorm">
-                <st-img class="o-image" src="/assets/img/webstorm.png" alt="webstorm sponser" />
+                <img class="o-image" src="/assets/img/webstorm.png" alt="webstorm sponser" />
               </a>
             </div>
             <div class="o-grid__cell o-grid__cell--width-40">
               <a href="https://www.algolia.com">
-                <st-img class="o-image" src="/assets/img/algolia.png" alt="algolia sponser" />
+                <img class="o-image" src="/assets/img/algolia.png" alt="algolia sponser" />
               </a>
             </div>
           </div>

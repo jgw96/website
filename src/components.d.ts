@@ -4,7 +4,6 @@
  * and imports for stencil collections that might be configured in your stencil.config.js file
  */
 
-import 'st-img';
 import '@stencil/router';
 
 
