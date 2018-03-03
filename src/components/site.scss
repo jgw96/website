@@ -61,9 +61,10 @@ site-header {
   .o-page-header__button {
     position: absolute;
     top: 50%;
-    width: 6em;
+    width: 2em;
     transform: translateY(-50%);
     text-align: center;
+    font-size: $text-font-size-xlarge;
 
     &--left {
       left: 0;
@@ -100,7 +101,7 @@ site-search {
     position: absolute;
     top: 0;
     right: 0;
-    left: 6em;
+    left: 3em;
     height: 100%;
     transition: visibility 0s linear .3s, opacity .3s;
     background-color: $color-white;
@@ -117,7 +118,7 @@ site-search {
   }
 
   .c-search__close {
-    width: 6em;
+    width: 4em;
   }
 
   .c-search__input {
@@ -198,7 +199,7 @@ page-template > section {
 .modal-demo {
   position: relative;
   height: 550px;
-  background-image: url("//unsplash.it/1024/963?random");
+  background-image: url("https://source.unsplash.com/random");
   background-size: cover;
   overflow: hidden;
 }

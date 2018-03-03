@@ -14,22 +14,22 @@ export class ComponentsAvatars {
         </p>
 
         <demo-markup language="html" code={`<div class="c-avatar u-super">
-  <img class="c-avatar__img" src="https://unsplash.it/200/?image=823">
+  <img class="c-avatar__img" src="https://source.unsplash.com/random/200x200">
 </div>
 <div class="c-avatar u-xlarge">
-  <img class="c-avatar__img" src="https://unsplash.it/200/?image=823">
+  <img class="c-avatar__img" src="https://source.unsplash.com/random/200x200">
 </div>
 <div class="c-avatar u-large">
-  <img class="c-avatar__img" src="https://unsplash.it/200/?image=823">
+  <img class="c-avatar__img" src="https://source.unsplash.com/random/200x200">
 </div>
 <div class="c-avatar">
-  <img class="c-avatar__img" src="https://unsplash.it/200/?image=823">
+  <img class="c-avatar__img" src="https://source.unsplash.com/random/200x200">
 </div>
 <div class="c-avatar u-small">
-  <img class="c-avatar__img" src="https://unsplash.it/200/?image=823">
+  <img class="c-avatar__img" src="https://source.unsplash.com/random/200x200">
 </div>
 <div class="c-avatar u-xsmall">
-  <img class="c-avatar__img" src="https://unsplash.it/200/?image=823">
+  <img class="c-avatar__img" src="https://source.unsplash.com/random/200x200">
 </div>`}/>
 
         <h2 class="c-heading">
@@ -37,28 +37,28 @@ export class ComponentsAvatars {
         </h2>
 
         <demo-markup language="html" code={`<div class="c-avatar u-super">
-  <img class="c-avatar__img" src="https://unsplash.it/200/?image=823">
-  <img class="c-avatar__img" src="https://unsplash.it/200/?image=815">
+  <img class="c-avatar__img" src="https://source.unsplash.com/random/200x200">
+  <img class="c-avatar__img" src="https://source.unsplash.com/random/200x200">
 </div>
 <div class="c-avatar u-xlarge">
-  <img class="c-avatar__img" src="https://unsplash.it/200/?image=823">
-  <img class="c-avatar__img" src="https://unsplash.it/200/?image=815">
+  <img class="c-avatar__img" src="https://source.unsplash.com/random/200x200">
+  <img class="c-avatar__img" src="https://source.unsplash.com/random/200x200">
 </div>
 <div class="c-avatar u-large">
-  <img class="c-avatar__img" src="https://unsplash.it/200/?image=823">
-  <img class="c-avatar__img" src="https://unsplash.it/200/?image=815">
+  <img class="c-avatar__img" src="https://source.unsplash.com/random/200x200">
+  <img class="c-avatar__img" src="https://source.unsplash.com/random/200x200">
 </div>
 <div class="c-avatar">
-  <img class="c-avatar__img" src="https://unsplash.it/200/?image=823">
-  <img class="c-avatar__img" src="https://unsplash.it/200/?image=815">
+  <img class="c-avatar__img" src="https://source.unsplash.com/random/200x200">
+  <img class="c-avatar__img" src="https://source.unsplash.com/random/200x200">
 </div>
 <div class="c-avatar u-small">
-  <img class="c-avatar__img" src="https://unsplash.it/200/?image=823">
-  <img class="c-avatar__img" src="https://unsplash.it/200/?image=815">
+  <img class="c-avatar__img" src="https://source.unsplash.com/random/200x200">
+  <img class="c-avatar__img" src="https://source.unsplash.com/random/200x200">
 </div>
 <div class="c-avatar u-xsmall">
-  <img class="c-avatar__img" src="https://unsplash.it/200/?image=823">
-  <img class="c-avatar__img" src="https://unsplash.it/200/?image=815">
+  <img class="c-avatar__img" src="https://source.unsplash.com/random/200x200">
+  <img class="c-avatar__img" src="https://source.unsplash.com/random/200x200">
 </div>`}/>
 
         <h2 class="c-heading">

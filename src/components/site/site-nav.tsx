@@ -44,7 +44,7 @@ export class SiteNav {
     return (
       <div class="c-text">
         <a class="o-page-header__button o-page-header__button--left c-link c-link--brand" onClick={() => this.openMenu()}>
-          <i class="fa fa-bars u-pillar-box-xsmall"/> Menu
+          <i class="fas fa-bars"/>
         </a>
         <div class={`c-overlay c-overlay--dismissible ${overlayVisibleClass}`} onClick={() => this.closeMenu()}/>
         <div class={`o-drawer o-drawer--left ${drawerVisibleClass} u-highest`}>
@@ -53,16 +53,14 @@ export class SiteNav {
               <nav>
                 <ul class="c-list c-list--unstyled">
                   <li class="c-list__item u-letter-box u-letter-box-xsmall">
-                    <a class="c-link" href="https://raw.githubusercontent.com/BlazeCSS/blaze/master/dist/blaze.min.css"
+                    <a class="c-link" href="https://github.com/BlazeUI/blaze/archive/master.zip"
                        download="">
-                      <i class="fa fa-download c-button__icon-left"/>
-                      Download
+                      <i class="fas fa-download"/> Download
                     </a>
                   </li>
                   <li class="c-list__item u-letter-box u-letter-box-xsmall">
                     <a class="c-link" href="https://github.com/BlazeCSS/blaze">
-                      <i class="fa fa-code c-button__icon-left"/>
-                      Source
+                      <i class="fas fa-code"/> Source
                     </a>
                   </li>
                 </ul>

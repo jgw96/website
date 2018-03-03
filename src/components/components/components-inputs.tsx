@@ -30,19 +30,19 @@ export class ComponentsInputs {
         <h2 id="icons" class="c-heading u-xlarge">Icons</h2>
 
         <demo-markup language="html" code={`<div class="o-field o-field--icon-left">
-  <i class="fa fa-fw fa-calendar c-icon"></i>
+  <i class="far fa-calendar-alt c-icon"></i>
   <input class="c-field" type="text">
 </div>`}/>
 
         <demo-markup language="html" code={`<div class="o-field o-field--icon-right">
   <input class="c-field" type="text">
-  <i class="fa fa-fw fa-search c-icon"></i>
+  <i class="fas fa-search c-icon"></i>
 </div>`}/>
 
         <demo-markup language="html" code={`<div class="o-field o-field--icon-left o-field--icon-right">
-  <i class="fa fa-fw fa-user c-icon u-color-brand"></i>
+  <i class="fas fa-user c-icon u-color-brand"></i>
   <input class="c-field c-field--success" type="text">
-  <i class="fa fa-fw fa-check c-icon u-color-green"></i>
+  <i class="fas fa-check c-icon u-color-green"></i>
 </div>`}/>
 
         <h2 id="size" class="c-heading u-xlarge">Sizes</h2>

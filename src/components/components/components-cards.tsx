@@ -126,7 +126,7 @@ export class ComponentsCards {
         </p>
 
         <demo-markup language="html" code={`<div class="c-card">
-  <img class="o-image" src="https://unsplash.it/1024/500?random">
+  <img class="o-image" src="https://source.unsplash.com/random/1024x500">
   <header class="c-card__header">
     <h2 class="c-heading">
       Heading

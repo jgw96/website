@@ -56,7 +56,7 @@ export class CustomBuild {
                   Install node modules per folder:
                 </p>,
                   <p class="c-paragraph">
-                    <demo-markup language="bash" demo={false} code={`npm i gulp -g && npm i`}/>
+                    <demo-markup language="bash" demo={false} code={`cd scss && npm i gulp -g && npm i`}/>
                   </p>])
               })
             }
@@ -71,7 +71,7 @@ export class CustomBuild {
                   To build Blaze run:
                 </p>,
                   <p class="c-paragraph">
-                    <demo-markup language="bash" demo={false} code={`gulp`}/>
+                    <demo-markup language="bash" demo={false} code={`npm run build`}/>
                   </p>])
               })
             }
@@ -85,10 +85,10 @@ export class CustomBuild {
                 body: ([<p class="c-paragraph">
                   The output of your changes will be available in <span class="c-text--loud">/dist</span>
                 </p>,
-                  <p class="c-paragraph">
-                    If you want to build the solution every time you make a change <code class="c-code">gulp
-                    watch</code> will watch the appropriate files.
-                  </p>])
+                <p class="c-paragraph">
+                  If you want to build the solution every time you make a change <code class="c-code">npm run
+                  watch</code> will watch the appropriate files.
+                </p>])
               })
             }
           </div>

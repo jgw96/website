@@ -67,12 +67,12 @@ export class LandingPage {
           <div class="u-letter-box u-letter-box-large">
             <span>
               <a class="c-link" href="https://github.com/BlazeCSS/blaze">
-                <i class="fa fa-github" /> Github
+                <i class="fab fa-github" /> Github
               </a>
             </span>
             <span class="u-pillar-box u-pillar-box-large">
               <a class="c-link" href="https://gitter.im/BlazeCSS/blaze">
-                <i class="fa fa-comments" /> Chat
+                <i class="fas fa-comments" /> Chat
               </a>
             </span>
           </div>
@@ -92,7 +92,7 @@ export class LandingPage {
 				          </p>
                 </div>
                 <div class="o-grid__cell o-grid__cell--width-33 u-letter-box-super">
-                  <i class="fa fa-table fa-5x" style={{ color: '#d3eafd' }}></i>
+                  <i class="fas fa-table fa-5x" style={{ color: '#d3eafd' }}></i>
 
                   <h3 class="c-heading u-xlarge">More than just a grid</h3>
 
@@ -101,7 +101,7 @@ export class LandingPage {
 				          </p>
                 </div>
                 <div class="o-grid__cell o-grid__cell--width-33 u-window-box-super">
-                  <i class="fa fa-hand-paper-o fa-5x" style={{ color: '#8bc8f9' }}></i>
+                  <i class="fas fa-hand-paper fa-5x" style={{ color: '#8bc8f9' }}></i>
 
                   <h3 class="c-heading u-xlarge">Opt-in</h3>
 
@@ -110,7 +110,7 @@ export class LandingPage {
 				          </p>
                 </div>
                 <div class="o-grid__cell o-grid__cell--width-33 u-window-box-super">
-                  <i class="fa fa-play fa-5x" style={{ color: '#085796', transform: 'rotate(90deg)' }}></i>
+                  <i class="fas fa-play fa-5x" style={{ color: '#085796', transform: 'rotate(90deg)' }}></i>
 
                   <h3 class="c-heading u-xlarge">BEM and ITCSS</h3>
 
@@ -128,9 +128,11 @@ export class LandingPage {
                 <div class="o-grid__cell o-grid__cell--width-100">
                   <h2 class="c-heading u-super">
                     Components<br />
-                    <i class="fa fa-sliders" style={{ color: '#0c80df' }}></i>
-                    <i class="u-pillar-box u-pillar-box-medium fa fa-toggle-on pillar-box-small" style={{ color: '#8bc8f9' }}></i>
-                    <i class="fa fa-calendar" style={{ color: '#085796' }}></i>
+                    <i class="fas fa-cogs" style={{ color: '#0c80df' }}></i>
+                    <span class="u-pillar-box-medium">
+                      <i class="fas fa-toggle-on" style={{ color: '#8bc8f9' }}></i>
+                    </span>
+                    <i class="far fa-calendar-alt" style={{ color: '#085796' }}></i>
                   </h2>
 
                   <p class="c-paragraph">
@@ -140,9 +142,11 @@ export class LandingPage {
                   </p>
                 </div>
                 <div class="o-grid__cell o-grid__cell--width-25 u-window-box-super">
-                  <i class="fa fa-tablet fa-2x" style={{ color: '#d3eafd' }}></i>
-                  <i class="u-pillar-box u-pillar-box-xsmall fa fa-laptop fa-3x" style={{ color: '#8bc8f9' }}></i>
-                  <i class="fa fa-desktop fa-5x" style={{ color: '#085796' }}></i>
+                  <i class="fas fa-tablet-alt fa-2x" style={{ color: '#d3eafd' }}></i>
+                  <span class="u-pillar-box-small">
+                    <i class="fas fa-laptop fa-3x" style={{ color: '#8bc8f9' }}></i>
+                  </span>
+                  <i class="fas fa-desktop fa-5x" style={{ color: '#085796' }}></i>
 
                   <h3 class="c-heading u-xlarge">Responsive</h3>
 
@@ -151,7 +155,7 @@ export class LandingPage {
 				          </p>
                 </div>
                 <div class="o-grid__cell o-grid__cell--width-25 u-letter-box-super">
-                  <i class="fa fa-sitemap fa-5x" style={{ color: '#d3eafd' }}></i>
+                  <i class="fas fa-cubes fa-5x" style={{ color: '#d3eafd' }}></i>
 
                   <h3 class="c-heading u-xlarge">Modular</h3>
 
@@ -160,7 +164,7 @@ export class LandingPage {
 				          </p>
                 </div>
                 <div class="o-grid__cell o-grid__cell--width-25 u-letter-box-super">
-                  <i class="fa fa-gears fa-5x" style={{ color: '#0c80df' }}></i>
+                  <i class="fas fa-cogs fa-5x" style={{ color: '#0c80df' }}></i>
 
                   <h3 class="c-heading u-xlarge">Custom builds</h3>
 
@@ -169,12 +173,12 @@ export class LandingPage {
 				          </p>
                 </div>
                 <div class="o-grid__cell o-grid__cell--width-25 u-letter-box-super">
-                  <i class="fa fa-balance-scale fa-5x" style={{ color: '#085796' }}></i>
+                  <i class="fas fa-balance-scale fa-5x" style={{ color: '#085796' }}></i>
 
                   <h3 class="c-heading u-xlarge">Small size</h3>
 
                   <p class="o-paragraph">
-                    It might only be 9Kb but its complete and easy to use
+                    It might be small but it's complete and easy to use
 				          </p>
                 </div>
               </div>
@@ -192,16 +196,16 @@ export class LandingPage {
 				          </p>
                 </div>
                 <div class="o-grid__cell o-grid__cell--width-33 u-letter-box-super">
-                  <i class="fa fa-github-alt fa-5x" style={{ color: '#8bc8f9' }}></i>
+                  <i class="fab fa-github fa-5x" style={{ color: '#8bc8f9' }}></i>
 
                   <h3 class="c-heading u-xlarge">Hosted on Github</h3>
 
                   <p class="c-paragraph">
-                    Our project (and this website) is hosted on Github. Blaze <i class="fa fa-heart" style={{ color: '#ef4f52' }}></i> Github!
+                    Our project (and this website) is hosted on Github. Blaze <i class="fas fa-heart" style={{ color: '#ef4f52' }}></i> Github!
 				          </p>
                 </div>
                 <div class="o-grid__cell o-grid__cell--width-33 u-letter-box-super">
-                  <i class="fa fa-gavel fa-5x" style={{ color: '#d3eafd' }}></i>
+                  <i class="fas fa-gavel fa-5x" style={{ color: '#d3eafd' }}></i>
 
                   <h3 class="c-heading u-xlarge">MIT Licence</h3>
 
@@ -210,7 +214,7 @@ export class LandingPage {
 				          </p>
                 </div>
                 <div class="o-grid__cell o-grid__cell--width-33 u-letter-box-super">
-                  <i class="fa fa-code-fork fa-5x" style={{ color: '#0c80df' }}></i>
+                  <i class="fas fa-code-branch fa-5x" style={{ color: '#0c80df' }}></i>
 
                   <h3 class="c-heading u-xlarge">Contributing</h3>
 
