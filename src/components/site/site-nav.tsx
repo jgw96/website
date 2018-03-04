@@ -23,6 +23,7 @@ export class SiteNav {
           <stencil-route-link url={route.url} onClick={() => this.closeMenu()}>
             {route.props.name}
           </stencil-route-link>
+          {route.props.atoms && <span>&nbsp;<i class="fab fa-js-square"></i></span>}
         </li>
       ))
     };
@@ -44,9 +45,9 @@ export class SiteNav {
     return (
       <div class="c-text">
         <a class="o-page-header__button o-page-header__button--left c-link c-link--brand" onClick={() => this.openMenu()}>
-          <i class="fas fa-bars"/>
+          <i class="fas fa-bars" />
         </a>
-        <div class={`c-overlay c-overlay--dismissible ${overlayVisibleClass}`} onClick={() => this.closeMenu()}/>
+        <div class={`c-overlay c-overlay--dismissible ${overlayVisibleClass}`} onClick={() => this.closeMenu()} />
         <div class={`o-drawer o-drawer--left ${drawerVisibleClass} u-highest`}>
           <div class="c-card">
             <div class="c-card__body">
@@ -54,13 +55,13 @@ export class SiteNav {
                 <ul class="c-list c-list--unstyled">
                   <li class="c-list__item u-letter-box u-letter-box-xsmall">
                     <a class="c-link" href="https://github.com/BlazeUI/blaze/archive/master.zip"
-                       download="">
-                      <i class="fas fa-download"/> Download
+                      download="">
+                      <i class="fas fa-download" /> Download
                     </a>
                   </li>
                   <li class="c-list__item u-letter-box u-letter-box-xsmall">
                     <a class="c-link" href="https://github.com/BlazeCSS/blaze">
-                      <i class="fas fa-code"/> Source
+                      <i class="fas fa-code" /> Source
                     </a>
                   </li>
                 </ul>

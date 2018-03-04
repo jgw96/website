@@ -9,11 +9,14 @@ export class ComponentsAccordions {
   render() {
     return (
       <page-template name={this.name}>
-        <p slot="intro" class="c-paragraph">
-          Accordions are achieved by adding a modifier to a <a href="cards" class="c-link">card</a> element.
-        </p>
 
-        <demo-markup language="html" code={`<div class="c-text c-card c-card--accordion">
+        <blaze-tabs type="brand">
+          <blaze-tab header="CSS" open>
+            <p class="c-paragraph">
+              Accordions are achieved by adding a modifier to a <a href="cards" class="c-link">card</a> element.
+            </p>
+
+            <demo-markup language="html" code={`<div class="c-text c-card c-card--accordion">
   <div class="c-card__item c-card__item--title c-card__item--active">
     Header
   </div>
@@ -26,7 +29,19 @@ export class ComponentsAccordions {
   <div class="c-card__item c-card__item--pane">
     This is the body
   </div>
-</div>`}/>
+</div>`} />
+          </blaze-tab>
+          <blaze-tab header="JavaScript">
+            <demo-markup language="html" code={`<blaze-accordion>
+  <blaze-accordion-pane open header="Click me">
+    This is an expanded accordion
+  </blaze-accordion-pane>
+  <blaze-accordion-pane header="Click me also">
+    To toggle other panes
+  </blaze-accordion-pane>
+</blaze-accordion>`} />
+          </blaze-tab>
+        </blaze-tabs>
 
       </page-template>
     );

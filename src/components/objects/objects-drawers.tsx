@@ -153,7 +153,7 @@ export class ObjectsDrawers {
               Attributes
             </h2>
 
-            <table class="c-table c-table--striped c-table--condensed">
+            <table class="c-table c-table--condensed">
               <thead class="c-table__head">
                 <tr class="c-table__row c-table__row--heading">
                   <th class="c-table__cell">Attribute</th>
@@ -176,7 +176,6 @@ export class ObjectsDrawers {
               </tbody>
             </table>
 
-
             <h2 class="c-heading">
               Methods
             </h2>
@@ -186,7 +185,7 @@ export class ObjectsDrawers {
               using <code class="c-code">document.querySelector()</code>.
             </p>
 
-            <table class="c-table c-table--striped c-table--condensed">
+            <table class="c-table c-table--condensed">
               <thead class="c-table__head">
                 <tr class="c-table__row c-table__row--heading">
                   <th class="c-table__cell">Method</th>
@@ -204,7 +203,7 @@ export class ObjectsDrawers {
                 </tr>
                 <tr class="c-table__row">
                   <td class="c-table__cell">isOpen()</td>
-                  <td class="c-table__cell">Returns true or false depending whether the drawer is open or closed</td>
+                  <td class="c-table__cell">Returns true or false</td>
                 </tr>
               </tbody>
             </table>

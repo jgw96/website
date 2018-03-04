@@ -179,7 +179,7 @@ export class ObjectsModals {
               Attributes
             </h2>
 
-            <table class="c-table c-table--striped c-table--condensed">
+            <table class="c-table c-table--condensed">
               <thead class="c-table__head">
                 <tr class="c-table__row c-table__row--heading">
                   <th class="c-table__cell">Attribute</th>
@@ -216,7 +216,7 @@ export class ObjectsModals {
               using <code class="c-code">document.querySelector()</code>.
             </p>
 
-            <table class="c-table c-table--striped c-table--condensed">
+            <table class="c-table c-table--condensed">
               <thead class="c-table__head">
                 <tr class="c-table__row c-table__row--heading">
                   <th class="c-table__cell">Method</th>

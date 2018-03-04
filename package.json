@@ -16,7 +16,7 @@
     "@stencil/router": "latest",
     "@stencil/sass": "latest",
     "blaze-atoms": "1.0.0-4",
-    "blaze-css": "1.0.0-2"
+    "blaze-css": "1.0.0-3"
   },
   "devDependencies": {
     "@stencil/dev-server": "latest",
