@@ -6,10 +6,6 @@ import { Component, Prop } from '@stencil/core';
 export class ComponentsNavs {
   @Prop() name: string;
 
-  componentWillLoad() {
-    document.title = `${this.name} - Blaze`;
-  }
-
   render() {
     return (
       <page-template name={this.name}>
@@ -24,11 +20,11 @@ export class ComponentsNavs {
 
         <demo-markup language="html" code={`<ul class="c-nav" style="width: 280px;">
   <li class="c-nav__content u-centered c-text--loud">MY APP</li>
-  <li class="c-nav__item c-nav__item--success c-nav__item--active"><i class="fa fa-plus"></i> Create New</li>
-  <li class="c-nav__item"><i class="fa fa-home"></i> Home</li>
-  <li class="c-nav__item c-nav__item--brand"><i class="fa fa-question-circle"></i> About</li>
-  <li class="c-nav__item c-nav__item--info"><i class="fa fa-star"></i> News</li>
-  <li class="c-nav__item c-nav__item--error"><i class="fa fa-life-ring"></i> Help</li>
+  <li class="c-nav__item c-nav__item--success c-nav__item--active"><i class="fas fa-plus"></i> Create New</li>
+  <li class="c-nav__item"><i class="fas fa-home"></i> Home</li>
+  <li class="c-nav__item c-nav__item--brand"><i class="fas fa-question-circle"></i> About</li>
+  <li class="c-nav__item c-nav__item--info"><i class="fas fa-star"></i> News</li>
+  <li class="c-nav__item c-nav__item--error"><i class="fas fa-life-ring"></i> Help</li>
 </ul>`}/>
 
         <h2 id="inline" class="c-heading u-xlarge">
@@ -36,9 +32,9 @@ export class ComponentsNavs {
         </h2>
 
         <demo-markup language="html" code={`<ul class="c-nav c-nav--inline">
-  <li class="c-nav__item"><i class="fa fa-home"></i> Home</li>
-  <li class="c-nav__item"><i class="fa fa-star"></i> News</li>
-  <li class="c-nav__item c-nav__item--right"><i class="fa fa-user"></i> Contact</li>
+  <li class="c-nav__item"><i class="fas fa-home"></i> Home</li>
+  <li class="c-nav__item"><i class="fas fa-star"></i> News</li>
+  <li class="c-nav__item c-nav__item--right"><i class="fas fa-user"></i> Contact</li>
 </ul>`}/>
 
         <h2 id="absolute-positions" class="c-heading u-xlarge">
@@ -82,9 +78,9 @@ export class ComponentsNavs {
         </p>
 
         <demo-markup language="html" code={`<ul class="c-nav c-nav--inline u-highest">
-  <span class="c-nav__item"><i class="fa fa-home"></i> Home</span>
-  <span class="c-nav__item"><i class="fa fa-star"></i> News</span>
-  <span class="c-nav__item c-nav__item--right"><i class="fa fa-user"></i> Contact</span>
+  <span class="c-nav__item"><i class="fas fa-home"></i> Home</span>
+  <span class="c-nav__item"><i class="fas fa-star"></i> News</span>
+  <span class="c-nav__item c-nav__item--right"><i class="fas fa-user"></i> Contact</span>
 </ul>`}/>
 
         <h2 id="images" class="c-heading u-xlarge">
@@ -96,12 +92,12 @@ export class ComponentsNavs {
         </p>
 
         <demo-markup language="html" code={`<ul class="c-nav c-nav--inline">
-  <span class="c-nav__content u-window-box--none">
-    <img class="o-image" src="https://unsplash.it/g/200?random">
+  <span class="c-nav__content u-window-box-none">
+    <img class="o-image" src="https://source.unsplash.com/random/100x100">
   </span>
-  <span class="c-nav__item"><i class="fa fa-home"></i> Home</span>
-  <span class="c-nav__item"><i class="fa fa-star"></i> News</span>
-  <span class="c-nav__item c-nav__item--right"><i class="fa fa-user"></i> Contact</span>
+  <span class="c-nav__item"><i class="fas fa-home"></i> Home</span>
+  <span class="c-nav__item"><i class="fas fa-star"></i> News</span>
+  <span class="c-nav__item c-nav__item--right"><i class="fas fa-user"></i> Contact</span>
 </ul>`}/>
 
         <h2 id="light-variation" class="c-heading u-xlarge">
@@ -109,9 +105,9 @@ export class ComponentsNavs {
         </h2>
 
         <demo-markup language="html" code={`<ul class="c-nav c-nav--light c-nav--inline">
-  <li class="c-nav__item"><i class="fa fa-home"></i> Home</li>
-  <li class="c-nav__item"><i class="fa fa-star"></i> News</li>
-  <li class="c-nav__item c-nav__item--right"><i class="fa fa-user"></i> Contact</li>
+  <li class="c-nav__item"><i class="fas fa-home"></i> Home</li>
+  <li class="c-nav__item"><i class="fas fa-star"></i> News</li>
+  <li class="c-nav__item c-nav__item--right"><i class="fas fa-user"></i> Contact</li>
 </ul>`}/>
 
       </page-template>

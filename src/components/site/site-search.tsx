@@ -4,8 +4,7 @@ import { ActiveRouter, RouterHistory } from "@stencil/router";
 declare const algoliasearch: any;
 
 @Component({
-  tag: 'site-search',
-  styleUrl: 'site-search.scss'
+  tag: 'site-search'
 })
 export class SiteSearch {
   @Element() el: HTMLElement;
@@ -48,7 +47,7 @@ export class SiteSearch {
       if (!err && content.hits) {
         return content.hits.forEach((hit) => {
           this.results.push(
-            <stencil-route-link custom={true} class="u-display-block c-card__item" onClick={() => this.onSelect(hit.url)}>
+            <stencil-route-link custom="true" class="u-display-block c-card__item" onClick={() => this.onSelect(hit.url)}>
               {hit.title}
             </stencil-route-link>
           );
@@ -64,7 +63,7 @@ export class SiteSearch {
       <div class={classes}>
         <a class="o-page-header__button o-page-header__button--right c-link c-link--brand"
            onClick={() => this.openSearch()}>
-          Search <i class="fa fa-search u-pillar-box--xsmall"/>
+          <i class="fas fa-search"/>
         </a>
         <div class="c-search__container o-grid o-grid--center o-grid--no-gutter">
           <div class="o-grid__cell c-search__input">
@@ -81,7 +80,7 @@ export class SiteSearch {
           </div>
           <div class="c-search__close o-grid__cell--width-fixed u-centered">
             <a class="c-link c-link--brand" onClick={() => this.closeSearch()}>
-              <i class="fa fa-close u-pillar-box--xsmall"/> Close
+              Close
             </a>
           </div>
         </div>

@@ -17,8 +17,8 @@ export class AboutPage {
         </p>
 
         <h2 id="opt-in" class="c-heading u-xlarge">
-          <i class="fa fa-hand-paper-o"></i>
-          <span class="u-pillar-box--small">Opt-in</span>
+          <i class="fas fa-hand-paper"></i>
+          <span class="u-pillar-box-small">Opt-in</span>
         </h2>
 
         <p class="c-paragraph">
@@ -32,13 +32,12 @@ export class AboutPage {
         </p>
 
         <h2 id="bem-itcss" class="c-heading u-xlarge">
-          <i class="fa fa-play" style={{ transform: 'rotate(90deg)' }}></i>
-          <span class="u-pillar-box--small">BEM and ITCSS</span></h2>
+          <i class="fas fa-play" style={{ transform: 'rotate(90deg)' }}></i>
+          <span class="u-pillar-box-small">BEM and ITCSS</span></h2>
 
         <p class="c-paragraph">
-          Blaze follows <span class="c-text--loud">BEM</span> and
-          <span class="c-text--loud">Inverted Triangle</span> naming conventions to give meaning
-          and context to our selectors.
+          Blaze follows <span class="c-text--loud">BEM</span> and <span class="c-text--loud">Inverted
+          Triangle</span> naming conventions to give meaning and context to our selectors.
         </p>
 
         <p class="c-paragraph">
@@ -48,14 +47,24 @@ export class AboutPage {
 
 
         <h2 id="components" class="c-heading u-xlarge">
-          <i class="fa fa-sliders"></i>
-          <span class="u-pillar-box--small">Components</span>
+          <i class="fas fa-cogs"></i>
+          <span class="u-pillar-box-small">Components</span>
         </h2>
 
         <p class="c-paragraph">
           Micro-frameworks tend to sacrifice a lot of usefulness for the file size, leaving the
           developer wanting more. We took the approach that provides a decent set of components
           built on top of solid foundations.
+        </p>
+
+        <h2 id="components" class="c-heading u-xlarge">
+          <i class="fas fa-plug"></i>
+          <span class="u-pillar-box-small">Atoms</span>
+        </h2>
+
+        <p class="c-paragraph">
+          Blaze comes with a set of totally portable framework agnostic atomic components that you
+          can use anywhere with no additional framework or JavaScript library.
         </p>
       </page-template>
     );

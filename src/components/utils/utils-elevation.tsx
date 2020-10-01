@@ -6,10 +6,6 @@ import { Component, Prop } from '@stencil/core';
 export class UtilsElevation {
   @Prop() name: string;
 
-  componentWillLoad() {
-    document.title = `${this.name} - Blaze`;
-  }
-
   render() {
     return (
       <page-template name={this.name}>
@@ -26,16 +22,16 @@ export class UtilsElevation {
 .u-highest`}/>
 
         <div class="o-grid o-grid--wrap u-centered">
-          <div class="o-grid__cell u-letter-box--large">
+          <div class="o-grid__cell u-letter-box-large">
             <div class="c-avatar u-super"></div>
           </div>
-          <div class="o-grid__cell u-letter-box--large">
+          <div class="o-grid__cell u-letter-box-large">
             <div class="c-avatar u-super u-high"></div>
           </div>
-          <div class="o-grid__cell u-letter-box--large">
+          <div class="o-grid__cell u-letter-box-large">
             <div class="c-avatar u-super u-higher"></div>
           </div>
-          <div class="o-grid__cell u-letter-box--large">
+          <div class="o-grid__cell u-letter-box-large">
             <div class="c-avatar u-super u-highest"></div>
           </div>
         </div>

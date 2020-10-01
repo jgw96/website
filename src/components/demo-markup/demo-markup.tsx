@@ -30,8 +30,8 @@ export class DemoMarkup {
 
   render() {
     return ([
-      this.demo && <div class={`demo-markup-source u-letter-box--small ${this.classes}`} innerHTML={this.markup}/>,
-      <div class="u-letter-box--small">
+      this.demo && <div class={`demo-markup-source u-letter-box-small ${this.classes}`} innerHTML={this.markup}/>,
+      <div class="u-letter-box-small">
         <pre class="c-pre">
           <code class={`c-code c-code--multiline ${this.language}`} contenteditable onBlur={(e) => this.updateDemo(e)}>
             {this.markup}

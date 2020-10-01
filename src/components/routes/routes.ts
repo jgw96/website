@@ -6,7 +6,8 @@ export const gettingStartedRoutes = [
     url: '/getting-started/install',
     component: 'install-page',
     props: new RouteProps({
-      name: 'Install'
+      name: 'Install',
+      atoms: true
     })
   }),
   new Route({
@@ -54,21 +55,24 @@ export const objectsRoutes = [
     url: '/objects/panels',
     component: 'objects-panels',
     props: new RouteProps({
-      name: 'Panels'
+      name: 'Panels',
+      atoms: true
     })
   }),
   new Route({
     url: '/objects/images',
     component: 'objects-images',
     props: new RouteProps({
-      name: 'Images'
+      name: 'Images',
+      atoms: true
     })
   }),
   new Route({
     url: '/objects/drawers',
     component: 'objects-drawers',
     props: new RouteProps({
-      name: 'Drawers'
+      name: 'Drawers',
+      atoms: true
     })
   }),
   new Route({
@@ -82,7 +86,8 @@ export const objectsRoutes = [
     url: '/objects/modals',
     component: 'objects-modals',
     props: new RouteProps({
-      name: 'Modals'
+      name: 'Modals',
+      atoms: true
     })
   })
 ];
@@ -137,42 +142,48 @@ export const componentsRoutes = [
     url: '/components/accordions',
     component: 'components-accordions',
     props: new RouteProps({
-      name: 'Accordions'
+      name: 'Accordions',
+      atoms: true
     })
   }),
   new Route({
     url: '/components/addresses',
     component: 'components-addresses',
     props: new RouteProps({
-      name: 'Addresses'
+      name: 'Addresses',
+      atoms: true
     })
   }),
   new Route({
     url: '/components/alerts',
     component: 'components-alerts',
     props: new RouteProps({
-      name: 'Alerts'
+      name: 'Alerts',
+      atoms: true
     })
   }),
   new Route({
     url: '/components/avatars',
     component: 'components-avatars',
     props: new RouteProps({
-      name: 'Avatars'
+      name: 'Avatars',
+      atoms: true
     })
   }),
   new Route({
     url: '/components/badges',
     component: 'components-badges',
     props: new RouteProps({
-      name: 'Badges'
+      name: 'Badges',
+      atoms: true
     })
   }),
   new Route({
     url: '/components/breadcrumbs',
     component: 'components-breadcrumbs',
     props: new RouteProps({
-      name: 'Breadcrumbs'
+      name: 'Breadcrumbs',
+      atoms: true
     })
   }),
   new Route({
@@ -200,7 +211,8 @@ export const componentsRoutes = [
     url: '/components/cards',
     component: 'components-cards',
     props: new RouteProps({
-      name: 'Cards'
+      name: 'Cards',
+      atoms: true
     })
   }),
   new Route({
@@ -249,14 +261,16 @@ export const componentsRoutes = [
     url: '/components/pagination',
     component: 'components-pagination',
     props: new RouteProps({
-      name: 'Pagination'
+      name: 'Pagination',
+      atoms: true
     })
   }),
   new Route({
     url: '/components/progress',
     component: 'components-progress',
     props: new RouteProps({
-      name: 'Progress'
+      name: 'Progress',
+      atoms: true
     })
   }),
   new Route({
@@ -277,21 +291,24 @@ export const componentsRoutes = [
     url: '/components/tabs',
     component: 'components-tabs',
     props: new RouteProps({
-      name: 'Tabs'
+      name: 'Tabs',
+      atoms: true
     })
   }),
   new Route({
     url: '/components/toasts',
     component: 'components-toasts',
     props: new RouteProps({
-      name: 'Toasts'
+      name: 'Toasts',
+      atoms: true
     })
   }),
   new Route({
     url: '/components/toggles',
     component: 'components-toggles',
     props: new RouteProps({
-      name: 'Toggles'
+      name: 'Toggles',
+      atoms: true
     })
   }),
   new Route({

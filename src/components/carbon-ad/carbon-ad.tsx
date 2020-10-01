@@ -32,7 +32,6 @@ export class CarbonAd {
   }
 
   loadAd() {
-    console.log('loading');
     this.src = '//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=blazecsscom';
   }
 
@@ -45,7 +44,7 @@ export class CarbonAd {
 
   render() {
     return (
-      <div class="u-letter-box u-letter-box--medium">
+      <div class="u-letter-box u-letter-box-medium">
         <script async defer type="text/javascript" src={this.src} id="_carbonads_js" />
       </div>
     );

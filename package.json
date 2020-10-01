@@ -12,23 +12,24 @@
     "start": "npm run dev"
   },
   "dependencies": {
-    "@stencil/core": "next",
+    "@stencil/core": "^0.6.1",
     "@stencil/router": "latest",
-    "st-img": "^0.2.2"
+    "@stencil/sass": "latest",
+    "blaze-atoms": "1.0.0-4",
+    "blaze-css": "1.0.0-3"
   },
   "devDependencies": {
     "@stencil/dev-server": "latest",
-    "@stencil/utils": "latest",
-    "blaze": "^3.5.2"
+    "@stencil/utils": "latest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BlazeCSS/website.git"
+    "url": "git+https://github.com/BlazeUI/website.git"
   },
   "author": "Gregory Pratt",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/BlazeCSS/website/issues"
+    "url": "https://github.com/BlazeUI/website/issues"
   },
-  "homepage": "http://blazecss.com"
+  "homepage": "https://www.blazeui.com/"
 }
