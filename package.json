@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "@stencil/core": "next",
-    "@stencil/router": "latest"
+    "@stencil/router": "latest",
+    "st-img": "^0.2.2"
   },
   "devDependencies": {
     "@stencil/dev-server": "latest",

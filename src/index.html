@@ -3,7 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro">
+  
+  <link rel="preload" href="/assets/img/blaze.png" as="image">
+  <link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" as="style">
+  <link rel="preload" href="https://yandex.st/highlightjs/8.2/styles/github.min.css" as="style">
+  <link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.woff2?v=4.5.0" as="font">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://yandex.st/highlightjs/8.2/styles/github.min.css">
 
@@ -16,14 +21,21 @@
   <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico">
   <link rel="manifest" href="/manifest.json">
 
+
   <script src="/build/app.js"></script>
 </head>
 <body>
   <blaze-site></blaze-site>
 
-  <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/highlight.js/8.6/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad()</script>
+  <script async defer src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
+
+  <script id='highlightScript' async defer src="https://cdn.jsdelivr.net/highlight.js/8.6/highlight.min.js"></script>
+  <script>
+    document.querySelector('#highlightScript').addEventListener('load', () => {
+      hljs.initHighlightingOnLoad()
+    });
+  </script>
+
   <script>
     window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
     ga('create', 'UA-36978977-6', 'auto');
